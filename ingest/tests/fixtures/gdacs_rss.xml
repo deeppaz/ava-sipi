@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:gdacs="http://www.gdacs.org" xmlns:glide="http://glidenumber.net" xmlns:georss="http://www.georss.org/georss" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GDACS RSS information</title>
+    <link>https://www.gdacs.org/</link>
+    <copyright>public domain</copyright>
+    <description>Near real-time notification about natural disaster with a potential humanitarian impact</description>
+    <managingEditor>stefano.paris@ext.ec.europa.eu</managingEditor>
+    <!--Records number 381-->
+    <!--Start 9/2/2026 5:45:04 PM-->
+    <!--=Start 9/2/2026 5:45:04 PM-->
+    <webMaster>stefano.paris@ext.ec.europa.eu</webMaster>
+    <pubDate>Wed, 02 Sep 2026 15:45:04 GMT</pubDate>
+    <atom:link href="https://www.gdacs.org/xml/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Green earthquake (Magnitude 5.9M, Depth:10km) in Southern East Pacific Rise 02/09/2026 12:35 UTC, [unknown].</title>
+      <description>On 9/2/2026 12:35:56 PM, an earthquake occurred in Southern East Pacific Rise potentially affecting [unknown]. The earthquake had Magnitude 5.9M, Depth:10km.</description>
+      <enclosure type="image/png" length="1" url="https://www.gdacs.org/contentdata/resources/imgtemp/gdacs/eq/eq1730728_1.png" />
+      <gdacs:temporary>false</gdacs:temporary>
+      <link>https://www.gdacs.org/report.aspx?eventtype=EQ&amp;eventid=1563166</link>
+      <pubDate>Wed, 02 Sep 2026 12:55:32 GMT</pubDate>
+      <gdacs:dateadded>Wed, 02 Sep 2026 12:55:32 GMT</gdacs:dateadded>
+      <gdacs:datemodified>Wed, 02 Sep 2026 14:41:48 GMT</gdacs:datemodified>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Wed, 02 Sep 2026 12:35:56 GMT</gdacs:fromdate>
+      <gdacs:todate>Wed, 02 Sep 2026 12:35:56 GMT</gdacs:todate>
+      <gdacs:durationinweek>0</gdacs:durationinweek>
+      <gdacs:year>2026</gdacs:year>
+      <dc:subject>EQ1</dc:subject>
+      <guid isPermaLink="false">EQ1563166</guid>
+      <geo:Point>
+        <geo:lat>-34.9815</geo:lat>
+        <geo:long>-109.0259</geo:long>
+      </geo:Point>
+      <!--gdacs:bbox format = lonmin lonmax latmin latmax-->
+      <gdacs:bbox>-113.0259 -105.0259 -38.9815 -30.9815</gdacs:bbox>
+      <georss:point>-34.9815 -109.0259</georss:point>
+      <gdacs:cap>https://www.gdacs.org/contentdata/resources/EQ/1563166/cap_1563166.xml</gdacs:cap>
+      <gdacs:icon>https://www.gdacs.org/Images/gdacs_icons/alerts/Green/EQ.png</gdacs:icon>
+      <gdacs:version>1</gdacs:version>
+      <gdacs:eventtype>EQ</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+      <gdacs:alertscore>0</gdacs:alertscore>
+      <gdacs:episodealertlevel>Green</gdacs:episodealertlevel>
+      <gdacs:episodealertscore>1</gdacs:episodealertscore>
+      <gdacs:eventname />
+      <gdacs:eventid>1563166</gdacs:eventid>
+      <gdacs:episodeid>1730728</gdacs:episodeid>
+      <gdacs:calculationtype>earthquakeonly</gdacs:calculationtype>
+      <gdacs:severity unit="M" value="5.9">Magnitude 5.9M, Depth:10km</gdacs:severity>
+      <gdacs:population unit="in MMI -" value="0" />
+      <gdacs:vulnerability value="1.3145341380124" />
+      <gdacs:iso3 />
+      <gdacs:country>Southern East Pacific Rise</gdacs:country>
+      <gdacs:glide />
+      <gdacs:mapimage />
+      <gdacs:maplink />
+      <gdacs:gtsimage />
+      <gdacs:gtslink />
+      <gdacs:resources>
+        <gdacs:resource id="event_rss" version="0" source="EC-JRC" url="https://www.gdacs.org//datareport/resources/EQ/1563166/rss_1563166.xml" type="rss">
+          <gdacs:title>Event in rss format</gdacs:title>
+          <gdacs:description>Joint Research Center of the European Commission</gdacs:description>
+          <gdacs:acknowledgements>Copyright notice: European Union (CC BY 4.0), reuse is allowed, provided appropriate credit to GDACS is given.</gdacs:acknowledgements>
+          <gdacs:accesslevel>Public</gdacs:accesslevel>
+        </gdacs:resource>
+      </gdacs:resources>
+    </item>
+    <item>
+      <title>Green earthquake (Magnitude 5.6M, Depth:10km) in Mexico 02/09/2026 12:28 UTC, 550 thousand in MMI IV.</title>
+      <description>On 9/2/2026 12:28:31 PM, an earthquake occurred in Mexico potentially affecting 550 thousand in MMI IV. The earthquake had Magnitude 5.6M, Depth:10km.</description>
+      <enclosure type="image/png" length="1" url="https://www.gdacs.org/contentdata/resources/imgtemp/gdacs/eq/eq1730726_1.png" />
+      <gdacs:temporary>false</gdacs:temporary>
+      <link>https://www.gdacs.org/report.aspx?eventtype=EQ&amp;eventid=1563163</link>
+      <pubDate>Wed, 02 Sep 2026 12:49:34 GMT</pubDate>
+      <gdacs:dateadded>Wed, 02 Sep 2026 12:49:34 GMT</gdacs:dateadded>
+      <gdacs:datemodified>Wed, 02 Sep 2026 14:34:48 GMT</gdacs:datemodified>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Wed, 02 Sep 2026 12:28:31 GMT</gdacs:fromdate>
+      <gdacs:todate>Wed, 02 Sep 2026 12:28:31 GMT</gdacs:todate>
+      <gdacs:durationinweek>0</gdacs:durationinweek>
+      <gdacs:year>2026</gdacs:year>
+      <dc:subject>EQ1</dc:subject>
+      <guid isPermaLink="false">EQ1563163</guid>
+      <geo:Point>
+        <geo:lat>14.3909</geo:lat>
+        <geo:long>-92.9873</geo:long>
+      </geo:Point>
+      <!--gdacs:bbox format = lonmin lonmax latmin latmax-->
+      <gdacs:bbox>-96.9873 -88.9873 10.3909 18.3909</gdacs:bbox>
+      <georss:point>14.3909 -92.9873</georss:point>
+      <gdacs:cap>https://www.gdacs.org/contentdata/resources/EQ/1563163/cap_1563163.xml</gdacs:cap>
+      <gdacs:icon>https://www.gdacs.org/Images/gdacs_icons/alerts/Green/EQ.png</gdacs:icon>
+      <gdacs:version>1</gdacs:version>
+      <gdacs:eventtype>EQ</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+      <gdacs:alertscore>0</gdacs:alertscore>
+      <gdacs:episodealertlevel>Green</gdacs:episodealertlevel>
+      <gdacs:episodealertscore>1</gdacs:episodealertscore>
+      <gdacs:eventname />
+      <gdacs:eventid>1563163</gdacs:eventid>
+      <gdacs:episodeid>1730726</gdacs:episodeid>
+      <gdacs:calculationtype>earthquakeonly</gdacs:calculationtype>
+      <gdacs:severity unit="M" value="5.6">Magnitude 5.6M, Depth:10km</gdacs:severity>
+      <gdacs:population unit="in MMI IV" value="546209">550 thousand in MMI IV</gdacs:population>
+      <gdacs:vulnerability value="1.3145341380124" />
+      <gdacs:iso3>MEX</gdacs:iso3>
+      <gdacs:country>Mexico</gdacs:country>
+      <gdacs:glide />
+      <gdacs:mapimage />
+      <gdacs:maplink />
+      <gdacs:gtsimage />
+      <gdacs:gtslink />
+      <gdacs:resources>
+        <gdacs:resource id="event_rss" version="0" source="EC-JRC" url="https://www.gdacs.org//datareport/resources/EQ/1563163/rss_1563163.xml" type="rss">
+          <gdacs:title>Event in rss format</gdacs:title>
+          <gdacs:description>Joint Research Center of the European Commission</gdacs:description>
+          <gdacs:acknowledgements>Copyright notice: European Union (CC BY 4.0), reuse is allowed, provided appropriate credit to GDACS is given.</gdacs:acknowledgements>
+          <gdacs:accesslevel>Public</gdacs:accesslevel>
+        </gdacs:resource>
+      </gdacs:resources>
+    </item>
+    <item>
+      <title>Green earthquake (Magnitude 5.6M, Depth:64.644km) in Indonesia 02/09/2026 00:04 UTC, 400 thousand in MMI IV.</title>
+      <description>On 9/2/2026 12:04:54 AM, an earthquake occurred in Indonesia potentially affecting 400 thousand in MMI IV. The earthquake had Magnitude 5.6M, Depth:64.644km.</description>
+      <enclosure type="image/png" length="1" url="https://www.gdacs.org/contentdata/resources/imgtemp/gdacs/eq/eq1730598_1.png" />
+      <gdacs:temporary>false</gdacs:temporary>
+      <link>https://www.gdacs.org/report.aspx?eventtype=EQ&amp;eventid=1563052</link>
+      <pubDate>Wed, 02 Sep 2026 00:18:15 GMT</pubDate>
+      <gdacs:dateadded>Wed, 02 Sep 2026 00:18:15 GMT</gdacs:dateadded>
+      <gdacs:datemodified>Wed, 02 Sep 2026 02:11:26 GMT</gdacs:datemodified>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Wed, 02 Sep 2026 00:04:54 GMT</gdacs:fromdate>
+      <gdacs:todate>Wed, 02 Sep 2026 00:04:54 GMT</gdacs:todate>
+      <gdacs:durationinweek>0</gdacs:durationinweek>
+      <gdacs:year>2026</gdacs:year>
+      <dc:subject>EQ1</dc:subject>
+      <guid isPermaLink="false">EQ1563052</guid>
+      <geo:Point>
+        <geo:lat>-3.2128</geo:lat>
+        <geo:long>139.3732</geo:long>
+      </geo:Point>
+      <!--gdacs:bbox format = lonmin lonmax latmin latmax-->
+      <gdacs:bbox>135.3732 143.3732 -7.2128 0.7872</gdacs:bbox>
+      <georss:point>-3.2128 139.3732</georss:point>
+      <gdacs:cap>https://www.gdacs.org/contentdata/resources/EQ/1563052/cap_1563052.xml</gdacs:cap>
+      <gdacs:icon>https://www.gdacs.org/Images/gdacs_icons/alerts/Green/EQ.png</gdacs:icon>
+      <gdacs:version>1</gdacs:version>
+      <gdacs:eventtype>EQ</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+      <gdacs:alertscore>0</gdacs:alertscore>
+      <gdacs:episodealertlevel>Green</gdacs:episodealertlevel>
+      <gdacs:episodealertscore>1</gdacs:episodealertscore>
+      <gdacs:eventname />
+      <gdacs:eventid>1563052</gdacs:eventid>
+      <gdacs:episodeid>1730598</gdacs:episodeid>
+      <gdacs:calculationtype>earthquakeonly</gdacs:calculationtype>
+      <gdacs:severity unit="M" value="5.6">Magnitude 5.6M, Depth:64.6km</gdacs:severity>
+      <gdacs:population unit="in MMI IV" value="397795">400 thousand in MMI IV</gdacs:population>
+      <gdacs:vulnerability value="1.62113293717696" />
+      <gdacs:iso3>IDN</gdacs:iso3>
+      <gdacs:country>Indonesia</gdacs:country>
+      <gdacs:glide />
+      <gdacs:mapimage />
+      <gdacs:maplink />
+      <gdacs:gtsimage />
+      <gdacs:gtslink />
+      <gdacs:resources>
+        <gdacs:resource id="event_rss" version="0" source="EC-JRC" url="https://www.gdacs.org//datareport/resources/EQ/1563052/rss_1563052.xml" type="rss">
+          <gdacs:title>Event in rss format</gdacs:title>
+          <gdacs:description>Joint Research Center of the European Commission</gdacs:description>
+          <gdacs:acknowledgements>Copyright notice: European Union (CC BY 4.0), reuse is allowed, provided appropriate credit to GDACS is given.</gdacs:acknowledgements>
+          <gdacs:accesslevel>Public</gdacs:accesslevel>
+        </gdacs:resource>
+      </gdacs:resources>
+    </item>
+    <item>
+      <title>Green notification for tropical cyclone MARIE-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0  (0 in Tropical Storm).</title>
+      <description>From 01/09/2026 to 02/09/2026, a Tropical Storm (maximum wind speed of 167 km/h) MARIE-26 was active in EastPacific. The cyclone affects these countries: Mexico (vulnerability Medium). Estimated population affected by category 1 (120 km/h) wind speeds or higher is 0  (0 in tropical storm).</description>
+      <enclosure type="image/png" length="1" url="https://www.gdacs.org/contentdata/resources/imgtemp/gdacs/tc/1001317/1001317_6_tn.png" />
+      <gdacs:temporary>false</gdacs:temporary>
+      <link>https://www.gdacs.org/report.aspx?eventtype=TC&amp;eventid=1001317</link>
+      <pubDate>Tue, 01 Sep 2026 09:24:37 GMT</pubDate>
+      <gdacs:dateadded>Tue, 01 Sep 2026 09:24:37 GMT</gdacs:dateadded>
+      <gdacs:datemodified>Wed, 02 Sep 2026 15:17:51 GMT</gdacs:datemodified>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Tue, 01 Sep 2026 09:00:00 GMT</gdacs:fromdate>
+      <gdacs:todate>Wed, 02 Sep 2026 15:00:00 GMT</gdacs:todate>
+      <gdacs:durationinweek>0</gdacs:durationinweek>
+      <gdacs:year>2026</gdacs:year>
+      <dc:subject>TC1</dc:subject>
+      <guid isPermaLink="false">TC1001317</guid>
+      <geo:Point>
+        <geo:lat>17.1</geo:lat>
+        <geo:long>-111.7</geo:long>
+      </geo:Point>
+      <!--gdacs:bbox format = lonmin lonmax latmin latmax-->
+      <gdacs:bbox>-128.431515961729 -102.431515961729 5.78128476042415 31.7812847604241</gdacs:bbox>
+      <georss:point>17.1 -111.7</georss:point>
+      <gdacs:cap>https://www.gdacs.org/contentdata/resources/TC/1001317/cap_1001317.xml</gdacs:cap>
+      <gdacs:icon>https://www.gdacs.org/Images/gdacs_icons/alerts/Green/TC.png</gdacs:icon>
+      <gdacs:version>6</gdacs:version>
+      <gdacs:eventtype>TC</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+      <gdacs:alertscore>1</gdacs:alertscore>
+      <gdacs:episodealertlevel>Green</gdacs:episodealertlevel>
+      <gdacs:episodealertscore>1</gdacs:episodealertscore>
+      <gdacs:eventname>MARIE-26</gdacs:eventname>
+      <gdacs:eventid>1001317</gdacs:eventid>
+      <gdacs:episodeid>6</gdacs:episodeid>
+      <gdacs:calculationtype>tropicalcyclonewithstormsurge</gdacs:calculationtype>
+      <gdacs:severity unit="km/h" value="166.6656">Tropical Storm (maximum wind speed of 167 km/h)</gdacs:severity>
+      <gdacs:population unit="Pop74" value="0">Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm)</gdacs:population>
+      <gdacs:vulnerability value="2">Medium</gdacs:vulnerability>
+      <gdacs:iso3>MEX</gdacs:iso3>
+      <gdacs:country>Mexico</gdacs:country>
+      <gdacs:glide />
+      <gdacs:mapimage />
+      <gdacs:maplink />
+      <gdacs:gtsimage />
+      <gdacs:gtslink />
+      <gdacs:resources>
+        <gdacs:resource id="event_rss" version="0" source="EC-JRC" url="https://www.gdacs.org//datareport/resources/TC/1001317/rss_1001317.xml" type="rss">
+          <gdacs:title>Event in rss format</gdacs:title>
+          <gdacs:description>Joint Research Center of the European Commission</gdacs:description>
+          <gdacs:acknowledgements>Copyright notice: European Union (CC BY 4.0), reuse is allowed, provided appropriate credit to GDACS is given.</gdacs:acknowledgements>
+          <gdacs:accesslevel>Public</gdacs:accesslevel>
+        </gdacs:resource>
+      </gdacs:resources>
+    </item>
+    <item>
+      <title>Green earthquake (Magnitude 5.6M, Depth:10km) in Indonesia 01/09/2026 08:22 UTC, 8 thousand in MMI VI.</title>
+      <description>On 9/1/2026 8:22:20 AM, an earthquake occurred in Indonesia potentially affecting 8 thousand in MMI VI. The earthquake had Magnitude 5.6M, Depth:10km.</description>
+      <enclosure type="image/png" length="1" url="https://www.gdacs.org/contentdata/resources/imgtemp/gdacs/eq/eq1730450_1.png" />
+      <gdacs:temporary>false</gdacs:temporary>
+      <link>https://www.gdacs.org/report.aspx?eventtype=EQ&amp;eventid=1562918</link>
+      <pubDate>Tue, 01 Sep 2026 08:39:52 GMT</pubDate>
+      <gdacs:dateadded>Tue, 01 Sep 2026 08:39:52 GMT</gdacs:dateadded>
+      <gdacs:datemodified>Wed, 02 Sep 2026 14:03:28 GMT</gdacs:datemodified>
+      <gdacs:iscurrent>true</gdacs:iscurrent>
+      <gdacs:fromdate>Tue, 01 Sep 2026 08:22:20 GMT</gdacs:fromdate>
+      <gdacs:todate>Tue, 01 Sep 2026 08:22:20 GMT</gdacs:todate>
+      <gdacs:durationinweek>0</gdacs:durationinweek>
+      <gdacs:year>2026</gdacs:year>
+      <dc:subject>EQ1</dc:subject>
+      <guid isPermaLink="false">EQ1562918</guid>
+      <geo:Point>
+        <geo:lat>0.1685</geo:lat>
+        <geo:long>128.8054</geo:long>
+      </geo:Point>
+      <!--gdacs:bbox format = lonmin lonmax latmin latmax-->
+      <gdacs:bbox>124.8054 132.8054 -3.8315 4.1685</gdacs:bbox>
+      <georss:point>0.1685 128.8054</georss:point>
+      <gdacs:cap>https://www.gdacs.org/contentdata/resources/EQ/1562918/cap_1562918.xml</gdacs:cap>
+      <gdacs:icon>https://www.gdacs.org/Images/gdacs_icons/alerts/Green/EQ.png</gdacs:icon>
+      <gdacs:version>1</gdacs:version>
+      <gdacs:eventtype>EQ</gdacs:eventtype>
+      <gdacs:alertlevel>Green</gdacs:alertlevel>
+      <gdacs:alertscore>0</gdacs:alertscore>
+      <gdacs:episodealertlevel>Green</gdacs:episodealertlevel>
+      <gdacs:episodealertscore>1</gdacs:episodealertscore>
+      <gdacs:eventname />
+      <gdacs:eventid>1562918</gdacs:eventid>
+      <gdacs:episodeid>1730450</gdacs:episodeid>
+      <gdacs:calculationtype>earthquakeonly</gdacs:calculationtype>
+      <gdacs:severity unit="M" value="5.6">Magnitude 5.6M, Depth:10km</gdacs:severity>
+      <gdacs:population unit="in MMI VI" value="8427">8 thousand in MMI VI</gdacs:population>
+      <gdacs:vulnerability value="1.62113293717696" />
+      <gdacs:iso3>IDN</gdacs:iso3>
+      <gdacs:country>Indonesia</gdacs:country>
+      <gdacs:glide />
+      <gdacs:mapimage />
+      <gdacs:maplink />
+      <gdacs:gtsimage />
+      <gdacs:gtslink />
+      <gdacs:resources>
+        <gdacs:resource id="event_rss" version="0" source="EC-JRC" url="https://www.gdacs.org//datareport/resources/EQ/1562918/rss_1562918.xml" type="rss">
+          <gdacs:title>Event in rss format</gdacs:title>
+          <gdacs:description>Joint Research Center of the European Commission</gdacs:description>
+          <gdacs:acknowledgements>Copyright notice: European Union (CC BY 4.0), reuse is allowed, provided appropriate credit to GDACS is given.</gdacs:acknowledgements>
+          <gdacs:accesslevel>Public</gdacs:accesslevel>
+        </gdacs:resource>
+      </gdacs:resources>
+    </item>
+    </channel></rss>

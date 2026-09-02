@@ -1,0 +1,57 @@
+[project]
+name = "ava-sipi-ingest"
+version = "0.1.0"
+description = "Scheduled ingest pipelines for Ava Sipî: fetch open water data, validate, tile, publish to R2."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+  "httpx>=0.27",
+  "jsonschema>=4.23",
+  "numpy>=1.26",
+  "pyarrow>=17.0",
+  "pillow>=10.4",
+  "boto3>=1.35",
+]
+
+[project.optional-dependencies]
+# Heavy geospatial stack, only needed for rivers/glaciers/rasters pipelines (GitHub Actions installs it).
+geo = [
+  "rasterio>=1.4",
+  "geopandas>=1.0",
+  "shapely>=2.0",
+  "pyogrio>=0.10",
+  "netCDF4>=1.7",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3",
+  "pytest-httpx>=0.35",
+  "pyright>=1.1.380",
+  "ruff>=0.6",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["."]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "W", "RUF"]
+ignore = ["E501", "RUF001", "RUF002", "RUF003", "B905", "RUF007", "RUF046"]
+
+[tool.pyright]
+include = ["common", "pipelines", "tests", "cli.py", "make_samples.py"]
+pythonVersion = "3.12"
+typeCheckingMode = "standard"
+reportMissingModuleSource = "none"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["live: hits real upstream APIs (nightly only)"]
+addopts = "-m 'not live'"

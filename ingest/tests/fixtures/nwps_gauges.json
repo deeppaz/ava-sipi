@@ -1,0 +1,4204 @@
+{
+  "gauges": [
+    {
+      "lid": "AACS2",
+      "name": "Cheyenne River above Angostura at Hwy 71",
+      "rfc": { "abbreviation": "MBRFC", "name": "Missouri Basin River Forecast Center" },
+      "wfo": { "abbreviation": "UNR", "name": "Rapid City" },
+      "state": { "abbreviation": "SD", "name": "South Dakota" },
+      "latitude": 43.30577,
+      "longitude": -103.562797,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 3199.57,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AAIT2",
+      "name": "Williamson Creek at Manchaca Road at Austin",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "EWX", "name": "New Braunfels" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 30.221111111111,
+      "longitude": -97.793333333333,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 1.9,
+          "primaryUnit": "ft",
+          "secondary": 0.001,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AAKA2",
+      "name": "Antler River below Antler Lake near Auke Bay",
+      "rfc": { "abbreviation": "APRFC", "name": "Alaska Pacific River Forecast Center" },
+      "wfo": { "abbreviation": "AJK", "name": "Juneau" },
+      "state": { "abbreviation": "AK", "name": "Alaska" },
+      "latitude": 58.851944444444,
+      "longitude": -134.70861111111,
+      "pedts": { "observed": "HGIRZ", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 30.93,
+          "primaryUnit": "ft",
+          "secondary": 0.173,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AAMC1",
+      "name": "San Francisco Bay  Alameda tide gage",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.771667,
+      "longitude": -122.298333,
+      "pedts": { "observed": "HMIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 3.48,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:36:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AANG1",
+      "name": "Peachtree Creek at Atlanta",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "FFC", "name": "Peachtree City" },
+      "state": { "abbreviation": "GA", "name": "Georgia" },
+      "latitude": 33.82030556,
+      "longitude": -84.40763889,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 2.16,
+          "primaryUnit": "ft",
+          "secondary": 0.021,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABAF1",
+      "name": "Tide Gauge at Alligator Bay (in MHHW)",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TBW", "name": "Ruskin" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 26.9735,
+      "longitude": -82.1197,
+      "pedts": { "observed": "HCIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -0.87,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:29:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABAG1",
+      "name": "Alabaha River at GA Highway 203 near Blackshear",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "JAX", "name": "Jacksonville" },
+      "state": { "abbreviation": "GA", "name": "Georgia" },
+      "latitude": 31.375277777778,
+      "longitude": -82.288888888889,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 2.95,
+          "primaryUnit": "ft",
+          "secondary": 0.039,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABAT2",
+      "name": "Hubbard Creek below Albany",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "SJT", "name": "San Angelo" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 32.7327777777778,
+      "longitude": -99.1402777777778,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 2.31,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABBG1",
+      "name": "Ocmulgee River at Abbeville",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "FFC", "name": "Peachtree City" },
+      "state": { "abbreviation": "GA", "name": "Georgia" },
+      "latitude": 31.996666666667,
+      "longitude": -83.279166666667,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 0.84,
+          "primaryUnit": "ft",
+          "secondary": 1.21,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": 0.8,
+          "primaryUnit": "ft",
+          "secondary": 1.19,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABBI3",
+      "name": "Cedar Creek (IN) at 18th Street Auburn",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "IWX", "name": "Syracuse" },
+      "state": { "abbreviation": "IN", "name": "Indiana" },
+      "latitude": 41.36,
+      "longitude": -85.0491,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 2.53,
+          "primaryUnit": "ft",
+          "secondary": 0.0113,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABBN7",
+      "name": "Abbotts Creek near Lexington",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "RAH", "name": "Raleigh" },
+      "state": { "abbreviation": "NC", "name": "North Carolina" },
+      "latitude": 35.806944444444,
+      "longitude": -80.234722222222,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 3.19,
+          "primaryUnit": "ft",
+          "secondary": 0.022,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABBV2",
+      "name": "Craig Creek at Broad Run near New Castle",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "RNK", "name": "Blacksburg" },
+      "state": { "abbreviation": "VA", "name": "Virginia" },
+      "latitude": 37.451517,
+      "longitude": -80.112736,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 3.6,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABCF1",
+      "name": "Apalachicola River at Brothers River Confluence (in NAVD88)",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TAE", "name": "Tallahassee" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 29.845399,
+      "longitude": -85.032037,
+      "pedts": { "observed": "HGIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 1.57,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:54:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABDC1",
+      "name": "Altamont Creek near Bluebell Drive",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.71843,
+      "longitude": -121.74318,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABDM6",
+      "name": "Buttahatchie River near Aberdeen",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "MEG", "name": "Memphis" },
+      "state": { "abbreviation": "MS", "name": "Mississippi" },
+      "latitude": 33.79,
+      "longitude": -88.315277777778,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 4.97,
+          "primaryUnit": "ft",
+          "secondary": 0.163,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": 5,
+          "primaryUnit": "ft",
+          "secondary": 0.168,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABEM6",
+      "name": "Tombigbee River at Aberdeen Lock and Dam",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "MEG", "name": "Memphis" },
+      "state": { "abbreviation": "MS", "name": "Mississippi" },
+      "latitude": 33.8293957,
+      "longitude": -88.5402036,
+      "pedts": { "observed": "HTIRG", "forecast": "HTIFF" },
+      "status": {
+        "observed": {
+          "primary": 163.42,
+          "primaryUnit": "ft",
+          "secondary": 0.473,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": 163.4,
+          "primaryUnit": "ft",
+          "secondary": 0.471,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABFF1",
+      "name": "Apalachicola River at Bloody Bluff (in NAVD88)",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TAE", "name": "Tallahassee" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 29.873318,
+      "longitude": -85.011456,
+      "pedts": { "observed": "HGIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 2.16,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABGM2",
+      "name": "Wheel Creek Near Abingdon, MD",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "LWX", "name": "Sterling" },
+      "state": { "abbreviation": "MD", "name": "Maryland" },
+      "latitude": 39.481666666667,
+      "longitude": -76.340555555556,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 1.56,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:50:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABIK1",
+      "name": "Smoky Hill River near Abilene",
+      "rfc": { "abbreviation": "MBRFC", "name": "Missouri Basin River Forecast Center" },
+      "wfo": { "abbreviation": "TOP", "name": "Topeka" },
+      "state": { "abbreviation": "KS", "name": "Kansas" },
+      "latitude": 38.906388888889,
+      "longitude": -97.284166666667,
+      "pedts": { "observed": "HGIRZ", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABIN5",
+      "name": "Rio Chama at Abiquiu Dam",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "ABQ", "name": "Albuquerque" },
+      "state": { "abbreviation": "NM", "name": "New Mexico" },
+      "latitude": 36.24,
+      "longitude": -106.42888888889,
+      "pedts": { "observed": "HPIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 6199.22,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABIT2",
+      "name": "West Central Texas Lakes at Lake Abilene",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "SJT", "name": "San Angelo" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 32.234444444444,
+      "longitude": -99.888611111111,
+      "pedts": { "observed": "HPIRG", "forecast": "HPIFF" },
+      "status": {
+        "observed": {
+          "primary": 1992.65,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABKF1",
+      "name": "Arbuckle Creek at US 98",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TBW", "name": "Ruskin" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 27.442222222222,
+      "longitude": -81.2975,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 3.75,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABKL1",
+      "name": "Amite River Basin at Bayou Manchac at Alligator Bayou near Kleinpeter",
+      "rfc": { "abbreviation": "LMRFC", "name": "Lower Mississippi River Forecast Center" },
+      "wfo": { "abbreviation": "LIX", "name": "Slidell" },
+      "state": { "abbreviation": "LA", "name": "Louisiana" },
+      "latitude": 30.321111111111,
+      "longitude": -91.020833333333,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 1.97,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABLA2",
+      "name": "Kobuk River at Ambler",
+      "rfc": { "abbreviation": "APRFC", "name": "Alaska Pacific River Forecast Center" },
+      "wfo": { "abbreviation": "AFG", "name": "Fairbanks" },
+      "state": { "abbreviation": "AK", "name": "Alaska" },
+      "latitude": 67.086944444444,
+      "longitude": -157.8475,
+      "pedts": { "observed": "HGIRV", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "out_of_service",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "out_of_service",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABNG1",
+      "name": "Flint River (GA) at Albany",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TAE", "name": "Tallahassee" },
+      "state": { "abbreviation": "GA", "name": "Georgia" },
+      "latitude": 31.594166666667,
+      "longitude": -84.144166666667,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 3.27,
+          "primaryUnit": "ft",
+          "secondary": 2.01,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": 2.9,
+          "primaryUnit": "ft",
+          "secondary": 1.66,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-03T06:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABOM8",
+      "name": "Clark Fork River above Missoula",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "MSO", "name": "Missoula" },
+      "state": { "abbreviation": "MT", "name": "Montana" },
+      "latitude": 46.877222222222,
+      "longitude": -113.93138888889,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": 2.43,
+          "primaryUnit": "ft",
+          "secondary": 1.15,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": 2.46,
+          "primaryUnit": "ft",
+          "secondary": 1.19,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-03T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABPC1",
+      "name": "Pacheco Creek above Pacheco Reservoir",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.0867,
+      "longitude": -121.2876,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABPK2",
+      "name": "South Fork Beargrass Creek near Audubon Park",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "LMK", "name": "Louisville" },
+      "state": { "abbreviation": "KY", "name": "Kentucky" },
+      "latitude": 38.2114592,
+      "longitude": -85.7024613,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 1.78,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABPV2",
+      "name": "Backlick Run at Armistead Boothe Park",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "LWX", "name": "Sterling" },
+      "state": { "abbreviation": "VA", "name": "Virginia" },
+      "latitude": 38.803888888889,
+      "longitude": -77.128333333333,
+      "pedts": { "observed": "HGIRR", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 0,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:25:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABQN5",
+      "name": "Rio Grande at Albuquerque",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "ABQ", "name": "Albuquerque" },
+      "state": { "abbreviation": "NM", "name": "New Mexico" },
+      "latitude": 35.089166666667,
+      "longitude": -106.68055555556,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 1.86,
+          "primaryUnit": "ft",
+          "secondary": 0.0126,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": 1.9,
+          "primaryUnit": "ft",
+          "secondary": 0.017,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABRF1",
+      "name": "Tide Station near Avalon Boat Ramp (in MHHW)",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "MOB", "name": "Mobile" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 30.5466,
+      "longitude": -87.103368,
+      "pedts": { "observed": "HCIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 0.8,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:54:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABRN1",
+      "name": "Little Nemaha River near Auburn",
+      "rfc": { "abbreviation": "MBRFC", "name": "Missouri Basin River Forecast Center" },
+      "wfo": { "abbreviation": "OAX", "name": "Valley" },
+      "state": { "abbreviation": "NE", "name": "Nebraska" },
+      "latitude": 40.392805,
+      "longitude": -95.81268,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 2.68,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABRN8",
+      "name": "Wild Rice River (ND) near Abercrombie",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "FGF", "name": "Grand Forks" },
+      "state": { "abbreviation": "ND", "name": "North Dakota" },
+      "latitude": 46.4705555555556,
+      "longitude": -96.7819444444444,
+      "pedts": { "observed": "HGIRP", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 9.71,
+          "primaryUnit": "ft",
+          "secondary": 0,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABRW2",
+      "name": "Cheat River at Albright",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "PBZ", "name": "Moon Township" },
+      "state": { "abbreviation": "WV", "name": "West Virginia" },
+      "latitude": 39.494722222222,
+      "longitude": -79.644722222222,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 10.63,
+          "primaryUnit": "ft",
+          "secondary": 0.513,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": 10.6,
+          "primaryUnit": "ft",
+          "secondary": 0.496,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABSN4",
+      "name": "Absecon Creek at Absecon",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "PHI", "name": "Mount Holly" },
+      "state": { "abbreviation": "NJ", "name": "New Jersey" },
+      "latitude": 39.430277777778,
+      "longitude": -74.520555555556,
+      "pedts": { "observed": "HPIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABTI3",
+      "name": "East Fork Whitewater River at Abington",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "ILN", "name": "Wilmington" },
+      "state": { "abbreviation": "IN", "name": "Indiana" },
+      "latitude": 39.7325477,
+      "longitude": -84.9596837,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 4.99,
+          "primaryUnit": "ft",
+          "secondary": 0.706,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABTM1",
+      "name": "Kingsbury Stream at Abbot Village",
+      "rfc": { "abbreviation": "NERFC", "name": "Northeast River Forecast Center" },
+      "wfo": { "abbreviation": "CAR", "name": "Caribou" },
+      "state": { "abbreviation": "ME", "name": "Maine" },
+      "latitude": 45.184444444444,
+      "longitude": -69.452222222222,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 5.34,
+          "primaryUnit": "ft",
+          "secondary": 0.0098,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABTT2",
+      "name": "Barton Creek at Loop 360",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "EWX", "name": "New Braunfels" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 30.244444444444,
+      "longitude": -97.801944444444,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 1.65,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABUT2",
+      "name": "Bull Creek above Loop 360",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "EWX", "name": "New Braunfels" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 30.371944444444,
+      "longitude": -97.784444444444,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 1.02,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ABYT2",
+      "name": "Clear Fork Brazos River near Fort Griffin",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "SJT", "name": "San Angelo" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 32.932978,
+      "longitude": -99.215389,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 4.96,
+          "primaryUnit": "ft",
+          "secondary": 0.0018,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACAW1",
+      "name": "Asotin Creek at Asotin",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "OTX", "name": "Spokane" },
+      "state": { "abbreviation": "WA", "name": "Washington" },
+      "latitude": 46.34072,
+      "longitude": -117.05599,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": 1.62,
+          "primaryUnit": "ft",
+          "secondary": 0.04,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACBC1",
+      "name": "Alameda Creek below Div Dam near Sunol",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.4986111,
+      "longitude": -121.7794444,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 4.31,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACCP1",
+      "name": "Anderson Creek at Curwensville",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "CTP", "name": "State College" },
+      "state": { "abbreviation": "PA", "name": "Pennsylvania" },
+      "latitude": 40.9752,
+      "longitude": -78.5305,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 1.7,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACDG1",
+      "name": "Middle Oconee River near Arcade",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "FFC", "name": "Peachtree City" },
+      "state": { "abbreviation": "GA", "name": "Georgia" },
+      "latitude": 34.031666666667,
+      "longitude": -83.563333333333,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 1.96,
+          "primaryUnit": "ft",
+          "secondary": 0.0779,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": 2,
+          "primaryUnit": "ft",
+          "secondary": 0.082,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACDO2",
+      "name": "Deep Fork River at Arcadia Lake",
+      "rfc": { "abbreviation": "ABRFC", "name": "Arkansas-Red Basin RFC" },
+      "wfo": { "abbreviation": "OUN", "name": "Norman" },
+      "state": { "abbreviation": "OK", "name": "Oklahoma" },
+      "latitude": 35.64839,
+      "longitude": -97.36337,
+      "pedts": { "observed": "HPIRG", "forecast": "HPIFF" },
+      "status": {
+        "observed": {
+          "primary": 1004.82,
+          "primaryUnit": "ft",
+          "secondary": 25.5,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACEC1",
+      "name": "Almaden-Calero Canal at Almaden Reservoir",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.1656,
+      "longitude": -121.8281,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 0.16,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "out_of_service",
+          "validTime": "2026-09-02T14:39:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "out_of_service",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACET2",
+      "name": "San Diego Creek at Alice",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "CRP", "name": "Corpus Christi" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 27.76663889,
+      "longitude": -98.07555555555555,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 7.08,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACFS1",
+      "name": "St. Pierre Creek near Edisto Beach (IN MLLW)",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "CHS", "name": "North Charleston" },
+      "state": { "abbreviation": "SC", "name": "South Carolina" },
+      "latitude": 32.528,
+      "longitude": -80.36144,
+      "pedts": { "observed": "HMIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 5.54,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACIT1",
+      "name": "Cumberland River at Ashland City",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "OHX", "name": "Old Hickory" },
+      "state": { "abbreviation": "TN", "name": "Tennessee" },
+      "latitude": 36.270555555556,
+      "longitude": -87.076111111111,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 17.42,
+          "primaryUnit": "ft",
+          "secondary": 0.934,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACJU1",
+      "name": "Ashley Creek Below Union Canal Diversion near Jensen, UT",
+      "rfc": { "abbreviation": "", "name": "" },
+      "wfo": { "abbreviation": "", "name": "" },
+      "state": { "abbreviation": "UT", "name": "Utah" },
+      "latitude": 40.358,
+      "longitude": -109.3877,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACKF1",
+      "name": "Archie Creek at 78th Street Near Tampa ",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TBW", "name": "Ruskin" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 27.87972222222222,
+      "longitude": -82.37083333333334,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 20.87,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T01:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACKI1",
+      "name": "Antelope Creek (ID) near Darlington",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "PIH", "name": "Pocatello" },
+      "state": { "abbreviation": "ID", "name": "Idaho" },
+      "latitude": 43.73333,
+      "longitude": -113.51472,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 4.52,
+          "primaryUnit": "ft",
+          "secondary": 0.024,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACLW1",
+      "name": "Abernathy Creek near Longview",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "PQR", "name": "Portland" },
+      "state": { "abbreviation": "WA", "name": "Washington" },
+      "latitude": 46.195277777778,
+      "longitude": -123.16555555556,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACMC1",
+      "name": "Arroyo Corte Madera del Presidio  ",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.8975,
+      "longitude": -122.53611111111,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 2.74,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T07:20:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACML1",
+      "name": "Black River at Acme",
+      "rfc": { "abbreviation": "LMRFC", "name": "Lower Mississippi River Forecast Center" },
+      "wfo": { "abbreviation": "JAN", "name": "Jackson" },
+      "state": { "abbreviation": "LA", "name": "Louisiana" },
+      "latitude": 31.267777777778,
+      "longitude": -91.830833333333,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 14.86,
+          "primaryUnit": "ft",
+          "secondary": 20.5,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": 14.8,
+          "primaryUnit": "ft",
+          "secondary": 20.3,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACMN5",
+      "name": "Pecos River below Acme",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "ABQ", "name": "Albuquerque" },
+      "state": { "abbreviation": "NM", "name": "New Mexico" },
+      "latitude": 33.57185556,
+      "longitude": -104.3736028,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 4.45,
+          "primaryUnit": "ft",
+          "secondary": 0.0042,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACMP1",
+      "name": "Allegheny River at C.W. Bill Young Lock and Dam",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "PBZ", "name": "Moon Township" },
+      "state": { "abbreviation": "PA", "name": "Pennsylvania" },
+      "latitude": 40.536111111111,
+      "longitude": -79.815,
+      "pedts": { "observed": "HPIRG", "forecast": "HPIFF" },
+      "status": {
+        "observed": {
+          "primary": 10.43,
+          "primaryUnit": "ft",
+          "secondary": 8.56,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": 10.8,
+          "primaryUnit": "ft",
+          "secondary": 12.2,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-05T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACMW1",
+      "name": "Andrews Creek near Mazama",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "OTX", "name": "Spokane" },
+      "state": { "abbreviation": "WA", "name": "Washington" },
+      "latitude": 48.8229,
+      "longitude": -120.1459,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": 0.26,
+          "primaryUnit": "ft",
+          "secondary": 0.003,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACNF1",
+      "name": "Alligator Creek near Garfield Bight",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "MFL", "name": "Miami" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 25.17555556,
+      "longitude": -80.7927778,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -0.36,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T10:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACOF1",
+      "name": "Anclote River Near Odessa",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TBW", "name": "Ruskin" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 28.229166666667,
+      "longitude": -82.595555555556,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 3.62,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T02:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACOV2",
+      "name": "Ashville Bridge Creek at Old Dam Neck Road",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "AKQ", "name": "Wakefield" },
+      "state": { "abbreviation": "VA", "name": "Virginia" },
+      "latitude": 36.7764201,
+      "longitude": -75.984402,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 15.43,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "out_of_service",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "out_of_service",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACQC1",
+      "name": "Almaden-Calero Canal at Calero Reservoir",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.1808,
+      "longitude": -121.7916,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -0.09,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACRO1",
+      "name": "Alum Creek at Alum Creek Lake",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "ILN", "name": "Wilmington" },
+      "state": { "abbreviation": "OH", "name": "Ohio" },
+      "latitude": 40.18422937,
+      "longitude": -82.9637934,
+      "pedts": { "observed": "HPIRG", "forecast": "HPIFF" },
+      "status": {
+        "observed": {
+          "primary": 888.44,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACRO3",
+      "name": "Abernethy Creek near Redland",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "PQR", "name": "Portland" },
+      "state": { "abbreviation": "OR", "name": "Oregon" },
+      "latitude": 45.326388888889,
+      "longitude": -122.50888888889,
+      "pedts": { "observed": "HGIRZ", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACRT2",
+      "name": "Colorado River (TX) at Austin",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "EWX", "name": "New Braunfels" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 30.246111111111,
+      "longitude": -97.68,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 13.15,
+          "primaryUnit": "ft",
+          "secondary": 0.332,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:50:00Z"
+        },
+        "forecast": {
+          "primary": 16.2,
+          "primaryUnit": "ft",
+          "secondary": 1.68,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-05T06:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACRV2",
+      "name": "Cameron Run at Alexandria",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "LWX", "name": "Sterling" },
+      "state": { "abbreviation": "VA", "name": "Virginia" },
+      "latitude": 38.806388888889,
+      "longitude": -77.11,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "out_of_service",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "out_of_service",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACRW1",
+      "name": "Alpowa Creek at Mouth",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "OTX", "name": "Spokane" },
+      "state": { "abbreviation": "WA", "name": "Washington" },
+      "latitude": 46.412222222222,
+      "longitude": -117.21333333333,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": 1.25,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T12:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACSC1",
+      "name": "San Antonio Creek near Sunol",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.577434,
+      "longitude": -121.857734,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": 2.53,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": 2.92,
+          "primaryUnit": "ft",
+          "secondary": 0,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T16:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACSC2",
+      "name": "Anthracite Creek Above Mouth near Somerset",
+      "rfc": { "abbreviation": "CBRFC", "name": "Colorado Basin River Forecast Center" },
+      "wfo": { "abbreviation": "GJT", "name": "Grand Junction" },
+      "state": { "abbreviation": "CO", "name": "Colorado" },
+      "latitude": 38.9372,
+      "longitude": -107.3583,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 0.81,
+          "primaryUnit": "ft",
+          "secondary": 0.0283,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": 0.8,
+          "primaryUnit": "ft",
+          "secondary": 0.0274,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T16:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACSF1",
+      "name": "Alligator Creek at Starke (in NAVD88)",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "JAX", "name": "Jacksonville" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 29.9369444444444,
+      "longitude": -82.1152777777778,
+      "pedts": { "observed": "HGIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 136.92,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACSN7",
+      "name": "Aberdeen Cr at W South St",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "RAH", "name": "Raleigh" },
+      "state": { "abbreviation": "NC", "name": "North Carolina" },
+      "latitude": 35.1322,
+      "longitude": -79.4305,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 2.35,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:50:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACST1",
+      "name": "Sycamore Creek near Ashland City",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "OHX", "name": "Old Hickory" },
+      "state": { "abbreviation": "TN", "name": "Tennessee" },
+      "latitude": 36.32,
+      "longitude": -87.051111111111,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 1.53,
+          "primaryUnit": "ft",
+          "secondary": 0.0136,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACSV2",
+      "name": "Ashville Bridge Creek at Sandbridge Road",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "AKQ", "name": "Wakefield" },
+      "state": { "abbreviation": "VA", "name": "Virginia" },
+      "latitude": 36.7317428,
+      "longitude": -75.9846634,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 0.89,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACTI3",
+      "name": "Buck Creek (IN) at Acton",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "IND", "name": "Indianapolis" },
+      "state": { "abbreviation": "IN", "name": "Indiana" },
+      "latitude": 39.656944444444,
+      "longitude": -85.9575,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 1.83,
+          "primaryUnit": "ft",
+          "secondary": 0.0333,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACTT2",
+      "name": "North Texas Lakes at Waco Lake",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "FWD", "name": "Fort Worth" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 31.579444444444,
+      "longitude": -97.1975,
+      "pedts": { "observed": "HPIRG", "forecast": "HPIFF" },
+      "status": {
+        "observed": {
+          "primary": 460.05,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACUC1",
+      "name": "Atherton Channel   upstream of Caltrain",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.4619,
+      "longitude": -122.1938,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 0.06,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:11:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACWS1",
+      "name": "Waccamaw River above Conway",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "ILM", "name": "Wilmington" },
+      "state": { "abbreviation": "SC", "name": "South Carolina" },
+      "latitude": 33.850833333333,
+      "longitude": -78.897222222222,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 1.73,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACYG1",
+      "name": "Alcovy River above Covington",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "FFC", "name": "Peachtree City" },
+      "state": { "abbreviation": "GA", "name": "Georgia" },
+      "latitude": 33.63938889,
+      "longitude": -83.7784167,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 1.49,
+          "primaryUnit": "ft",
+          "secondary": 0.0207,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACYN4",
+      "name": "New Jersey Atlantic Coast at Atlantic City (ocean front) (IN MLLW)",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "PHI", "name": "Mount Holly" },
+      "state": { "abbreviation": "NJ", "name": "New Jersey" },
+      "latitude": 39.3567,
+      "longitude": -74.4183,
+      "pedts": { "observed": "HMIRG", "forecast": "HMIFE" },
+      "status": {
+        "observed": {
+          "primary": 5.8,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:36:00Z"
+        },
+        "forecast": {
+          "primary": 6,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "minor",
+          "validTime": "2026-09-02T16:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ACZC1",
+      "name": "Alameda Creek below Calaveras Creek near Sunol",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.5035472,
+      "longitude": -121.8246774,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 4.68,
+          "primaryUnit": "ft",
+          "secondary": 0.006,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADAK1",
+      "name": "Salt Creek (KS) near Ada",
+      "rfc": { "abbreviation": "MBRFC", "name": "Missouri Basin River Forecast Center" },
+      "wfo": { "abbreviation": "TOP", "name": "Topeka" },
+      "state": { "abbreviation": "KS", "name": "Kansas" },
+      "latitude": 39.139166666667,
+      "longitude": -97.836666666667,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 4.19,
+          "primaryUnit": "ft",
+          "secondary": 0.0087,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADAM4",
+      "name": "Grand River at Ada",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "GRR", "name": "Grand Rapids" },
+      "state": { "abbreviation": "MI", "name": "Michigan" },
+      "latitude": 42.9569741,
+      "longitude": -85.4775228,
+      "pedts": { "observed": "HGIRP", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 7.23,
+          "primaryUnit": "ft",
+          "secondary": 2.39,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADBC1",
+      "name": "Arundell Barranca",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "LOX", "name": "Oxnard" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 34.25341667,
+      "longitude": -119.25805556,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 0.19,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADDM8",
+      "name": "Sun River below Diversion Dam near Augusta",
+      "rfc": { "abbreviation": "MBRFC", "name": "Missouri Basin River Forecast Center" },
+      "wfo": { "abbreviation": "TFX", "name": "Great Falls" },
+      "state": { "abbreviation": "MT", "name": "Montana" },
+      "latitude": 47.619444444444,
+      "longitude": -112.69111111111,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 3.92,
+          "primaryUnit": "ft",
+          "secondary": 0.17,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADDO2",
+      "name": "Cow Creek (OK) near Addington",
+      "rfc": { "abbreviation": "ABRFC", "name": "Arkansas-Red Basin RFC" },
+      "wfo": { "abbreviation": "OUN", "name": "Norman" },
+      "state": { "abbreviation": "OK", "name": "Oklahoma" },
+      "latitude": 34.245,
+      "longitude": -97.974167,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADDT2",
+      "name": "Langham Creek at Addicks Reservoir",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "HGX", "name": "Dickinson" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 29.791111111111,
+      "longitude": -95.623333333333,
+      "pedts": { "observed": "HPIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 75,
+          "primaryUnit": "ft",
+          "secondary": 2.5,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADEI4",
+      "name": "North Raccoon River near Adel IA 44--IFC",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "DMX", "name": "Des Moines" },
+      "state": { "abbreviation": "IA", "name": "Iowa" },
+      "latitude": 41.688393,
+      "longitude": -94.035011,
+      "pedts": { "observed": "HGIRP", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 885.36,
+          "primaryUnit": "ft",
+          "secondary": 0,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADEV2",
+      "name": "Cedar Run near Aden",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "LWX", "name": "Sterling" },
+      "state": { "abbreviation": "VA", "name": "Virginia" },
+      "latitude": 38.61508,
+      "longitude": -77.55342,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 0.58,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:05:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADJP4",
+      "name": "Lago Garzas nr Adjuntas",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "SJU", "name": "San Juan" },
+      "state": { "abbreviation": "PR", "name": "Puerto Rico" },
+      "latitude": 18.1316487,
+      "longitude": -66.7425802,
+      "pedts": { "observed": "HPIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 2415.01,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADKA2",
+      "name": "Adak at Adak Tide Gage",
+      "rfc": { "abbreviation": "APRFC", "name": "Alaska Pacific River Forecast Center" },
+      "wfo": { "abbreviation": "AFC", "name": "Anchorage" },
+      "state": { "abbreviation": "AK", "name": "Alaska" },
+      "latitude": 51.8633333333333,
+      "longitude": -176.631666666667,
+      "pedts": { "observed": "HMIRG", "forecast": "HMIFV" },
+      "status": {
+        "observed": {
+          "primary": 1.43,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T12:54:00Z"
+        },
+        "forecast": {
+          "primary": 4.8,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-04T06:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADLC1",
+      "name": "Arroyo de la Laguna at Verona",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.62659915,
+      "longitude": -121.8830126,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": 0.77,
+          "primaryUnit": "ft",
+          "secondary": 0.006,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": 0.77,
+          "primaryUnit": "ft",
+          "secondary": 0.006,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T16:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADLC2",
+      "name": "Arkansas River near Avondale",
+      "rfc": { "abbreviation": "ABRFC", "name": "Arkansas-Red Basin RFC" },
+      "wfo": { "abbreviation": "PUB", "name": "Pueblo" },
+      "state": { "abbreviation": "CO", "name": "Colorado" },
+      "latitude": 38.24805799,
+      "longitude": -104.3991356,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 2.53,
+          "primaryUnit": "ft",
+          "secondary": 0.232,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": 2.5,
+          "primaryUnit": "ft",
+          "secondary": 0.222,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADLG1",
+      "name": "Little River (SW Georgia) near Adel (SR 37)",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TAE", "name": "Tallahassee" },
+      "state": { "abbreviation": "GA", "name": "Georgia" },
+      "latitude": 31.155,
+      "longitude": -83.543611111111,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 177.05,
+          "primaryUnit": "ft",
+          "secondary": 0.196,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADMI3",
+      "name": "Eel River (IN) near Logansport (Adamsboro)",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "IWX", "name": "Syracuse" },
+      "state": { "abbreviation": "IN", "name": "Indiana" },
+      "latitude": 40.781944444444,
+      "longitude": -86.263888888889,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 3.09,
+          "primaryUnit": "ft",
+          "secondary": 0.235,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADMO1",
+      "name": "Raccoon Creek at Adamsville",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "RLX", "name": "South Charleston" },
+      "state": { "abbreviation": "OH", "name": "Ohio" },
+      "latitude": 38.873611111111,
+      "longitude": -82.355833333333,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 2.54,
+          "primaryUnit": "ft",
+          "secondary": 0.09,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADMT2",
+      "name": "Adams Bayou at SH 87",
+      "rfc": { "abbreviation": "WGRFC", "name": "West Gulf River Forecast Center" },
+      "wfo": { "abbreviation": "LCH", "name": "Lake Charles" },
+      "state": { "abbreviation": "TX", "name": "Texas" },
+      "latitude": 30.0934,
+      "longitude": -93.7497,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 1.72,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADNI3",
+      "name": "White River (IN) at Raible Avenue in Anderson",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "IND", "name": "Indianapolis" },
+      "state": { "abbreviation": "IN", "name": "Indiana" },
+      "latitude": 40.1106,
+      "longitude": -85.7108,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 3.1,
+          "primaryUnit": "ft",
+          "secondary": 0.45,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADNN6",
+      "name": "Tuscarora Creek at South Addison",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "BGM", "name": "Johnson City" },
+      "state": { "abbreviation": "NY", "name": "New York" },
+      "latitude": 42.072222222222,
+      "longitude": -77.2988889,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": 2.61,
+          "primaryUnit": "ft",
+          "secondary": 0.0164,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADNW1",
+      "name": "Chehalis River near Adna",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "SEW", "name": "Seattle" },
+      "state": { "abbreviation": "WA", "name": "Washington" },
+      "latitude": 46.6258333333333,
+      "longitude": -123.100555555556,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 192.78,
+          "primaryUnit": "ft",
+          "secondary": 0.045,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADOW2",
+      "name": "Middle Fork Tygart Valley River at Adolph",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "RLX", "name": "South Charleston" },
+      "state": { "abbreviation": "WV", "name": "West Virginia" },
+      "latitude": 38.7459407,
+      "longitude": -80.04562,
+      "pedts": { "observed": "HGIRA", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 3.39,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:35:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADRM4",
+      "name": "River Raisin near Adrian",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "DTX", "name": "White Lake" },
+      "state": { "abbreviation": "MI", "name": "Michigan" },
+      "latitude": 41.904166666667,
+      "longitude": -83.980555555556,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 3.62,
+          "primaryUnit": "ft",
+          "secondary": 0.0936,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADRN7",
+      "name": "Crabtree Creek at Anderson Drive",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "RAH", "name": "Raleigh" },
+      "state": { "abbreviation": "NC", "name": "North Carolina" },
+      "latitude": 35.821111,
+      "longitude": -78.6341667,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 2.09,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:40:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADRS1",
+      "name": "Black River near Andrews",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "ILM", "name": "Wilmington" },
+      "state": { "abbreviation": "SC", "name": "South Carolina" },
+      "latitude": 33.490278,
+      "longitude": -79.544833,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 18.82,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADRW2",
+      "name": "Middle Fork Tygart Valley River at Audra",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "RLX", "name": "South Charleston" },
+      "state": { "abbreviation": "WV", "name": "West Virginia" },
+      "latitude": 39.03954454,
+      "longitude": -80.0681352,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 2.16,
+          "primaryUnit": "ft",
+          "secondary": 0.0715,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADSM5",
+      "name": "Wild Rice River (MN) near Ada",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "FGF", "name": "Grand Forks" },
+      "state": { "abbreviation": "MN", "name": "Minnesota" },
+      "latitude": 47.262322,
+      "longitude": -96.500359,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 6.05,
+          "primaryUnit": "ft",
+          "secondary": 0.0114,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ADXC1",
+      "name": "San Luis Obispo Creek at Andrews St.",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "LOX", "name": "Oxnard" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 35.288333333333,
+      "longitude": -120.65027777778,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 265.84,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AECC1",
+      "name": "Arroyo Las Positas above El Charro Rd",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.69524,
+      "longitude": -121.84506,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 0.57,
+          "primaryUnit": "ft",
+          "secondary": 0.001,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AECF1",
+      "name": "Anclote River at Elfers Spur",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TBW", "name": "Ruskin" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 28.1595,
+      "longitude": -82.7475,
+      "pedts": { "observed": "HCIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AERK1",
+      "name": "Walnut Creek (KS) above Alexander 4W",
+      "rfc": { "abbreviation": "ABRFC", "name": "Arkansas-Red Basin RFC" },
+      "wfo": { "abbreviation": "DDC", "name": "Dodge City" },
+      "state": { "abbreviation": "KS", "name": "Kansas" },
+      "latitude": 38.464722222222,
+      "longitude": -99.622222222222,
+      "pedts": { "observed": "", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AESI4",
+      "name": "South Skunk River near Ames US 30",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "DMX", "name": "Des Moines" },
+      "state": { "abbreviation": "IA", "name": "Iowa" },
+      "latitude": 42.0082222,
+      "longitude": -93.5959722,
+      "pedts": { "observed": "HGIRP", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 10.53,
+          "primaryUnit": "ft",
+          "secondary": 0.159,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AEXL1",
+      "name": "Red River at Alexandria",
+      "rfc": { "abbreviation": "LMRFC", "name": "Lower Mississippi River Forecast Center" },
+      "wfo": { "abbreviation": "LCH", "name": "Lake Charles" },
+      "state": { "abbreviation": "LA", "name": "Louisiana" },
+      "latitude": 31.308888888889,
+      "longitude": -92.439166666667,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 20.21,
+          "primaryUnit": "ft",
+          "secondary": 8.07,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-01T20:00:00Z"
+        },
+        "forecast": {
+          "primary": 20.3,
+          "primaryUnit": "ft",
+          "secondary": 12.1,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFAF1",
+      "name": "Alford Arm at Buck Lake Road (in NAVD88)",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TAE", "name": "Tallahassee" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 30.46365,
+      "longitude": -84.17113,
+      "pedts": { "observed": "HGIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 44.38,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T13:20:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFBI2",
+      "name": "Fox River at Algonquin tailwater",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "LOT", "name": "Romeoville" },
+      "state": { "abbreviation": "IL", "name": "Illinois" },
+      "latitude": 42.161944444444,
+      "longitude": -88.293888888889,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 5.56,
+          "primaryUnit": "ft",
+          "secondary": 0.799,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFCC1",
+      "name": "Adobe Creek above Foothill College",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 37.358,
+      "longitude": -122.128,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 0.84,
+          "primaryUnit": "ft",
+          "secondary": 0,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFCS2",
+      "name": "Foot Creek near Aberdeen",
+      "rfc": { "abbreviation": "MBRFC", "name": "Missouri Basin River Forecast Center" },
+      "wfo": { "abbreviation": "ABR", "name": "Aberdeen" },
+      "state": { "abbreviation": "SD", "name": "South Dakota" },
+      "latitude": 45.51919906,
+      "longitude": -98.577541,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 4.03,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFHA3",
+      "name": "Agua Fria River near Humboldt",
+      "rfc": { "abbreviation": "CBRFC", "name": "Colorado Basin River Forecast Center" },
+      "wfo": { "abbreviation": "FGZ", "name": "Bellemont" },
+      "state": { "abbreviation": "AZ", "name": "Arizona" },
+      "latitude": 34.485277777778,
+      "longitude": -112.2375,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 11.8,
+          "primaryUnit": "ft",
+          "secondary": 0.003,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": 14.2,
+          "primaryUnit": "ft",
+          "secondary": 0.0934,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-07T08:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFIC1",
+      "name": "Santa Ana Creek",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "LOX", "name": "Oxnard" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 34.423611111111,
+      "longitude": -119.34027777778,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 558.94,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:27:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFMA3",
+      "name": "Agua Fria River near Mayer",
+      "rfc": { "abbreviation": "CBRFC", "name": "Colorado Basin River Forecast Center" },
+      "wfo": { "abbreviation": "FGZ", "name": "Bellemont" },
+      "state": { "abbreviation": "AZ", "name": "Arizona" },
+      "latitude": 34.315277777778,
+      "longitude": -112.06333333333,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 4.18,
+          "primaryUnit": "ft",
+          "secondary": 0.0757,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": 4.84,
+          "primaryUnit": "ft",
+          "secondary": 0.177,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-07T08:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFPU1",
+      "name": "American Fork River near American Fork",
+      "rfc": { "abbreviation": "CBRFC", "name": "Colorado Basin River Forecast Center" },
+      "wfo": { "abbreviation": "SLC", "name": "Salt Lake City" },
+      "state": { "abbreviation": "UT", "name": "Utah" },
+      "latitude": 40.4477297,
+      "longitude": -111.6821472,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 5.99,
+          "primaryUnit": "ft",
+          "secondary": 0.0089,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": 5.99,
+          "primaryUnit": "ft",
+          "secondary": 0.0089,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T16:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFRA3",
+      "name": "Agua Fria River near Rock Springs",
+      "rfc": { "abbreviation": "CBRFC", "name": "Colorado Basin River Forecast Center" },
+      "wfo": { "abbreviation": "PSR", "name": "Phoenix" },
+      "state": { "abbreviation": "AZ", "name": "Arizona" },
+      "latitude": 34.015555555556,
+      "longitude": -112.1679378,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 2.88,
+          "primaryUnit": "ft",
+          "secondary": 0.0033,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": 4.85,
+          "primaryUnit": "ft",
+          "secondary": 0.214,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-07T14:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFRI1",
+      "name": "Eastern Idaho Reservoirs at American Falls",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "PIH", "name": "Pocatello" },
+      "state": { "abbreviation": "ID", "name": "Idaho" },
+      "latitude": 42.77889,
+      "longitude": -112.87694,
+      "pedts": { "observed": "HPIRG", "forecast": "HFIFZ" },
+      "status": {
+        "observed": {
+          "primary": 4311.03,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": 4311.22,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFRL1",
+      "name": "Amite River Basin at Sandy Creek at Forbes Rd near Greenwell Springs",
+      "rfc": { "abbreviation": "LMRFC", "name": "Lower Mississippi River Forecast Center" },
+      "wfo": { "abbreviation": "LIX", "name": "Slidell" },
+      "state": { "abbreviation": "LA", "name": "Louisiana" },
+      "latitude": 30.621111111111,
+      "longitude": -90.982222222222,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFRO1",
+      "name": "Alum Creek at Africa",
+      "rfc": { "abbreviation": "OHRFC", "name": "Ohio River Forecast Center" },
+      "wfo": { "abbreviation": "ILN", "name": "Wilmington" },
+      "state": { "abbreviation": "OH", "name": "Ohio" },
+      "latitude": 40.18228495,
+      "longitude": -82.9615711,
+      "pedts": { "observed": "HTIRG", "forecast": "HTIFF" },
+      "status": {
+        "observed": {
+          "primary": 1.18,
+          "primaryUnit": "ft",
+          "secondary": 0.0063,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFRV2",
+      "name": "Four Mile Run at Alexandria",
+      "rfc": { "abbreviation": "MARFC", "name": "Middle Atlantic River Forecast Center" },
+      "wfo": { "abbreviation": "LWX", "name": "Sterling" },
+      "state": { "abbreviation": "VA", "name": "Virginia" },
+      "latitude": 38.843333333333,
+      "longitude": -77.085833333333,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 4.06,
+          "primaryUnit": "ft",
+          "secondary": 0.0026,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:50:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AFTW3",
+      "name": "Rock River at Afton",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "MKX", "name": "Dousman" },
+      "state": { "abbreviation": "WI", "name": "Wisconsin" },
+      "latitude": 42.6136111,
+      "longitude": -89.0716667,
+      "pedts": { "observed": "HGIRA", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGAI4",
+      "name": "East Fork Des Moines River near Algona Hwy B63--IFC",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "DMX", "name": "Des Moines" },
+      "state": { "abbreviation": "IA", "name": "Iowa" },
+      "latitude": 42.951322,
+      "longitude": -94.2335,
+      "pedts": { "observed": "HGIRP", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 1086.73,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGAK1",
+      "name": "Walnut River at Augusta",
+      "rfc": { "abbreviation": "ABRFC", "name": "Arkansas-Red Basin RFC" },
+      "wfo": { "abbreviation": "ICT", "name": "Wichita" },
+      "state": { "abbreviation": "KS", "name": "Kansas" },
+      "latitude": 37.670555555556,
+      "longitude": -96.98,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 5.49,
+          "primaryUnit": "ft",
+          "secondary": 0.0436,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGCC1",
+      "name": "Sonoma Creek at Agua Caliente",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "MTR", "name": "Monterey" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 38.32324705,
+      "longitude": -122.4944258,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 8.71,
+          "primaryUnit": "ft",
+          "secondary": 0.001,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGCF1",
+      "name": "Water Level Sensor at Alligator Lake",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TBW", "name": "Ruskin" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 27.9804,
+      "longitude": -82.7001,
+      "pedts": { "observed": "HGIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 4.38,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:29:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGCM4",
+      "name": "St Clair River at Algonac",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "DTX", "name": "White Lake" },
+      "state": { "abbreviation": "MI", "name": "Michigan" },
+      "latitude": 42.6158333333333,
+      "longitude": -82.5436111111111,
+      "pedts": { "observed": "HMIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 575.79,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:36:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGCS2",
+      "name": "Silver Creek at Sioux Falls",
+      "rfc": { "abbreviation": "MBRFC", "name": "Missouri Basin River Forecast Center" },
+      "wfo": { "abbreviation": "FSD", "name": "Sioux Falls" },
+      "state": { "abbreviation": "SD", "name": "South Dakota" },
+      "latitude": 43.602222222222,
+      "longitude": -96.731388888889,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 0.99,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGCW1",
+      "name": "Asotin Creek above George Creek",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "OTX", "name": "Spokane" },
+      "state": { "abbreviation": "WA", "name": "Washington" },
+      "latitude": 46.323055555556,
+      "longitude": -117.135,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "obs_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGDM5",
+      "name": "JD11 below Agassiz NWR at Thief River",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "FGF", "name": "Grand Forks" },
+      "state": { "abbreviation": "MN", "name": "Minnesota" },
+      "latitude": 48.3111111111111,
+      "longitude": -96.0580555555556,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 1130.16,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGGC1",
+      "name": "Arroyo Grande Creek at 22nd Street Bridge",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "LOX", "name": "Oxnard" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 35.095555555556,
+      "longitude": -120.60722222222,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 21.61,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:37:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGHC1",
+      "name": "Arroyo Grande Creek at Cecchetti",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "LOX", "name": "Oxnard" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 35.148611111111,
+      "longitude": -120.53083333333,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 212.31,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:49:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGMC1",
+      "name": "Arroyo Grande Creek at Myrtle St.",
+      "rfc": { "abbreviation": "CNRFC", "name": "California Nevada River Forecast Center" },
+      "wfo": { "abbreviation": "LOX", "name": "Oxnard" },
+      "state": { "abbreviation": "CA", "name": "California" },
+      "latitude": 35.124444444444,
+      "longitude": -120.56805555556,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 100.04,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:37:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGNI4",
+      "name": "East Fork Des Moines River near Algona",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "DMX", "name": "Des Moines" },
+      "state": { "abbreviation": "IA", "name": "Iowa" },
+      "latitude": 43.08266667,
+      "longitude": -94.2305556,
+      "pedts": { "observed": "HGIRP", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 6.89,
+          "primaryUnit": "ft",
+          "secondary": 0.036,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGNM5",
+      "name": "Polk JD25 near Angus (160th St NW)",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "FGF", "name": "Grand Forks" },
+      "state": { "abbreviation": "MN", "name": "Minnesota" },
+      "latitude": 48.10843,
+      "longitude": -96.5444,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 947.7,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGNO3",
+      "name": "Rogue River near Agness",
+      "rfc": { "abbreviation": "NWRFC", "name": "Northwest River Forecast Center" },
+      "wfo": { "abbreviation": "MFR", "name": "Medford" },
+      "state": { "abbreviation": "OR", "name": "Oregon" },
+      "latitude": 42.5784422,
+      "longitude": -124.0581443,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFZ" },
+      "status": {
+        "observed": {
+          "primary": 4.12,
+          "primaryUnit": "ft",
+          "secondary": 1.83,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": 4.81,
+          "primaryUnit": "ft",
+          "secondary": 2.58,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-03T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGPM5",
+      "name": "Agassiz Pool at Agassiz NWR",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "FGF", "name": "Grand Forks" },
+      "state": { "abbreviation": "MN", "name": "Minnesota" },
+      "latitude": 48.325,
+      "longitude": -95.9869444444444,
+      "pedts": { "observed": "HPIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 1139.94,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGRA1",
+      "name": "Escatawpa River above Wilmer",
+      "rfc": { "abbreviation": "LMRFC", "name": "Lower Mississippi River Forecast Center" },
+      "wfo": { "abbreviation": "MOB", "name": "Mobile" },
+      "state": { "abbreviation": "AL", "name": "Alabama" },
+      "latitude": 30.862222,
+      "longitude": -88.417778,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 8.19,
+          "primaryUnit": "ft",
+          "secondary": 0.0292,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGRI4",
+      "name": "Cedar River near St. Ansgar (IFC)",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "ARX", "name": "La Crosse" },
+      "state": { "abbreviation": "IA", "name": "Iowa" },
+      "latitude": 43.3554,
+      "longitude": -92.9252,
+      "pedts": { "observed": "HGIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 1096.94,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGSI4",
+      "name": "Skunk River at Augusta",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "DVN", "name": "Davenport" },
+      "state": { "abbreviation": "IA", "name": "Iowa" },
+      "latitude": 40.7544,
+      "longitude": -91.275399,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 2.48,
+          "primaryUnit": "ft",
+          "secondary": 0.978,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGSK1",
+      "name": "Whitewater River (KS) at Augusta",
+      "rfc": { "abbreviation": "ABRFC", "name": "Arkansas-Red Basin RFC" },
+      "wfo": { "abbreviation": "ICT", "name": "Wichita" },
+      "state": { "abbreviation": "KS", "name": "Kansas" },
+      "latitude": 37.6797,
+      "longitude": -96.99638,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFF" },
+      "status": {
+        "observed": {
+          "primary": 3.49,
+          "primaryUnit": "ft",
+          "secondary": 0.0223,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGSM4",
+      "name": "Au Gres River near Au Gres",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "APX", "name": "Gaylord" },
+      "state": { "abbreviation": "MI", "name": "Michigan" },
+      "latitude": 44.08027777777778,
+      "longitude": -83.68583333333333,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 5.75,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGSM5",
+      "name": "Polk JD25 near Angus (150th St NW)",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "FGF", "name": "Grand Forks" },
+      "state": { "abbreviation": "MN", "name": "Minnesota" },
+      "latitude": 48.0941666666667,
+      "longitude": -96.5661111111111,
+      "pedts": { "observed": "HGIRG", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 936.7,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGSM8",
+      "name": "Sun River above Augusta",
+      "rfc": { "abbreviation": "MBRFC", "name": "Missouri Basin River Forecast Center" },
+      "wfo": { "abbreviation": "TFX", "name": "Great Falls" },
+      "state": { "abbreviation": "MT", "name": "Montana" },
+      "latitude": 47.601666666667,
+      "longitude": -112.75361111111,
+      "pedts": { "observed": "HPIRG", "forecast": "HPIFF" },
+      "status": {
+        "observed": {
+          "primary": 4613.25,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGTF1",
+      "name": "Alligator Creek at S Tamiami Trail",
+      "rfc": { "abbreviation": "SERFC", "name": "Southeast River Forecast Center" },
+      "wfo": { "abbreviation": "TBW", "name": "Ruskin" },
+      "state": { "abbreviation": "FL", "name": "Florida" },
+      "latitude": 27.057675,
+      "longitude": -82.412702,
+      "pedts": { "observed": "HGIRR", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": -0.33,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGYM5",
+      "name": "Middle River at Argyle",
+      "rfc": { "abbreviation": "NCRFC", "name": "North Central River Forecast Center" },
+      "wfo": { "abbreviation": "FGF", "name": "Grand Forks" },
+      "state": { "abbreviation": "MN", "name": "Minnesota" },
+      "latitude": 48.34007687,
+      "longitude": -96.8165174,
+      "pedts": { "observed": "HGIRP", "forecast": "" },
+      "status": {
+        "observed": {
+          "primary": 3.02,
+          "primaryUnit": "ft",
+          "secondary": 0.0012,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-09-02T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "AGYM7",
+      "name": "Platte River near Agency",
+      "rfc": { "abbreviation": "MBRFC", "name": "Missouri Basin River Forecast Center" },
+      "wfo": { "abbreviation": "EAX", "name": "Pleasant Hill" },
+      "state": { "abbreviation": "MO", "name": "Missouri" },
+      "latitude": 39.688028,
+      "longitude": -94.702611,
+      "pedts": { "observed": "HGIRG", "forecast": "HGIFE" },
+      "status": {
+        "observed": {
+          "primary": 5.69,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-09-02T14:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    }
+  ]
+}

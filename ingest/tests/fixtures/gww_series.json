@@ -1,0 +1,208 @@
+{
+  "90554": [
+    {
+      "value": 294536270.8254017,
+      "t": "2023-08-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 298735848.06873983,
+      "t": "2023-09-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 304398656.276584,
+      "t": "2023-10-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 310355644.1844976,
+      "t": "2023-11-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 335450625.23674214,
+      "t": "2023-12-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 336321506.1027986,
+      "t": "2024-01-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 318021852.9380764,
+      "t": "2024-02-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 310690086.5387647,
+      "t": "2024-03-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 316073830.6655206,
+      "t": "2024-04-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 318418732.6050444,
+      "t": "2024-05-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 306639455.19931346,
+      "t": "2024-06-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 298745174.3900831,
+      "t": "2024-07-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 307877352.0932281,
+      "t": "2024-08-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 301104288.7727184,
+      "t": "2024-09-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 305389158.16738355,
+      "t": "2024-10-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 313534304.30951476,
+      "t": "2024-11-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 318720147.5022441,
+      "t": "2024-12-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 317318760.1809749,
+      "t": "2025-01-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 311689946.79061294,
+      "t": "2025-02-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 305898221.2676389,
+      "t": "2025-03-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 300538854.84092945,
+      "t": "2025-04-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 295920113.8937452,
+      "t": "2025-05-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 286916487.0451124,
+      "t": "2025-06-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 284504783.10215724,
+      "t": "2025-07-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 287289561.43490845,
+      "t": "2025-08-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 294931421.86118835,
+      "t": "2025-09-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 297114643.49561346,
+      "t": "2025-10-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 306656033.8856656,
+      "t": "2025-11-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 317942644.55975145,
+      "t": "2025-12-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 313993876.7189071,
+      "t": "2026-01-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 304225971.7945121,
+      "t": "2026-02-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 309021268.23464304,
+      "t": "2026-03-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 304768816.89488065,
+      "t": "2026-04-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    },
+    {
+      "value": 289637030.74982345,
+      "t": "2026-05-01T00:00:00",
+      "name": "surface_water_area_monthly",
+      "unit": "m2"
+    }
+  ]
+}
