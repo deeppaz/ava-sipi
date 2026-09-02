@@ -1,0 +1,411 @@
+/*
+ * Ava Sipî design tokens (spec §6). One theme: a night globe.
+ * Tailwind v4 reads the @theme block; components use the CSS variables directly.
+ */
+@import "tailwindcss";
+@import "./fonts.css";
+
+@theme {
+  --color-abyss: #07131f;
+  --color-shelf: #0f2233;
+  --color-tide: #3e6e8e;
+  --color-current: #7fb8d6;
+  --color-foam: #eaf4f8;
+  --color-glacier: #cfe6f0;
+  --color-surge: #35e0e0;
+  --color-parch: #c8873a;
+  --color-parch-deep: #7a4a1c;
+  --color-cyclone: #9a8bd6;
+
+  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+
+  --text-12: 12px;
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-20: 20px;
+  --text-28: 28px;
+  --text-44: 44px;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-12: 48px;
+
+  --radius-glass: 6px;
+  --ease-water: cubic-bezier(0.2, 0, 0, 1);
+}
+
+:root {
+  --abyss: #07131f;
+  --shelf: #0f2233;
+  --tide: #3e6e8e;
+  --current: #7fb8d6;
+  --foam: #eaf4f8;
+  --glacier: #cfe6f0;
+  --surge: #35e0e0;
+  --parch: #c8873a;
+  --parch-deep: #7a4a1c;
+  --cyclone: #9a8bd6;
+
+  /* Derived (alpha) values — the only place alpha variants are defined. */
+  --glass-bg: rgb(7 19 31 / 0.6);
+  --glass-border: rgb(62 110 142 / 0.3);
+  --glass-blur: 16px;
+  --tide-60: rgb(62 110 142 / 0.6);
+  --current-20: rgb(127 182 214 / 0.2);
+  --foam-70: rgb(234 244 248 / 0.7);
+
+  --radius: 6px;
+  --rail-w: 56px;
+  --rail-w-open: 200px;
+  --panel-w: 380px;
+
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --panel-open: 240ms;
+  --panel-close: 180ms;
+
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: var(--abyss);
+  color: var(--foam);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Every number is tabular (spec §6.2). */
+body,
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+.metric {
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.wordmark {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 28px;
+  line-height: 1.1;
+  color: var(--foam);
+}
+
+/* ---- glass surface (spec §6.3): one radius, no shadows, depth via blur + opacity ---- */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+}
+
+.text-secondary {
+  color: var(--tide);
+}
+
+a {
+  color: var(--current);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--current);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+
+/* ---- shared UI primitives (packages/ui class hooks) ---- */
+.as-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--foam);
+  cursor: pointer;
+  transition:
+    background 120ms var(--ease),
+    border-color 120ms var(--ease),
+    opacity 120ms var(--ease);
+}
+.as-btn--sm {
+  height: 28px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+.as-btn--ghost {
+  border-color: var(--glass-border);
+}
+.as-btn--ghost:hover {
+  background: var(--current-20);
+}
+.as-btn--solid {
+  background: var(--current);
+  color: var(--abyss);
+  font-weight: 500;
+}
+.as-btn--solid:hover {
+  opacity: 0.9;
+}
+.as-btn--quiet {
+  color: var(--tide);
+}
+.as-btn--quiet:hover {
+  color: var(--foam);
+}
+.as-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.as-btn__icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+}
+
+.as-iconbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--tide);
+  cursor: pointer;
+  transition:
+    color 120ms var(--ease),
+    background 120ms var(--ease);
+}
+.as-iconbtn:hover,
+.as-iconbtn.is-active {
+  color: var(--foam);
+  background: var(--current-20);
+}
+
+.as-switch {
+  --switch-color: var(--current);
+  position: relative;
+  width: 28px;
+  height: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--tide-60);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 160ms var(--ease);
+}
+.as-switch__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--tide);
+  transition:
+    transform 160ms var(--ease),
+    background 160ms var(--ease);
+}
+.as-switch.is-on {
+  border-color: var(--switch-color);
+}
+.as-switch.is-on .as-switch__thumb {
+  transform: translateX(12px);
+  background: var(--switch-color);
+}
+
+.as-tooltip {
+  position: relative;
+  display: inline-flex;
+}
+.as-tooltip__bubble {
+  position: absolute;
+  z-index: 40;
+  pointer-events: none;
+  opacity: 0;
+  white-space: nowrap;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: var(--foam);
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  transition: opacity 120ms var(--ease);
+}
+.as-tooltip:hover .as-tooltip__bubble,
+.as-tooltip:focus-within .as-tooltip__bubble {
+  opacity: 1;
+}
+.as-tooltip--right .as-tooltip__bubble {
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.as-tooltip--top .as-tooltip__bubble {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.as-tooltip--bottom .as-tooltip__bubble {
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.as-tooltip--left .as-tooltip__bubble {
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.as-sheet {
+  position: absolute;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  outline: none;
+  pointer-events: none;
+  opacity: 0;
+  transition:
+    transform var(--panel-close) var(--ease),
+    opacity var(--panel-close) var(--ease);
+}
+.as-sheet.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  transition-duration: var(--panel-open);
+}
+.as-sheet--right {
+  top: 72px;
+  right: 16px;
+  bottom: 88px;
+  width: var(--panel-w);
+  max-width: calc(100vw - 32px);
+  transform: translateX(24px);
+}
+.as-sheet--right.is-open {
+  transform: translateX(0);
+}
+.as-sheet--bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 85vh;
+  border-radius: var(--radius) var(--radius) 0 0;
+  transform: translateY(24px);
+}
+.as-sheet--bottom.is-open {
+  transform: translateY(0);
+}
+
+.as-kbd {
+  display: inline-block;
+  min-width: 18px;
+  padding: 0 5px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--tide);
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+}
+
+/* ---- motion (spec §6.4) ---- */
+@keyframes as-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+.pulse-red {
+  animation: as-pulse 2s var(--ease) infinite;
+}
+.pulse-orange {
+  animation: as-pulse 4s var(--ease) infinite;
+}
+
+@keyframes as-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: as-fade-in 240ms var(--ease) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-red,
+  .pulse-orange,
+  .fade-in {
+    animation: none;
+  }
+  .as-sheet,
+  .as-btn,
+  .as-switch__thumb {
+    transition: none;
+  }
+}
+
+/* ---- scrollbars inside glass ---- */
+.scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--tide-60) transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

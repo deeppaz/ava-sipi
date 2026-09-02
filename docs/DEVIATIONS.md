@@ -49,9 +49,10 @@ Every "Doğrula" item was checked against the source's current documentation or 
 
 - Rate limiting in the Worker is per isolate (in-memory). Exact global limits need KV or a Durable
   Object; documented in `docs/ARCHITECTURE.md`.
-- Visual-regression baselines are GPU/OS specific (SwiftShader), so `playwright.config.ts` uses
-  `updateSnapshots: 'missing'`: the first run on a machine writes baselines, later runs diff at
-  ≤ 0.5 %. Commit baselines per CI image if you want strict enforcement across runs.
+- Visual-regression baselines are GPU/OS specific (SwiftShader). A visual test is skipped when no
+  baseline exists for the platform; `VISUAL_UPDATE=1 pnpm e2e` writes them (run once per CI image
+  and commit the `*-snapshots` folder to enforce the ≤ 0.5 % diff in CI). Locally the six views
+  pass at ≤ 0.5 % between runs after a `networkidle` wait.
 - README media: `apps/web/scripts/capture.mjs` + `make_gif.py` produce `docs/media/og.png` and the
   15-second GIF (1.5 MB) from the built app; an MP4 needs ffmpeg (`ffmpeg -framerate 4 -i
   docs/media/frames/%03d.png -pix_fmt yuv420p docs/media/ava-sipi.mp4`), not vendored.
