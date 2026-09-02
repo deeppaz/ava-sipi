@@ -1,0 +1,43 @@
+{
+  "id": "rivers",
+  "version": "20260902T1604",
+  "generatedAt": "2026-09-02T16:04:58Z",
+  "sourceUpdatedAt": "2026-09-02T00:00:00Z",
+  "stale": false,
+  "artifacts": [
+    {
+      "kind": "parquet",
+      "url": "discharge/latest/20260902.parquet",
+      "bytes": 26246,
+      "name": "discharge"
+    },
+    {
+      "kind": "json",
+      "url": "discharge/latest/20260902.json",
+      "bytes": 68724,
+      "name": "discharge-json"
+    },
+    {
+      "kind": "geojson",
+      "url": "rivers/latest/spine.geojson",
+      "bytes": 514228,
+      "name": "spine"
+    },
+    {
+      "kind": "json",
+      "url": "rivers/latest/points.json",
+      "bytes": 42446,
+      "name": "points"
+    }
+  ],
+  "attribution": {
+    "name": "Open-Meteo Flood API (Copernicus GloFAS v4) · HydroRIVERS mean discharge",
+    "url": "https://open-meteo.com/en/docs/flood-api",
+    "license": "CC BY 4.0 (Open-Meteo) · GloFAS: Copernicus licence"
+  },
+  "coverage": "global",
+  "failures": 0,
+  "sample": true,
+  "versions": ["20260902T1604"],
+  "notes": ["rivers.ratioSource"]
+}

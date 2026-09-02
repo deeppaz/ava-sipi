@@ -1,0 +1,57 @@
+{
+  "id": "drought",
+  "version": "20260902T1604",
+  "generatedAt": "2026-09-02T16:04:58Z",
+  "sourceUpdatedAt": "2026-06-11T00:00:00Z",
+  "stale": false,
+  "artifacts": [
+    {
+      "kind": "png",
+      "url": "drought/latest/cdi.png",
+      "bytes": 40044,
+      "name": "cdi",
+      "bbox": [-180.0, -85.05112878, 180.0, 85.05112878]
+    },
+    {
+      "kind": "raster-pmtiles",
+      "url": "drought/latest/cdi.pmtiles",
+      "bytes": 1742921,
+      "name": "cdi-tiles"
+    }
+  ],
+  "attribution": {
+    "name": "Copernicus Emergency Management Service — Global Drought Observatory (European Commission, JRC)",
+    "url": "https://drought.emergency.copernicus.eu",
+    "license": "Copernicus data: free, full and open access with attribution"
+  },
+  "coverage": "global",
+  "legend": {
+    "unit": "class",
+    "stops": [
+      {
+        "value": 0,
+        "color": "transparent",
+        "label": "none"
+      },
+      {
+        "value": 1,
+        "color": "#D9A45B",
+        "label": "watch"
+      },
+      {
+        "value": 2,
+        "color": "#C8873A",
+        "label": "warning"
+      },
+      {
+        "value": 3,
+        "color": "#7A4A1C",
+        "label": "alert"
+      }
+    ]
+  },
+  "failures": 0,
+  "sample": true,
+  "versions": ["20260902T1604"],
+  "notes": ["drought.noSpi"]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "reservoirs",
+  "version": "20260902T1604",
+  "generatedAt": "2026-09-02T16:04:58Z",
+  "sourceUpdatedAt": "2026-07-01T00:00:00Z",
+  "stale": false,
+  "artifacts": [
+    {
+      "kind": "json",
+      "url": "reservoirs/latest/latest.json",
+      "bytes": 5188,
+      "name": "latest"
+    }
+  ],
+  "attribution": {
+    "name": "Global Water Watch (Deltares, World Resources Institute, WWF) · GRanD",
+    "url": "https://www.globalwaterwatch.earth",
+    "license": "CC BY 4.0"
+  },
+  "coverage": "global",
+  "legend": {
+    "unit": "%",
+    "stops": [
+      {
+        "value": 0,
+        "color": "#7A4A1C",
+        "label": "0"
+      },
+      {
+        "value": 40,
+        "color": "#C8873A",
+        "label": "40"
+      },
+      {
+        "value": 70,
+        "color": "#7FB8D6",
+        "label": "70"
+      },
+      {
+        "value": 100,
+        "color": "#EAF4F8",
+        "label": "100"
+      }
+    ]
+  },
+  "failures": 0,
+  "sample": true,
+  "versions": ["20260902T1604"],
+  "notes": ["reservoirs.proxy"]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "events",
+  "version": "20260902T1604",
+  "generatedAt": "2026-09-02T16:04:58Z",
+  "sourceUpdatedAt": "2026-09-02T16:10:13Z",
+  "stale": false,
+  "artifacts": [
+    {
+      "kind": "geojson",
+      "url": "events/latest/current.geojson",
+      "bytes": 108382,
+      "name": "current"
+    }
+  ],
+  "attribution": {
+    "name": "GDACS — Global Disaster Alert and Coordination System (EC JRC / UN OCHA)",
+    "url": "https://www.gdacs.org",
+    "license": "Free use with attribution (GDACS terms of use)"
+  },
+  "coverage": "global",
+  "bbox": [-179.2, -45.0322, 170.2, 57.1915],
+  "failures": 0,
+  "sample": true,
+  "versions": ["20260902T1604"],
+  "notes": ["events.window30d"]
+}

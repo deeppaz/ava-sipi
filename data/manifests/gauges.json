@@ -1,0 +1,33 @@
+{
+  "id": "gauges",
+  "version": "20260902T2231",
+  "generatedAt": "2026-09-02T22:31:14Z",
+  "sourceUpdatedAt": "2026-09-02T22:30:00Z",
+  "stale": false,
+  "artifacts": [
+    {
+      "kind": "json",
+      "url": "gauges/20260902T2231/noaa.json",
+      "bytes": 3010685,
+      "name": "noaa"
+    }
+  ],
+  "attribution": {
+    "name": "NOAA National Weather Service — National Water Prediction Service",
+    "url": "https://water.noaa.gov",
+    "license": "U.S. public domain"
+  },
+  "coverage": "regional",
+  "bbox": [
+    -170.0,
+    17.0,
+    -64.0,
+    72.0
+  ],
+  "failures": 0,
+  "sample": true,
+  "versions": [
+    "20260902T2231"
+  ],
+  "notes": []
+}
