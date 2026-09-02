@@ -2,9 +2,7 @@
   "ci": {
     "collect": {
       "staticDistDir": "./dist",
-      "url": [
-        "http://localhost/index.html?c=25,20,1.6&l=rivers,gauges,events"
-      ],
+      "url": ["http://localhost/index.html?c=25,20,1.6&l=rivers,gauges,events"],
       "numberOfRuns": 2,
       "settings": {
         "preset": "perf",

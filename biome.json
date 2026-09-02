@@ -16,7 +16,8 @@
       "!**/test-results",
       "!**/*.snap.png",
       "!packages/schema/json",
-      "!**/.venv"
+      "!**/.venv",
+      "!data"
     ]
   },
   "formatter": {
