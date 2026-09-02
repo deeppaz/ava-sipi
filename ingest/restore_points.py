@@ -9,6 +9,10 @@ from pathlib import Path
 
 import httpx
 
+SAMPLE_POINTS = (
+    Path(__file__).resolve().parents[1] / "data" / "samples" / "rivers" / "latest" / "points.json"
+)
+
 
 def main() -> int:
     base = os.environ.get("R2_PUBLIC_URL")
@@ -17,14 +21,7 @@ def main() -> int:
         return 0
     if not base:
         # offline / fork without a bucket: fall back to the sample points
-        sample = (
-            Path(__file__).resolve().parents[1]
-            / "data"
-            / "samples"
-            / "rivers"
-            / "latest"
-            / "points.json"
-        )
+        sample = SAMPLE_POINTS
         if sample.exists():
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_bytes(sample.read_bytes())
@@ -34,6 +31,19 @@ def main() -> int:
     r = httpx.get(
         f"{base.rstrip('/')}/rivers/latest/points.json", timeout=120, follow_redirects=True
     )
+    if r.status_code == 404:
+        # The rivers pipeline (monthly) has not published yet: fall back to the sample points so
+        # the daily discharge run still produces a usable layer.
+        sample = SAMPLE_POINTS
+        if not sample.exists():
+            print(
+                "rivers/latest/points.json missing in R2 and no sample available", file=sys.stderr
+            )
+            return 1
+        print("rivers points not in R2 yet; using the sample points", file=sys.stderr)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_bytes(sample.read_bytes())
+        return 0
     r.raise_for_status()
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(r.content)
