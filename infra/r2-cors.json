@@ -1,0 +1,19 @@
+[
+  {
+    "AllowedOrigins": [
+      "https://ava-sipi.pages.dev",
+      "http://localhost:5173",
+      "http://127.0.0.1:4173"
+    ],
+    "AllowedMethods": ["GET", "HEAD"],
+    "AllowedHeaders": ["range", "if-match", "if-none-match", "content-type"],
+    "ExposeHeaders": [
+      "content-length",
+      "content-range",
+      "content-encoding",
+      "accept-ranges",
+      "etag"
+    ],
+    "MaxAgeSeconds": 3600
+  }
+]

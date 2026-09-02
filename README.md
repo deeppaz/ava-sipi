@@ -13,7 +13,8 @@
 
 ## Try it
 
-Deploy target: Cloudflare Pages / GitHub Pages via `.github/workflows/deploy.yml` — or run it yourself in three lines. No API keys needed.
+Run it yourself in three lines below. No API keys needed. To put your own instance online
+(Cloudflare Pages + R2, free tier, no domain required) follow [`docs/DEPLOY.md`](docs/DEPLOY.md).
 
 ## Quickstart
 

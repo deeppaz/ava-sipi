@@ -34,6 +34,14 @@ jobs:
           VITE_WORKER_URL: ${{ vars.VITE_WORKER_URL }}
           VITE_SENTRY_DSN: ${{ vars.VITE_SENTRY_DSN }}
         run: pnpm --filter @ava-sipi/web build && pnpm budget
+      - name: Create the Pages project on first deploy
+        if: env.HAS_CLOUDFLARE == 'true'
+        continue-on-error: true # already exists on every later run
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages project create ava-sipi --production-branch=main
       - name: Deploy to Cloudflare Pages
         if: env.HAS_CLOUDFLARE == 'true'
         uses: cloudflare/wrangler-action@v3
