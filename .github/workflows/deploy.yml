@@ -14,6 +14,8 @@ jobs:
     name: Cloudflare Pages (web)
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    permissions:
+      contents: write # gh-pages fallback pushes a branch
     env:
       # secrets are not readable inside step `if:`; expose presence as an env flag
       HAS_CLOUDFLARE: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
