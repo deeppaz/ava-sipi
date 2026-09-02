@@ -1,0 +1,49 @@
+name: ingest-weekly
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: ingest-weekly
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: ingest
+    env:
+      INGEST_PUBLISH: 'true'
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
+      USGS_API_KEY: ${{ secrets.USGS_API_KEY }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync
+      - name: USGS stations
+        run: USGS_TASK=stations uv run python cli.py run gauges_usgs --out ./.out --publish
+      - name: USGS monthly percentile tables
+        run: USGS_TASK=stats uv run python cli.py run gauges_usgs --out ./.out --publish
+      - name: Reservoirs (Global Water Watch)
+        run: uv run python cli.py run reservoirs_gww --out ./.out --publish
+      - run: uv run python publish.py
+      - name: Commit manifests
+        run: |
+          git config user.name "ava-sipi-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add ../data/manifests
+          git diff --cached --quiet || git commit -m "chore(ingest): weekly manifests $(date -u +%Y-%m-%d)"
+          git push

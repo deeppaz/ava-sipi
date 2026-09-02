@@ -1,0 +1,61 @@
+name: ingest-monthly
+
+on:
+  schedule:
+    - cron: '0 5 1 * *'
+  workflow_dispatch:
+    inputs:
+      rivers:
+        description: 'Rebuild HydroRIVERS tiles (only when the source version changed)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: ingest-monthly
+
+jobs:
+  monthly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: ingest
+    env:
+      INGEST_PUBLISH: 'true'
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+      R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
+      EARTHDATA_USERNAME: ${{ secrets.EARTHDATA_USERNAME }}
+      EARTHDATA_PASSWORD: ${{ secrets.EARTHDATA_PASSWORD }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Install tippecanoe + go-pmtiles
+        run: |
+          sudo apt-get update && sudo apt-get install -y build-essential libsqlite3-dev zlib1g-dev
+          git clone --depth 1 --branch 2.78.0 https://github.com/felt/tippecanoe.git /tmp/tippecanoe
+          make -C /tmp/tippecanoe -j"$(nproc)" && sudo make -C /tmp/tippecanoe install
+          curl -sSL https://github.com/protomaps/go-pmtiles/releases/download/v1.28.0/go-pmtiles_1.28.0_Linux_x86_64.tar.gz | tar xz -C /tmp
+          sudo mv /tmp/pmtiles /usr/local/bin/pmtiles
+      - run: uv sync --extra geo
+      - name: Groundwater (GRACE mascons; UNL percentile fallback without login) + glaciers
+        run: uv run python cli.py run groundwater_grace glaciers_rgi --out ./.out --publish
+      - name: Rivers (HydroRIVERS → PMTiles)
+        if: ${{ inputs.rivers }}
+        run: RIVER_POINTS_LIMIT=30000 uv run python cli.py run rivers --out ./.out --publish
+      - run: uv run python publish.py
+      - name: Commit manifests
+        run: |
+          git config user.name "ava-sipi-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add ../data/manifests
+          git diff --cached --quiet || git commit -m "chore(ingest): monthly manifests $(date -u +%Y-%m)"
+          git push
