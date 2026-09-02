@@ -1,0 +1,1 @@
+Offline basemap fallback: Natural Earth 1:110m land, admin-0 boundary lines and populated places (public domain, https://www.naturalearthdata.com). Used only when the OpenFreeMap vector tiles are unreachable.

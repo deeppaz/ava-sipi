@@ -1,0 +1,63 @@
+{
+  "id": "groundwater",
+  "version": "20260902T2204",
+  "generatedAt": "2026-09-02T22:04:42Z",
+  "sourceUpdatedAt": "2026-09-01T16:55:54Z",
+  "stale": false,
+  "artifacts": [
+    {
+      "kind": "png",
+      "url": "groundwater/latest/gws_percentile.png",
+      "bytes": 1579438,
+      "name": "gws_percentile",
+      "bbox": [-180.0, -85.05112878, 180.0, 85.05112878]
+    },
+    {
+      "kind": "raster-pmtiles",
+      "url": "groundwater/latest/gws_percentile.pmtiles",
+      "bytes": 6606668,
+      "name": "gws_percentile-tiles"
+    }
+  ],
+  "attribution": {
+    "name": "NASA JPL GRACE/GRACE-FO Mascon RL06.3 (Watkins et al. 2015; Wiese et al. 2016) · NASA GRACE-DA groundwater indicators (GSFC / NDMC, UNL)",
+    "url": "https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4",
+    "license": "NASA open data (free with citation)"
+  },
+  "coverage": "global",
+  "legend": {
+    "unit": "percentile",
+    "stops": [
+      {
+        "value": 0,
+        "color": "#7A4A1C",
+        "label": "0"
+      },
+      {
+        "value": 20,
+        "color": "#C8873A",
+        "label": "20"
+      },
+      {
+        "value": 50,
+        "color": "transparent",
+        "label": "50"
+      },
+      {
+        "value": 80,
+        "color": "#7FB8D6",
+        "label": "80"
+      },
+      {
+        "value": 100,
+        "color": "#35E0E0",
+        "label": "100"
+      }
+    ]
+  },
+  "bbox": [-180.0, -85.05112878, 180.0, 85.05112878],
+  "failures": 0,
+  "sample": true,
+  "versions": ["20260902T2204"],
+  "notes": ["groundwater.percentileFallback"]
+}
