@@ -41,6 +41,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: '4.128.0' # matches the root devDependency, so nothing is installed
           command: pages project create ava-sipi --production-branch=main
       - name: Deploy to Cloudflare Pages
         if: env.HAS_CLOUDFLARE == 'true'
@@ -48,6 +49,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: '4.128.0'
           command: pages deploy apps/web/dist --project-name=ava-sipi
       - name: Deploy to GitHub Pages (fork-friendly fallback)
         if: env.HAS_CLOUDFLARE != 'true'
@@ -74,6 +76,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: apps/worker
+          wranglerVersion: '4.128.0'
           command: deploy
           secrets: |
             USGS_API_KEY
