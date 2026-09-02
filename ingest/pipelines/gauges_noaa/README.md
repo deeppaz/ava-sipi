@@ -24,9 +24,11 @@ the `FloodCategory` contract; everything else becomes `none` (the raw value is k
 
 ## Join
 
-`gauges_usgs` joins on `usgsId` → `USGS-<usgsId>` and copies `floodCategory` + `nwsLid`.
+The list endpoint has **no `usgsId`** (verified 2026-09-02; only `/gauges/{lid}` carries it), so
+`gauges_usgs` joins on `usgsId` when present and otherwise on proximity: the nearest NWPS gauge
+within 800 m of a USGS station provides `floodCategory` and `nwsLid`.
 
 ## Known issues
 
-- Some NWPS gauges have no USGS id (state/local networks); they are dropped in sample mode.
+- Some NWPS gauges belong to state/local networks and have no USGS twin; they stay in `noaa.json`.
 - `validTime` `0001-01-01T00:00:00Z` marks "no forecast".
