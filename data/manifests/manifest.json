@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T22:05:08Z",
+  "generatedAt": "2026-09-02T23:09:51Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -41,34 +41,83 @@
       "coverage": "global",
       "failures": 0,
       "sample": true,
-      "versions": ["20260902T1604"],
-      "notes": ["rivers.ratioSource"]
+      "versions": [
+        "20260902T1604"
+      ],
+      "notes": [
+        "rivers.ratioSource"
+      ]
     },
     "gauges": {
       "id": "gauges",
-      "version": "20260902T2154",
-      "generatedAt": "2026-09-02T21:54:42Z",
-      "sourceUpdatedAt": "2026-09-02T21:54:42Z",
+      "version": "20260902T2309",
+      "generatedAt": "2026-09-02T23:09:51Z",
+      "sourceUpdatedAt": "2026-09-02T15:30:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
+          "url": "gauges/latest/latest.json",
+          "bytes": 2267546,
+          "name": "latest"
+        },
+        {
+          "kind": "json",
           "url": "gauges/latest/noaa.json",
-          "bytes": 62,
+          "bytes": 3010401,
           "name": "noaa"
         }
       ],
       "attribution": {
-        "name": "NOAA National Weather Service — National Water Prediction Service",
-        "url": "https://water.noaa.gov",
+        "name": "U.S. Geological Survey Water Data for the Nation",
+        "url": "https://waterdata.usgs.gov",
         "license": "U.S. public domain"
       },
       "coverage": "regional",
-      "bbox": [-170.0, 17.0, -64.0, 72.0],
+      "legend": {
+        "unit": "percentile",
+        "stops": [
+          {
+            "value": 0,
+            "color": "#C8873A",
+            "label": "< 10"
+          },
+          {
+            "value": 10,
+            "color": "#D9A45B",
+            "label": "10–25"
+          },
+          {
+            "value": 25,
+            "color": "#7FB8D6",
+            "label": "25–75"
+          },
+          {
+            "value": 75,
+            "color": "#35E0E0",
+            "label": "75–90"
+          },
+          {
+            "value": 90,
+            "color": "#EAF4F8",
+            "label": "> 90"
+          }
+        ]
+      },
+      "bbox": [
+        -163.67756,
+        13.30694,
+        144.73614,
+        70.28138
+      ],
       "failures": 0,
       "sample": true,
-      "versions": ["20260902T2154"],
-      "notes": []
+      "versions": [
+        "20260902T2309"
+      ],
+      "notes": [
+        "gauges.noPercentiles"
+      ]
     },
     "events": {
       "id": "events",
@@ -90,11 +139,20 @@
         "license": "Free use with attribution (GDACS terms of use)"
       },
       "coverage": "global",
-      "bbox": [-179.2, -45.0322, 170.2, 57.1915],
+      "bbox": [
+        -179.2,
+        -45.0322,
+        170.2,
+        57.1915
+      ],
       "failures": 0,
       "sample": true,
-      "versions": ["20260902T1604"],
-      "notes": ["events.window30d"]
+      "versions": [
+        "20260902T1604"
+      ],
+      "notes": [
+        "events.window30d"
+      ]
     },
     "reservoirs": {
       "id": "reservoirs",
@@ -143,8 +201,12 @@
       },
       "failures": 0,
       "sample": true,
-      "versions": ["20260902T1604"],
-      "notes": ["reservoirs.proxy"]
+      "versions": [
+        "20260902T1604"
+      ],
+      "notes": [
+        "reservoirs.proxy"
+      ]
     },
     "groundwater": {
       "id": "groundwater",
@@ -158,7 +220,12 @@
           "url": "groundwater/latest/gws_percentile.png",
           "bytes": 1579438,
           "name": "gws_percentile",
-          "bbox": [-180.0, -85.05112878, 180.0, 85.05112878]
+          "bbox": [
+            -180.0,
+            -85.05112878,
+            180.0,
+            85.05112878
+          ]
         },
         {
           "kind": "raster-pmtiles",
@@ -203,11 +270,20 @@
           }
         ]
       },
-      "bbox": [-180.0, -85.05112878, 180.0, 85.05112878],
+      "bbox": [
+        -180.0,
+        -85.05112878,
+        180.0,
+        85.05112878
+      ],
       "failures": 0,
       "sample": true,
-      "versions": ["20260902T2204"],
-      "notes": ["groundwater.percentileFallback"]
+      "versions": [
+        "20260902T2204"
+      ],
+      "notes": [
+        "groundwater.percentileFallback"
+      ]
     },
     "drought": {
       "id": "drought",
@@ -221,7 +297,12 @@
           "url": "drought/latest/cdi.png",
           "bytes": 40044,
           "name": "cdi",
-          "bbox": [-180.0, -85.05112878, 180.0, 85.05112878]
+          "bbox": [
+            -180.0,
+            -85.05112878,
+            180.0,
+            85.05112878
+          ]
         },
         {
           "kind": "raster-pmtiles",
@@ -263,8 +344,12 @@
       },
       "failures": 0,
       "sample": true,
-      "versions": ["20260902T1604"],
-      "notes": ["drought.noSpi"]
+      "versions": [
+        "20260902T1604"
+      ],
+      "notes": [
+        "drought.noSpi"
+      ]
     },
     "glaciers": {
       "id": "glaciers",
@@ -314,8 +399,12 @@
       },
       "failures": 0,
       "sample": true,
-      "versions": ["20260902T2154"],
-      "notes": ["glaciers.sampleGeometry"]
+      "versions": [
+        "20260902T2154"
+      ],
+      "notes": [
+        "glaciers.sampleGeometry"
+      ]
     }
   }
 }

@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import logging
 import os
+import pathlib
 import shutil
 import sys
 from datetime import UTC, datetime
@@ -52,6 +53,12 @@ def main(only_list: list[str] | None = None) -> int:
         cfg.previous_versions = []
         if name == "glaciers_rgi":
             cfg.fixtures["wgms_regions_dir"] = FIXTURES_DIR / "wgms_regions"
+        # Optional offline input for USGS latest pages (raw OGC responses), e.g. when the API is degraded.
+        fixture_dir = os.environ.get("USGS_LATEST_FIXTURES")
+        if name == "gauges_usgs" and fixture_dir:
+            base = pathlib.Path(fixture_dir)
+            cfg.fixtures["usgs_latest_discharge"] = base / "usgs_latest_00060_p1.json"
+            cfg.fixtures["usgs_latest_stage"] = base / "usgs_latest_00065_p1.json"
         log.info("== sample %s", name)
         try:
             manifest = get_pipeline(name)(cfg)

@@ -76,11 +76,15 @@ def _paginate(
 
 
 def _fetch_latest(fetcher: Fetcher, cfg: PipelineConfig, param: str) -> list[dict[str, Any]]:
+    # Sample mode stops after the first 10 000-station page: the cursor pages of this
+    # collection are slow (observed multi-minute 504s) and one page is plenty offline.
+    max_pages = int(os.environ.get("USGS_SAMPLE_PAGES", "1")) if cfg.sample else 200
     return _paginate(
         fetcher,
         f"{BASE}/latest-continuous/items",
         {"f": "json", "limit": PAGE, "parameter_code": param},
         _headers(cfg),
+        max_pages=max_pages,
     )
 
 
@@ -469,7 +473,8 @@ def run(cfg: PipelineConfig) -> LayerManifest:
             )
     if not stats:
         notes.append("gauges.noPercentiles")
-    if not stations:
+    named = sum(1 for g in gauges if not g["name"].startswith("USGS "))
+    if gauges and named < len(gauges) / 2:
         notes.append("gauges.noStationNames")
 
     newest = max(

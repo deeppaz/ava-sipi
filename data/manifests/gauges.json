@@ -1,33 +1,71 @@
 {
   "id": "gauges",
-  "version": "20260902T2231",
-  "generatedAt": "2026-09-02T22:31:14Z",
-  "sourceUpdatedAt": "2026-09-02T22:30:00Z",
+  "version": "20260902T2309",
+  "generatedAt": "2026-09-02T23:09:51Z",
+  "sourceUpdatedAt": "2026-09-02T15:30:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "json",
-      "url": "gauges/20260902T2231/noaa.json",
-      "bytes": 3010685,
+      "url": "gauges/latest/latest.json",
+      "bytes": 2267546,
+      "name": "latest"
+    },
+    {
+      "kind": "json",
+      "url": "gauges/latest/noaa.json",
+      "bytes": 3010401,
       "name": "noaa"
     }
   ],
   "attribution": {
-    "name": "NOAA National Weather Service — National Water Prediction Service",
-    "url": "https://water.noaa.gov",
+    "name": "U.S. Geological Survey Water Data for the Nation",
+    "url": "https://waterdata.usgs.gov",
     "license": "U.S. public domain"
   },
   "coverage": "regional",
+  "legend": {
+    "unit": "percentile",
+    "stops": [
+      {
+        "value": 0,
+        "color": "#C8873A",
+        "label": "< 10"
+      },
+      {
+        "value": 10,
+        "color": "#D9A45B",
+        "label": "10–25"
+      },
+      {
+        "value": 25,
+        "color": "#7FB8D6",
+        "label": "25–75"
+      },
+      {
+        "value": 75,
+        "color": "#35E0E0",
+        "label": "75–90"
+      },
+      {
+        "value": 90,
+        "color": "#EAF4F8",
+        "label": "> 90"
+      }
+    ]
+  },
   "bbox": [
-    -170.0,
-    17.0,
-    -64.0,
-    72.0
+    -163.67756,
+    13.30694,
+    144.73614,
+    70.28138
   ],
   "failures": 0,
   "sample": true,
   "versions": [
-    "20260902T2231"
+    "20260902T2309"
   ],
-  "notes": []
+  "notes": [
+    "gauges.noPercentiles"
+  ]
 }
