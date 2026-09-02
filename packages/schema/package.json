@@ -1,0 +1,27 @@
+{
+  "name": "@ava-sipi/schema",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Zod data contracts for Ava Sipî — TypeScript types and JSON Schema export (single source for web, worker and Python ingest).",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsx scripts/export-json-schema.ts",
+    "export": "tsx scripts/export-json-schema.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "26.4.1",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  }
+}

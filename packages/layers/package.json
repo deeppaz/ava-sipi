@@ -1,0 +1,23 @@
+{
+  "name": "@ava-sipi/layers",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Layer manifests: metadata, colours, legends and LOD rules for every Ava Sipî data layer. Source-agnostic.",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ava-sipi/schema": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "titleKey": {
+      "type": "string"
+    },
+    "subtitleKey": {
+      "type": "string"
+    },
+    "steps": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "camera": {
+            "type": "object",
+            "properties": {
+              "lon": {
+                "type": "number"
+              },
+              "lat": {
+                "type": "number"
+              },
+              "zoom": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 22
+              },
+              "bearing": {
+                "default": 0,
+                "type": "number"
+              },
+              "pitch": {
+                "default": 0,
+                "type": "number",
+                "minimum": 0,
+                "maximum": 85
+              }
+            },
+            "required": [
+              "lon",
+              "lat",
+              "zoom"
+            ]
+          },
+          "layers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "rivers",
+                "gauges",
+                "events",
+                "reservoirs",
+                "groundwater",
+                "drought",
+                "glaciers",
+                "snow",
+                "tides"
+              ]
+            }
+          },
+          "time": {
+            "default": "live",
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "duration": {
+            "default": 8000,
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "select": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "camera",
+          "layers",
+          "text"
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "titleKey",
+    "subtitleKey",
+    "steps"
+  ],
+  "$id": "https://ava-sipi.dev/schema/story.json",
+  "title": "story"
+}

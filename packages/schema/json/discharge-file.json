@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "day": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+    },
+    "source": {
+      "type": "string",
+      "const": "open-meteo-flood"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "ratio": {
+            "type": "number",
+            "minimum": 0
+          },
+          "today": {
+            "type": "number",
+            "minimum": 0
+          },
+          "forecast": {
+            "maxItems": 7,
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0
+            }
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lon": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "id",
+          "ratio",
+          "today",
+          "forecast",
+          "lat",
+          "lon"
+        ]
+      }
+    }
+  },
+  "required": [
+    "day",
+    "source",
+    "records"
+  ],
+  "$id": "https://ava-sipi.dev/schema/discharge-file.json",
+  "title": "discharge-file"
+}
