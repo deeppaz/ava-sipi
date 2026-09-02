@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.turbo/
+*.tsbuildinfo
+.env
+.env.local
+.wrangler/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+ingest/.tmp/
+apps/web/playwright-report/
+apps/web/test-results/
+apps/web/blob-report/
+apps/web/lighthouse/
+.DS_Store
+Thumbs.db
+
+# generated media frames (GIF is committed, frames are not)
+docs/media/frames/
