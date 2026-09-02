@@ -47,6 +47,10 @@ Every "Doğrula" item was checked against the source's current documentation or 
 
 ## Known limitations carried into v1
 
+- Lighthouse mobile performance (spec ≥ 85) is asserted as a **warning** until a baseline on the
+  CI hardware exists: the globe runs on SwiftShader there, which makes the lab score noisy. The
+  bundle budget (`pnpm budget`) remains a hard failure.
+
 - Rate limiting in the Worker is per isolate (in-memory). Exact global limits need KV or a Durable
   Object; documented in `docs/ARCHITECTURE.md`.
 - Visual-regression baselines are GPU/OS specific (SwiftShader). A visual test is skipped when no

@@ -14,6 +14,9 @@ jobs:
     name: Cloudflare Pages (web)
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      # secrets are not readable inside step `if:`; expose presence as an env flag
+      HAS_CLOUDFLARE: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -30,14 +33,14 @@ jobs:
           VITE_SENTRY_DSN: ${{ vars.VITE_SENTRY_DSN }}
         run: pnpm --filter @ava-sipi/web build && pnpm budget
       - name: Deploy to Cloudflare Pages
-        if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+        if: env.HAS_CLOUDFLARE == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy apps/web/dist --project-name=ava-sipi
       - name: Deploy to GitHub Pages (fork-friendly fallback)
-        if: ${{ secrets.CLOUDFLARE_API_TOKEN == '' }}
+        if: env.HAS_CLOUDFLARE != 'true'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
