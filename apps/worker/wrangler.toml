@@ -1,0 +1,14 @@
+name = "ava-sipi-live"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+workers_dev = true
+
+[vars]
+# Comma-separated origins or "*"
+ALLOWED_ORIGIN = "*"
+RATE_LIMIT_PER_MINUTE = "60"
+
+# Secrets (never in this file): wrangler secret put USGS_API_KEY / OPEN_METEO_API_KEY
+
+[observability]
+enabled = true
