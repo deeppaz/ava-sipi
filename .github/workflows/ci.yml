@@ -106,4 +106,5 @@ jobs:
         with:
           name: web-dist
           path: apps/web/dist
-      - run: npx --yes @lhci/cli@0.15.1 autorun --config=apps/web/lighthouserc.json
+      - run: npx --yes @lhci/cli@0.15.1 autorun --config=lighthouserc.json
+        working-directory: apps/web
