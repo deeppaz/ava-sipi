@@ -376,3 +376,38 @@ def test_a_rerun_drops_its_own_stale_note(cfg: PipelineConfig, fixtures_dir: Pat
     assert "rivers.ratioSource" in merged["notes"]  # the discharge pipeline still owns it
     assert {a["name"] for a in merged["artifacts"]} >= {"spine", "points", "discharge"}
     assert "rivers.noNetworkTiles" in owned_notes("rivers")
+
+
+# ---------------------------------------------------------------- usgs stats merge
+
+
+def test_stats_merge_is_resumable_and_ages_out():
+    from datetime import UTC, datetime
+
+    from pipelines.gauges_usgs.run import merge_stats, stale_ids
+
+    now = datetime(2026, 9, 3, tzinfo=UTC)
+    table = [[1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0]] * 12
+    previous = {
+        "generatedAt": "2026-06-01T00:00:00Z",
+        "stations": [
+            {"id": "A", "monthly": table, "years": 9, "computedAt": "2026-08-30"},  # fresh
+            {"id": "B", "monthly": table, "years": 9, "computedAt": "2026-01-01"},  # too old
+            {"id": "C", "monthly": table, "years": 9},  # pre-field: kept one more cycle
+        ],
+    }
+    fresh = {
+        "generatedAt": "2026-09-03T00:00:00Z",
+        "stations": [{"id": "B", "monthly": table, "years": 10, "computedAt": "2026-09-03"}],
+    }
+    assert stale_ids(previous, now) == {"A"}
+    merged = merge_stats(previous, fresh, now)
+    ids = {s["id"]: s for s in merged["stations"]}
+    assert set(ids) == {"A", "B", "C"}
+    assert ids["B"]["years"] == 10  # replaced by the fresh table
+    assert merged["generatedAt"] == "2026-09-03T00:00:00Z"
+    # a run that computed nothing still publishes what it had
+    assert {
+        s["id"]
+        for s in merge_stats(previous, {"generatedAt": "x", "stations": []}, now)["stations"]
+    } == {"A", "C"}

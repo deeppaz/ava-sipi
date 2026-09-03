@@ -12,6 +12,7 @@ import json
 import logging
 import os
 import statistics
+import time
 from collections import defaultdict
 from collections.abc import Mapping, Sequence
 from datetime import UTC, datetime, timedelta
@@ -35,6 +36,12 @@ PARAM_DISCHARGE = "00060"
 PARAM_STAGE = "00065"
 STAT_MEAN = "00003"
 STATS_YEARS = 10
+#: A station's percentile table is rebuilt when older than this (days).
+STATS_MAX_AGE_DAYS = int(os.environ.get("USGS_STATS_MAX_AGE_DAYS", "120"))
+#: Stations (re)computed per weekly run, largest current discharge first.
+STATS_LIMIT = int(os.environ.get("USGS_STATS_LIMIT", "2500"))
+#: Wall-clock budget for the stats loop; whatever is done by then is merged and published.
+STATS_BUDGET_MIN = float(os.environ.get("USGS_STATS_BUDGET_MIN", "100"))
 QUANTILES = (5, 10, 25, 50, 75, 90, 95)
 
 #: Notes this pipeline decides on its own; a rerun replaces them rather than
@@ -338,10 +345,20 @@ def _fetch_daily(
     )
 
 
-def build_stats(fetcher: Fetcher, cfg: PipelineConfig, station_ids: list[str]) -> dict[str, Any]:
+def build_stats(
+    fetcher: Fetcher,
+    cfg: PipelineConfig,
+    station_ids: list[str],
+    budget_min: float = STATS_BUDGET_MIN,
+) -> dict[str, Any]:
     since = cfg.now - timedelta(days=365 * STATS_YEARS)
+    deadline = time.monotonic() + budget_min * 60
     stations = []
+    day = cfg.now.strftime("%Y-%m-%d")
     for i, sid in enumerate(station_ids):
+        if time.monotonic() > deadline:
+            log.warning("stats budget of %.0f min reached after %d stations", budget_min, i)
+            break
         try:
             feats = _fetch_daily(fetcher, cfg, sid, since)
         except FetchError as exc:
@@ -359,10 +376,48 @@ def build_stats(fetcher: Fetcher, cfg: PipelineConfig, station_ids: list[str]) -
             t = str(p["time"])
             by_month[int(t[5:7]) - 1].append(cfs_to_m3s(val))
             years.add(t[:4])
-        stations.append({"id": sid, "monthly": monthly_quantiles(by_month), "years": len(years)})
+        stations.append(
+            {
+                "id": sid,
+                "monthly": monthly_quantiles(by_month),
+                "years": len(years),
+                "computedAt": day,
+            }
+        )
         if (i + 1) % 100 == 0:
             log.info("stats %d/%d", i + 1, len(station_ids))
     return {"generatedAt": iso(cfg.now), "stations": stations}
+
+
+def stale_ids(previous: dict[str, Any] | None, now: datetime) -> set[str]:
+    """Stations whose table is fresh enough to keep; everything else is due."""
+    if not previous:
+        return set()
+    keep = set()
+    cutoff = (now - timedelta(days=STATS_MAX_AGE_DAYS)).strftime("%Y-%m-%d")
+    for s in previous.get("stations", []):
+        if str(s.get("computedAt", "")) >= cutoff:
+            keep.add(s["id"])
+    return keep
+
+
+def merge_stats(
+    previous: dict[str, Any] | None, fresh: dict[str, Any], now: datetime
+) -> dict[str, Any]:
+    """Fresh tables replace old ones; old tables survive unless they are past the age limit.
+
+    Tables without a `computedAt` (written before this field existed) are kept for one more cycle
+    so a partial run never shrinks the published set.
+    """
+    cutoff = (now - timedelta(days=STATS_MAX_AGE_DAYS)).strftime("%Y-%m-%d")
+    merged: dict[str, dict[str, Any]] = {}
+    for s in (previous or {}).get("stations", []):
+        stamp = s.get("computedAt")
+        if stamp is None or str(stamp) >= cutoff:
+            merged[s["id"]] = s
+    for s in fresh.get("stations", []):
+        merged[s["id"]] = s
+    return {"generatedAt": fresh["generatedAt"], "stations": [merged[k] for k in sorted(merged)]}
 
 
 # ---------------------------------------------------------------------------- run
@@ -415,20 +470,29 @@ def run(cfg: PipelineConfig) -> LayerManifest:
             stats_doc = load_fixture_or(cfg, "usgs_stats", lambda: {})
         elif task == "stats":
             discharge_now = _fetch_latest(fetcher, cfg, PARAM_DISCHARGE)
-            ids = sorted({f["properties"]["monitoring_location_id"] for f in discharge_now})
-            if cfg.sample:
-                # biggest rivers first so the sample has meaningful percentiles
-                by_val = sorted(
-                    discharge_now, key=lambda f: -(_num(f["properties"].get("value")) or 0.0)
-                )
-                ids = []
-                for f in by_val:
-                    sid = f["properties"]["monitoring_location_id"]
-                    if sid not in ids:
-                        ids.append(sid)
-                    if len(ids) >= int(os.environ.get("USGS_SAMPLE_STATS", "300")):
-                        break
-            stats_doc = build_stats(fetcher, cfg, ids)
+            # biggest rivers first: they carry the map, and a cut-off run should still cover them
+            by_val = sorted(
+                discharge_now, key=lambda f: -(_num(f["properties"].get("value")) or 0.0)
+            )
+            ordered: list[str] = []
+            seen: set[str] = set()
+            for f in by_val:
+                sid = f["properties"]["monitoring_location_id"]
+                if sid not in seen:
+                    seen.add(sid)
+                    ordered.append(sid)
+            previous = None if cfg.sample else _load_json_if_exists(latest_dir / "stats.json")
+            fresh_enough = stale_ids(previous, cfg.now)
+            limit = int(os.environ.get("USGS_SAMPLE_STATS", "300")) if cfg.sample else STATS_LIMIT
+            ids = [sid for sid in ordered if sid not in fresh_enough][:limit]
+            log.info(
+                "stats: %d stations due (%d fresh, %d total), computing %d this run",
+                len(ordered) - len(fresh_enough),
+                len(fresh_enough),
+                len(ordered),
+                len(ids),
+            )
+            stats_doc = merge_stats(previous, build_stats(fetcher, cfg, ids), cfg.now)
             validate("gauge-stats", stats_doc)
             p = write_json(tmp / "stats.json", stats_doc)
             st = storage.put(p, layer, cfg.version, "stats.json", cache_seconds=86400)

@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { ISODate, Latitude, Longitude } from './common.js'
+import { ISODate, ISODay, Latitude, Longitude } from './common.js'
 
 export const FloodCategory = z.enum(['none', 'action', 'minor', 'moderate', 'major'])
 export type FloodCategory = z.infer<typeof FloodCategory>
@@ -42,6 +42,8 @@ export const GaugeStats = z.object({
   /** 12 entries (Jan..Dec): [p5, p10, p25, p50, p75, p90, p95] in m3/s, or null when unknown. */
   monthly: z.array(z.array(z.number()).length(7).nullable()).length(12),
   years: z.number().int().nonnegative(),
+  /** Day the table was computed; the weekly job refreshes tables older than its age limit. */
+  computedAt: ISODay.optional(),
 })
 export type GaugeStats = z.infer<typeof GaugeStats>
 
