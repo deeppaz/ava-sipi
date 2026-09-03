@@ -93,6 +93,13 @@ REGION_BOXES: list[tuple[str, tuple[float, float, float, float]]] = [
     ("19", (-180, -90, 180, -45)),
 ]
 
+#: Notes this pipeline decides on its own; a rerun replaces them rather than
+#: inheriting a stale one from a sibling pipeline writing the same layer.
+OWNED_NOTES: frozenset[str] = frozenset(
+    {"glaciers.noMassBalance", "glaciers.sampleGeometry", "glaciers.noEarthdata"}
+)
+
+
 ATTRIBUTION = {
     "name": "Randolph Glacier Inventory v7.0 (RGI Consortium 2023, GLIMS/NSIDC) · WGMS annual mass-change estimates (2026)",
     "url": "https://doi.org/10.5067/f6jmovy5navz",

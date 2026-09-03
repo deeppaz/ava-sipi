@@ -37,6 +37,11 @@ BATCHES_PER_MINUTE = int(os.environ.get("OPENMETEO_BATCHES_PER_MINUTE", "5"))
 DAILY_POINT_LIMIT = int(os.environ.get("OPENMETEO_POINT_LIMIT", "5000"))
 RATIO_CAP = 12.0
 
+#: Notes this pipeline decides on its own; a rerun replaces them rather than
+#: inheriting a stale one from a sibling pipeline writing the same layer.
+OWNED_NOTES: frozenset[str] = frozenset({"rivers.ratioSource"})
+
+
 ATTRIBUTION = {
     "name": "Open-Meteo Flood API (Copernicus GloFAS v4) · HydroRIVERS mean discharge",
     "url": "https://open-meteo.com/en/docs/flood-api",

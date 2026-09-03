@@ -46,6 +46,11 @@ CDI_COLORS: dict[tuple[int, int, int], tuple[int, int, int, int]] = {
     (231, 87, 91): (0x7A, 0x4A, 0x1C, 130),
 }
 
+#: Notes this pipeline decides on its own; a rerun replaces them rather than
+#: inheriting a stale one from a sibling pipeline writing the same layer.
+OWNED_NOTES: frozenset[str] = frozenset({"drought.noSpi"})
+
+
 ATTRIBUTION = {
     "name": "Copernicus Emergency Management Service — Global Drought Observatory (European Commission, JRC)",
     "url": "https://drought.emergency.copernicus.eu",

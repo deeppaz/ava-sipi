@@ -37,5 +37,9 @@ RunFn = Callable[[PipelineConfig], LayerManifest]
 
 
 def get_pipeline(name: str) -> RunFn:
-    module = importlib.import_module(PIPELINES[name])
-    return module.run
+    return importlib.import_module(PIPELINES[name]).run
+
+
+def owned_notes(name: str) -> frozenset[str]:
+    """Notes this pipeline is authoritative for (see cmd_run's manifest merge)."""
+    return getattr(importlib.import_module(PIPELINES[name]), "OWNED_NOTES", frozenset())

@@ -26,6 +26,11 @@ VARIABLE = "surface_water_area_monthly"
 YEARS = 3
 LIST_PAGE = 1000
 
+#: Notes this pipeline decides on its own; a rerun replaces them rather than
+#: inheriting a stale one from a sibling pipeline writing the same layer.
+OWNED_NOTES: frozenset[str] = frozenset({"reservoirs.proxy"})
+
+
 ATTRIBUTION = {
     "name": "Global Water Watch (Deltares, World Resources Institute, WWF) · GRanD",
     "url": "https://www.globalwaterwatch.earth",

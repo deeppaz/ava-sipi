@@ -78,7 +78,10 @@ export function MapView() {
         attach(map)
       })
     }
-    requestAnimationFrame(() => requestAnimationFrame(start))
+    // idle rather than a fixed frame count, so the shell's own work finishes first
+    const idle = window.requestIdleCallback
+    if (idle) idle(start, { timeout: 1200 })
+    else requestAnimationFrame(() => requestAnimationFrame(start))
 
     const attach = (map: MlMap) => {
       map.on('load', () => {
@@ -239,13 +242,15 @@ export function MapView() {
   const layers = useApp((s) => s.layers)
   const time = useApp((s) => s.time)
   useEffect(() => {
-    if (!manifest) return
+    // Layer artifacts are megabytes and useless before there is a map to draw them on; fetching
+    // them during startup only starved the first paint of bandwidth.
+    if (!manifest || !ready) return
     const ensure = useData.getState().ensure
     for (const id of layers) {
       const lm = layerManifest(manifest, id)
       if (lm && isDataLayer(id)) ensure(id, lm, base, time)
     }
-  }, [manifest, base, layers, time])
+  }, [manifest, base, layers, time, ready])
 
   // ---- deck frame loop
   useEffect(() => {

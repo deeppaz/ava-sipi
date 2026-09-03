@@ -48,6 +48,13 @@ MIN_ORDER = 3
 SPINE_ORDER = 7
 POINTS_ORDER = 6
 
+#: Notes this pipeline decides on its own; a rerun replaces them rather than
+#: inheriting a stale one from a sibling pipeline writing the same layer.
+OWNED_NOTES: frozenset[str] = frozenset(
+    {"rivers.sampleGeometry", "rivers.sampleDischarge", "rivers.noNetworkTiles"}
+)
+
+
 ATTRIBUTION = {
     "name": "HydroRIVERS v1.0 (HydroSHEDS) · Lehner & Grill 2013",
     "url": "https://www.hydrosheds.org/products/hydrorivers",

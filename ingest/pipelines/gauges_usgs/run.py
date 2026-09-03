@@ -37,6 +37,11 @@ STAT_MEAN = "00003"
 STATS_YEARS = 10
 QUANTILES = (5, 10, 25, 50, 75, 90, 95)
 
+#: Notes this pipeline decides on its own; a rerun replaces them rather than
+#: inheriting a stale one from a sibling pipeline writing the same layer.
+OWNED_NOTES: frozenset[str] = frozenset({"gauges.noPercentiles", "gauges.noStationNames"})
+
+
 ATTRIBUTION = {
     "name": "U.S. Geological Survey Water Data for the Nation",
     "url": "https://waterdata.usgs.gov",

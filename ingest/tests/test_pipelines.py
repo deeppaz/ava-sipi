@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 
 from common.config import PipelineConfig
+from common.manifest import ArtifactRef, LayerManifest
 from common.validate import validate
 from pipelines.discharge_openmeteo.run import build_records
 from pipelines.discharge_openmeteo.run import run as run_discharge
@@ -327,3 +328,51 @@ def test_groundwater_fallback_pipeline(cfg: PipelineConfig, fixtures_dir: Path):
     assert m.legend and m.legend["unit"] == "percentile"
     assert "groundwater.percentileFallback" in m.notes
     assert {a.kind for a in m.artifacts} == {"png", "raster-pmtiles"}
+
+
+# ---------------------------------------------------------------- manifest merge
+
+
+def test_a_rerun_drops_its_own_stale_note(cfg: PipelineConfig, fixtures_dir: Path, tmp_path: Path):
+    """A pipeline that now produces tiles must not inherit "no tiles were built" from its own
+    previous run, while a sibling pipeline's note on the same layer survives."""
+    import argparse
+
+    from cli import cmd_run
+    from common.manifest import write_layer_manifest
+    from pipelines import owned_notes
+
+    manifests = tmp_path / "manifests"
+    stale = LayerManifest(
+        id="rivers",
+        version="20260101T0000",
+        generatedAt="2026-01-01T00:00:00Z",
+        sourceUpdatedAt="2026-01-01T00:00:00Z",
+        stale=False,
+        artifacts=[
+            ArtifactRef(kind="parquet", url="discharge/latest/x.parquet", bytes=1, name="discharge")
+        ],
+        attribution={"name": "x", "url": "https://x", "license": "x"},
+        coverage="global",
+        notes=["rivers.noNetworkTiles", "rivers.ratioSource"],
+    )
+    write_layer_manifest(stale, manifests)
+
+    cfg.fixtures = {
+        "ne_rivers": fixtures_dir / "ne_rivers.json",
+        "ne_land": fixtures_dir / "ne_land.json",
+    }
+    args = argparse.Namespace(
+        pipelines=["rivers"],
+        out=str(cfg.out_dir),
+        manifests=str(manifests),
+        publish=False,
+        sample=True,
+    )
+    assert cmd_run(args) == 0
+
+    merged = json.loads((manifests / "rivers.json").read_text(encoding="utf-8"))
+    assert "rivers.noNetworkTiles" not in merged["notes"]  # owned by rivers, this run decided
+    assert "rivers.ratioSource" in merged["notes"]  # the discharge pipeline still owns it
+    assert {a["name"] for a in merged["artifacts"]} >= {"spine", "points", "discharge"}
+    assert "rivers.noNetworkTiles" in owned_notes("rivers")

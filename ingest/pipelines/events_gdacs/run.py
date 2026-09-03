@@ -30,6 +30,11 @@ POLY_PREFERENCE = {
 MAX_POLY_VERTICES = 600
 NS = {"gdacs": "http://www.gdacs.org", "georss": "http://www.georss.org/georss"}
 
+#: Notes this pipeline decides on its own; a rerun replaces them rather than
+#: inheriting a stale one from a sibling pipeline writing the same layer.
+OWNED_NOTES: frozenset[str] = frozenset({"events.window30d"})
+
+
 ATTRIBUTION = {
     "name": "GDACS — Global Disaster Alert and Coordination System (EC JRC / UN OCHA)",
     "url": "https://www.gdacs.org",

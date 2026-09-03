@@ -21,7 +21,7 @@ from common.manifest import (
     write_layer_manifest,
     write_root_manifest,
 )
-from pipelines import LAYER_OF, PIPELINES, get_pipeline
+from pipelines import LAYER_OF, PIPELINES, get_pipeline, owned_notes
 
 log = logging.getLogger("ingest")
 
@@ -54,8 +54,11 @@ def cmd_run(args: argparse.Namespace) -> int:
 
                         manifest.artifacts.append(ArtifactRef(**a))
                 if kept:
+                    # Carry the sibling pipelines' notes, but never a stale one this run owns:
+                    # tiles built now must not inherit "no tiles were built".
+                    mine_notes = owned_notes(name)
                     for n in previous.get("notes", []):
-                        if n not in manifest.notes:
+                        if n not in manifest.notes and n not in mine_notes:
                             manifest.notes.append(n)
             path = write_layer_manifest(manifest, manifests_dir)
             log.info("manifest written %s", path)

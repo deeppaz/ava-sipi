@@ -29,6 +29,11 @@ FLOOD_MAP = {
 }
 MISSING = -999
 
+#: Notes this pipeline decides on its own; a rerun replaces them rather than
+#: inheriting a stale one from a sibling pipeline writing the same layer.
+OWNED_NOTES: frozenset[str] = frozenset(set())
+
+
 ATTRIBUTION = {
     "name": "NOAA National Weather Service — National Water Prediction Service",
     "url": "https://water.noaa.gov",

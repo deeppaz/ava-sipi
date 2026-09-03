@@ -1,21 +1,27 @@
 {
   "id": "rivers",
-  "version": "20260903T0036",
-  "generatedAt": "2026-09-03T00:36:11Z",
-  "sourceUpdatedAt": "2026-09-03T00:36:11Z",
+  "version": "20260903T1143",
+  "generatedAt": "2026-09-03T11:43:33Z",
+  "sourceUpdatedAt": "2026-09-03T11:43:33Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "geojson",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T0036/spine.geojson",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1143/spine.geojson",
       "bytes": 874820,
       "name": "spine"
     },
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T0036/points.json",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1143/points.json",
       "bytes": 2090388,
       "name": "points"
+    },
+    {
+      "kind": "pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1143/rivers.pmtiles",
+      "bytes": 333863880,
+      "name": "network"
     },
     {
       "kind": "parquet",
@@ -69,11 +75,11 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20260903T1143",
     "20260903T0036",
     "20260902T1604"
   ],
   "notes": [
-    "rivers.noNetworkTiles",
     "rivers.ratioSource"
   ]
 }

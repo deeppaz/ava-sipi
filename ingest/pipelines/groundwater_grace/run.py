@@ -40,6 +40,11 @@ MASCON_SHORT_NAME = "TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4"
 TILE_MAXZOOM = 4
 SERIES_BLOCK_DEG = 5
 
+#: Notes this pipeline decides on its own; a rerun replaces them rather than
+#: inheriting a stale one from a sibling pipeline writing the same layer.
+OWNED_NOTES: frozenset[str] = frozenset({"groundwater.percentileFallback", "groundwater.tws"})
+
+
 ATTRIBUTION = {
     "name": "NASA JPL GRACE/GRACE-FO Mascon RL06.3 (Watkins et al. 2015; Wiese et al. 2016) · NASA GRACE-DA groundwater indicators (GSFC / NDMC, UNL)",
     "url": "https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4",
