@@ -34,7 +34,7 @@ jobs:
           enable-cache: true
       - run: uv sync
       - name: Restore river points from the latest rivers artifact
-        run: uv run python restore_points.py
+        run: uv run python restore.py --out ./.out river-points
       # drought_gdo compares the WMS TIME extent with the current manifest and exits early when unchanged (10-day cadence)
       - run: uv run python cli.py run discharge_openmeteo drought_gdo --out ./.out --publish
       - run: uv run python publish.py

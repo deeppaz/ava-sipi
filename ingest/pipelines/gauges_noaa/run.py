@@ -81,7 +81,9 @@ def normalize(raw: dict[str, Any]) -> list[dict[str, Any]]:
 
 def run(cfg: PipelineConfig) -> LayerManifest:
     layer = "gauges"
-    with Fetcher(cache_dir=cfg.out_dir / ".cache", per_second=2, timeout=120) as fetcher:
+    # NWPS returns 13 MB and 504s often; two quick attempts, then leave the previous
+    # noaa.json in place rather than burning the whole scheduled-run budget.
+    with Fetcher(cache_dir=cfg.out_dir / ".cache", per_second=2, timeout=180, retries=2) as fetcher:
         raw = load_fixture_or(
             cfg, "nwps_gauges", lambda: fetcher.get_json(GAUGES_URL, use_cache=False)
         )

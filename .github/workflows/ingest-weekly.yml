@@ -33,6 +33,8 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync
+      - name: Restore previously published gauge artifacts
+        run: uv run python restore.py --out ./.out gauge-stations gauge-stats gauge-noaa
       - name: USGS stations
         run: USGS_TASK=stations uv run python cli.py run gauges_usgs --out ./.out --publish
       - name: USGS monthly percentile tables

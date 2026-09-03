@@ -12,7 +12,7 @@ concurrency:
 jobs:
   live:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 20
     permissions:
       contents: write
     defaults:
@@ -24,6 +24,10 @@ jobs:
         with:
           enable-cache: true
       - run: uv sync
+      - name: Restore artifacts published by the weekly job (station names, percentiles)
+        env:
+          R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
+        run: uv run python restore.py --out ./.out gauge-stations gauge-stats gauge-noaa
       - name: Run live pipelines (NOAA first so USGS can join flood categories)
         env:
           INGEST_PUBLISH: 'true'

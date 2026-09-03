@@ -63,6 +63,15 @@ flowchart LR
 5. MapLibre-native layers (rasters, glaciers) are synced in an effect and re-added after a style
    swap (offline basemap fallback).
 
+## Scheduled runs are stateless
+
+Every cron run starts from an empty checkout, so `ingest/restore.py` first pulls the artifacts that
+slower pipelines published (`gauges/latest/{stations.parquet,stats.json,noaa.json}`,
+`rivers/latest/points.json`) out of R2 into the working directory. Without it the 15-minute gauge
+job would silently lose station names, percentiles and flood categories, and the daily discharge
+job would have no river points. A 404 is not an error — it just means that pipeline has not run yet,
+and the layer reports the gap through a manifest note.
+
 ## Performance
 
 - Bundle budget enforced by `apps/web/scripts/budget.mjs` (initial JS ≤ 450 KB gzip). deck.gl is a
