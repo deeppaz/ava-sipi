@@ -164,9 +164,17 @@ class Fetcher:
             return None
         return resp.headers.get("Last-Modified")
 
-    def download(self, url: str, dest: Path, params: dict[str, Any] | None = None) -> Path:
+    def download(
+        self,
+        url: str,
+        dest: Path,
+        params: dict[str, Any] | None = None,
+        use_cache: bool = True,
+    ) -> Path:
+        """Fetch to `dest`. Pass `use_cache=False` for very large one-off archives so the
+        ETag cache does not keep a second copy on a small CI disk."""
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_bytes(self.get_bytes(url, params=params))
+        dest.write_bytes(self.get_bytes(url, params=params, use_cache=use_cache))
         return dest
 
     @staticmethod

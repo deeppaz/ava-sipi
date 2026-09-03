@@ -230,7 +230,7 @@ def _download_hydrorivers(fetcher: Fetcher, cache: Path) -> Path:
     zip_path = cache / "HydroRIVERS_v10_shp.zip"
     if not zip_path.exists():
         log.info("downloading HydroRIVERS (~544 MB)")
-        fetcher.download(HYDRORIVERS_URL, zip_path)
+        fetcher.download(HYDRORIVERS_URL, zip_path, use_cache=False)
     extract = cache / "HydroRIVERS_v10_shp"
     if not extract.exists():
         with zipfile.ZipFile(zip_path) as z:
@@ -254,7 +254,7 @@ def _name_lookup(fetcher: Fetcher, cache: Path):
 
 def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]], Path | None]:
     import geopandas as gpd
-    from pyogrio import read_dataframe
+    from pyogrio import read_dataframe, write_dataframe
 
     cache = cfg.out_dir / ".cache" / "rivers"
     cache.mkdir(parents=True, exist_ok=True)
@@ -282,24 +282,13 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
         gdf["name"] = gdf["id"].map(name_map)
 
     # ---- network tiles
+    # pyogrio writes GeoJSONSeq in C. Serialising millions of reaches row by row in Python
+    # (a GeoSeries per row) took hours and blew the job budget.
     net_path = tmp / "network.geojsonseq"
-    with net_path.open("w", encoding="utf-8") as fh:
-        for row in gdf.itertuples(index=False):
-            props = {
-                "id": int(row.id),
-                "order": int(row.order),
-                "meanDischarge": round(float(row.meanDischarge), 3),
-            }
-            if getattr(row, "name", None):
-                props["name"] = row.name
-            geom = json.loads(gpd.GeoSeries([row.geometry]).to_json())["features"][0]["geometry"]
-            fh.write(
-                json.dumps(
-                    {"type": "Feature", "id": props["id"], "geometry": geom, "properties": props},
-                    separators=(",", ":"),
-                )
-            )
-            fh.write("\n")
+    net = gdf[["id", "order", "meanDischarge", "name", "geometry"]].copy()
+    net["meanDischarge"] = net["meanDischarge"].astype(float).round(3)
+    log.info("writing %d reaches to %s", len(net), net_path.name)
+    write_dataframe(net, net_path, driver="GeoJSONSeq")
     filter_path = tmp / "lod.json"
     filter_path.write_text(json.dumps(LOD_FILTER), encoding="utf-8")
     pm: Path | None = None
@@ -339,16 +328,17 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
         )
     reaches = merge_chains(segments)
     features = [spine_feature(r) for r in reaches]
-    # discharge sample points from the full order >= 6 set
+    # discharge sample points: rank by mean discharge first, then walk only the ones we keep
+    limit = int(os.environ.get("RIVER_POINTS_LIMIT", "30000"))
+    candidates = gdf[gdf["order"] >= POINTS_ORDER].nlargest(limit, "meanDischarge")
     pts = []
-    for row in gdf[gdf["order"] >= POINTS_ORDER].itertuples(index=False):
+    for row in candidates.itertuples(index=False):
         g = (
             row.geometry
             if row.geometry.geom_type == "LineString"
             else max(row.geometry.geoms, key=lambda p: p.length)
         )
-        c = [[float(x), float(y)] for x, y in g.coords]
-        lon, lat = line_midpoint(c)
+        lon, lat = line_midpoint([[float(x), float(y)] for x, y in g.coords])
         pts.append(
             {
                 "id": int(row.id),
@@ -358,8 +348,7 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
             }
         )
     pts.sort(key=lambda p: -p["meanDischarge"])
-    limit = int(os.environ.get("RIVER_POINTS_LIMIT", "30000"))
-    return {"type": "FeatureCollection", "features": features}, pts[:limit], pm
+    return {"type": "FeatureCollection", "features": features}, pts, pm
 
 
 # ------------------------------------------------------------------ sample pipeline

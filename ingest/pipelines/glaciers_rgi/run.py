@@ -309,7 +309,13 @@ def run(cfg: PipelineConfig) -> LayerManifest:
             )
 
         pm: Path | None = None
-        if cfg.sample or "ne_glaciers" in cfg.fixtures:
+        has_earthdata = bool(cfg.earthdata_username and cfg.earthdata_password)
+        if cfg.sample or "ne_glaciers" in cfg.fixtures or not has_earthdata:
+            if not (cfg.sample or "ne_glaciers" in cfg.fixtures):
+                # RGI 7 lives behind an Earthdata login (docs/DEVIATIONS.md). Ship real WGMS mass
+                # balance on Natural Earth outlines rather than dropping the layer (spec §2.1).
+                log.warning("no Earthdata login: publishing Natural Earth glacier outlines")
+                notes.append("glaciers.noEarthdata")
             ne = load_fixture_or(cfg, "ne_glaciers", lambda: fetcher.get_json(NE_GLACIERS_URL))
             fc = sample_outlines(ne, mwe)
             attribution = SAMPLE_ATTRIBUTION
