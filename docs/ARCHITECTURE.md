@@ -72,10 +72,17 @@ job would silently lose station names, percentiles and flood categories, and the
 job would have no river points. A 404 is not an error — it just means that pipeline has not run yet,
 and the layer reports the gap through a manifest note.
 
+## Manifest notes are owned
+
+Several pipelines write one layer (`discharge_openmeteo` and `rivers` both write `rivers`). When a
+pipeline runs, `cli.py` keeps the sibling's artifacts and notes, but drops any previous note listed
+in the running pipeline's `OWNED_NOTES` — the run that just happened is authoritative for those.
+
 ## Performance
 
-- Bundle budget enforced by `apps/web/scripts/budget.mjs` (initial JS ≤ 450 KB gzip). deck.gl is a
-  lazy chunk loaded after the globe's first paint.
+- Bundle budget enforced by `apps/web/scripts/budget.mjs` (initial JS ≤ 450 KB gzip; ≈ 108 KB in
+  practice). `index.html` paints a static globe skeleton; the MapLibre module loads on idle after
+  the shell renders, deck.gl after the globe's first paint, panels on first use.
 - `lib/fps.ts` measures the rAF delta average; < 45 fps for 3 s raises `perfLevel` (rivers LOD one
   step up, gauge clustering threshold up, frame cap 30 fps at level 2).
 - PMTiles via HTTP range requests (`pmtiles` protocol); never a full download.

@@ -44,6 +44,19 @@ if neither works, run `uv run python cli.py run rivers --publish` from a machine
 archive. The site never breaks because of this: the layer keeps its previous artifacts and the
 manifest records the failure.
 
+**Why the archive is not mirrored.** The HydroSHEDS licence (Technical Documentation v1.4,
+Appendix A §2.1.2) grants distribution of the data *incorporated into derivative works* and states
+"in no event shall Licensee license or distribute the Licensed Materials as a stand-alone product".
+Re-hosting `HydroRIVERS_v10_shp.zip` in R2 would be exactly that, so the raw archive stays with
+WWF. The derived spine, points and PMTiles network (334 MB, Strahler ≥ 3 at zoom ≥ 7 per spec
+§5.3) are published from a machine that can reach the archive.
+
+**Tiling without a native tippecanoe.** `infra/tippecanoe.Dockerfile` builds 2.79.0 from the
+release tarball (a `git clone` inside the build sandbox prompts for credentials; 2.78.0, which the
+workflow once pinned, does not exist). `TIPPECANOE_DOCKER_IMAGE=ava-sipi/tippecanoe` makes
+`common/tiles.py` run tippecanoe in a container with the work directory bind-mounted — the same
+code path the CI uses natively.
+
 ## Sample data (offline mode)
 
 - Rivers: Natural Earth 50 m centrelines stand in for HydroRIVERS (544 MB + tippecanoe). Flow
@@ -57,9 +70,34 @@ manifest records the failure.
 
 ## Known limitations carried into v1
 
-- Lighthouse mobile performance (spec ≥ 85) is asserted as a **warning** until a baseline on the
-  CI hardware exists: the globe runs on SwiftShader there, which makes the lab score noisy. The
-  bundle budget (`pnpm budget`) remains a hard failure.
+- Lighthouse mobile performance (spec ≥ 85) is asserted as a **warning**. Measured on the CI
+  runner (SwiftShader, simulated 4G): 0.37 with maplibre in the first chunk → 0.60 after the
+  2026-09-03 work below. Locally (throttled mobile profile) FCP went 3.5 s → 1.7 s and the first
+  chunk 412 KB → 108 KB gzip. What remains is main-thread time (~1.4 s TBT) from React + MapLibre
+  initialisation, which a WebGL globe cannot avoid without dropping React (spec §1.2 binds React
+  19). The bundle budget (`pnpm budget`) remains a hard failure.
+  - `index.html` paints a static globe silhouette and wordmark before any script; React removes it
+    on mount. It never stands in for data.
+  - The map module (`map/createMap.ts`, maplibre-gl + pmtiles + its CSS) is imported in
+    `requestIdleCallback` after the shell renders; pure camera rules live in `map/camera.ts`.
+  - Layer artifacts are fetched only once deck.gl is ready — megabytes of gauges were starving the
+    first paint of bandwidth.
+  - zod is behind a dynamic import (layer ids come from `@ava-sipi/schema/constants`, a
+    validator-free module); stories are plain data, validated by `test/stories.test.ts`.
+  - Lesson recorded in a smoke test: a lazily loaded stylesheet lands *after* `app.css`, so
+    `maplibre-gl.css`'s `.maplibregl-map { position: relative }` collapsed the map container to
+    zero height for ~40 minutes on the live site. `.app .map-root` now outranks it.
+- Open-Meteo weights a request by locations × weeks, and the free plan allows roughly 600 units a
+  minute and 10 000 a day. The discharge pipeline therefore asks for two past days (GloFAS lags a
+  day; the 30-day series is fetched per river in the panel), queries the 5 000 largest rivers of
+  the 30 000 candidates and paces five batches a minute (`OPENMETEO_POINT_LIMIT`,
+  `OPENMETEO_BATCHES_PER_MINUTE`).
+- GDACS answers slowly at times; an event type that times out is dropped for that run instead of
+  failing the whole live job, and the workflows publish and commit manifests even when one
+  pipeline failed (`cli.py` records the failure in the manifest).
+- Manifest notes are **owned**: each pipeline declares `OWNED_NOTES`, and a rerun replaces only
+  those while sibling pipelines' notes on the same layer survive. Before this, the rivers manifest
+  kept saying "no network tiles" after the tiles were published.
 
 - Rate limiting in the Worker is per isolate (in-memory). Exact global limits need KV or a Durable
   Object; documented in `docs/ARCHITECTURE.md`.

@@ -69,8 +69,8 @@ Optional:
 
 ```bash
 gh secret set USGS_API_KEY        # raises the USGS rate limit (api.waterdata.usgs.gov/signup)
-gh secret set EARTHDATA_USERNAME  # GRACE mascons + RGI 7 outlines
-gh secret set EARTHDATA_PASSWORD
+gh secret set EARTHDATA_USERNAME  # GRACE mascons + RGI 7 outlines (free: urs.earthdata.nasa.gov)
+gh secret set EARTHDATA_PASSWORD  #   then Applications → Approve More → PO.DAAC Cumulus OPS + NSIDC_DATAPOOL_OPS
 gh secret set CLOUDFLARE_ZONE_ID  # cache purge, custom domain only
 gh variable set DEPLOY_WORKER --body true      # deploy the edge proxy
 gh variable set VITE_WORKER_URL --body "https://ava-sipi-live.<subdomain>.workers.dev"
@@ -94,10 +94,20 @@ The site shows the bundled sample until R2 has real artifacts. Fill it in order 
 because the discharge pipeline needs its `points.json`:
 
 ```bash
-gh workflow run ingest-monthly   # rivers (tick "rebuild HydroRIVERS"), groundwater, glaciers
+gh workflow run ingest-monthly   # groundwater, glaciers (rivers: see below)
 gh workflow run ingest-weekly    # USGS stations + percentile tables, reservoirs
 gh workflow run ingest-daily     # river discharge, drought
 gh workflow run ingest-live      # gauges + events (then every 15 min on its own)
+```
+
+The HydroRIVERS archive refuses GitHub Actions IPs and may not be mirrored (licence, see
+`docs/DEVIATIONS.md`), so build the river layer once from your own machine. Without a native
+tippecanoe, Docker does it:
+
+```bash
+docker build -f infra/tippecanoe.Dockerfile -t ava-sipi/tippecanoe .
+cd ingest && TIPPECANOE_DOCKER_IMAGE=ava-sipi/tippecanoe R2_... uv run python cli.py run rivers --publish
+uv run python publish.py
 ```
 
 Each run writes artifacts to R2, rewrites `manifest.json` last (atomic ordering) and commits the
