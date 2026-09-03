@@ -20,7 +20,13 @@ import { isDataLayer, useData } from '@/state/data'
 import { useRasterSamples } from '@/state/raster'
 import { type CameraRequest, forecastDays, useApp } from '@/state/store'
 import { LABEL_LAYER_ID } from './basemap'
-import { createMap, panelPadding, supportsWebGL2 } from './createMap'
+import {
+  applyProjectionInteractions,
+  cameraForProjection,
+  createMap,
+  panelPadding,
+  supportsWebGL2,
+} from './createMap'
 
 type DeckEntry = typeof import('@/layers/deckEntry')
 type Overlay = InstanceType<DeckEntry['MapboxOverlay']>
@@ -117,11 +123,16 @@ export function MapView() {
       if (req.seq === lastSeq) return
       lastSeq = req.seq
       const st = useApp.getState()
+      // globe ignores bearing/pitch in deck.gl, so never fly to a rotated globe camera
+      const { bearing, pitch } = cameraForProjection(
+        { bearing: req.bearing ?? 0, pitch: req.pitch ?? 0 },
+        st.projection,
+      )
       const opts = {
         center: [req.lon ?? st.camera.lon, req.lat ?? st.camera.lat] as [number, number],
         zoom: req.zoom ?? st.camera.zoom,
-        bearing: req.bearing ?? 0,
-        pitch: req.pitch ?? 0,
+        bearing,
+        pitch,
         padding: panelPadding(
           !!st.selection && req.padRight !== false,
           map.getContainer().clientWidth,
@@ -140,8 +151,10 @@ export function MapView() {
     if (current) apply(current)
     const unsub = useApp.subscribe((s, prev) => {
       if (s.cameraRequest && s.cameraRequest !== prev.cameraRequest) apply(s.cameraRequest)
-      if (s.projection !== prev.projection)
+      if (s.projection !== prev.projection) {
         map.setProjection({ type: s.projection === 'globe' ? 'globe' : 'mercator' })
+        applyProjectionInteractions(map, s.projection)
+      }
       if (
         s.selection !== prev.selection &&
         s.selection?.lon !== undefined &&

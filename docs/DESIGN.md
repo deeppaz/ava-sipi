@@ -54,7 +54,7 @@ only carries data:
 | River flow | `0.35 × clamp(ratio, 0.3, 3)` waves/s; wavelength scales with width (floor ≈ 28 px) |
 | Ratio > 3 | flood white with a 2 s pulse in the shader |
 | Pulses | red 2 s, orange 4 s, easing `cubic-bezier(0.2, 0, 0, 1)` |
-| Camera | `flyTo` 1.6 s ease-in-out; stories 2.4 s |
+| Camera | `flyTo` 1.6 s ease-in-out; stories 2.4 s. On the globe the camera pans and zooms only — tilt and rotation live in the flat projection (see docs/DEVIATIONS.md) |
 | Panel | open 240 ms, close 180 ms |
 | Glacier melt | opacity 0.8 → 0.6 → 0.8 over 6 s where regional balance is negative |
 | Ramps | ratio 0.3 parch-deep → 0.6 parch → 1.0 current → 1.6 surge → 3.0 foam, interpolated in OKLCH (culori in the browser, a matching implementation in `ingest/common/colors.py`) |

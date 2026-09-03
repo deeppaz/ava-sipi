@@ -1,6 +1,6 @@
 import maplibregl, { type Map as MlMap } from 'maplibre-gl'
 import { Protocol } from 'pmtiles'
-import type { Camera } from '@/state/store'
+import type { Camera, Projection } from '@/state/store'
 import { offlineStyle, onlineStyle } from './basemap'
 import 'maplibre-gl/dist/maplibre-gl.css'
 
@@ -43,7 +43,7 @@ export function createMap({ container, camera, interactive = true }: CreateMapOp
     pitch: camera.pitch,
     minZoom: 1,
     maxZoom: 14,
-    maxPitch: 70,
+    maxPitch: MAX_PITCH,
     interactive,
     attributionControl: false,
     canvasContextAttributes: { antialias: true, preserveDrawingBuffer: true },
@@ -53,6 +53,7 @@ export function createMap({ container, camera, interactive = true }: CreateMapOp
     keyboard: true,
   })
   map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right')
+  applyProjectionInteractions(map, 'globe')
 
   // Offline fallback: if the vector tiles never answer, swap to the Natural Earth style.
   let switched = false
@@ -70,6 +71,40 @@ export function createMap({ container, camera, interactive = true }: CreateMapOp
     }
   })
   return map
+}
+
+export const MAX_PITCH = 70
+
+/**
+ * deck.gl's `GlobeViewport` builds its view matrix from longitude, latitude and zoom only — it
+ * never applies bearing or pitch (verified in @deck.gl/core 9.3 `globe-viewport.js`). MapLibre's
+ * globe does apply both, so a rotated or pitched globe camera tears the two apart and the data
+ * layers detach from the sphere. In globe projection the camera is therefore pan + zoom only;
+ * rotation and pitch belong to the flat (Mercator) projection, where deck's MapView matches.
+ * See docs/DEVIATIONS.md.
+ */
+export function cameraForProjection<T extends { bearing: number; pitch: number }>(
+  camera: T,
+  projection: Projection,
+): T {
+  return projection === 'globe' ? { ...camera, bearing: 0, pitch: 0 } : camera
+}
+
+export function applyProjectionInteractions(map: MlMap, projection: Projection): void {
+  if (projection === 'globe') {
+    map.dragRotate.disable()
+    map.touchZoomRotate.disableRotation()
+    map.touchPitch.disable()
+    map.keyboard.disableRotation()
+    map.setMaxPitch(0)
+    if (map.getBearing() !== 0 || map.getPitch() !== 0) map.jumpTo({ bearing: 0, pitch: 0 })
+  } else {
+    map.setMaxPitch(MAX_PITCH)
+    map.dragRotate.enable()
+    map.touchZoomRotate.enableRotation()
+    map.touchPitch.enable()
+    map.keyboard.enableRotation()
+  }
 }
 
 /** Padding that keeps a selected object in the left two-thirds while the panel is open (spec §5.4). */
