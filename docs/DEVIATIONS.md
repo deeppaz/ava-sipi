@@ -101,10 +101,12 @@ code path the CI uses natively.
 
 - Rate limiting in the Worker is per isolate (in-memory). Exact global limits need KV or a Durable
   Object; documented in `docs/ARCHITECTURE.md`.
-- Visual-regression baselines are GPU/OS specific (SwiftShader). A visual test is skipped when no
-  baseline exists for the platform; `VISUAL_UPDATE=1 pnpm e2e` writes them (run once per CI image
-  and commit the `*-snapshots` folder to enforce the ≤ 0.5 % diff in CI). Locally the six views
-  pass at ≤ 0.5 % between runs after a `networkidle` wait.
+- Visual-regression baselines are GPU/OS specific. The linux ones (CI image, SwiftShader) are
+  committed and enforced at ≤ 0.5 % on every CI run; the `visual-baseline` workflow rewrites them
+  after an intentional visual change or a `data/samples` refresh (the panel view opens the first
+  sample event, so new samples move it). Other platforms skip a view until a baseline exists for
+  them (`VISUAL_UPDATE=1 pnpm e2e` writes local ones, which stay untracked). Captures get 90 s
+  because the software renderer needs that long to settle on a zoomed view with the river network.
 - README media: `apps/web/scripts/capture.mjs` + `make_gif.py` produce `docs/media/og.png` and the
   15-second GIF (1.5 MB) from the built app; an MP4 needs ffmpeg (`ffmpeg -framerate 4 -i
   docs/media/frames/%03d.png -pix_fmt yuv420p docs/media/ava-sipi.mp4`), not vendored.
