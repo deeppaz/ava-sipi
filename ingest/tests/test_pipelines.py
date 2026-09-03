@@ -26,7 +26,14 @@ from pipelines.groundwater_grace.run import grid_from_unl_tif, unl_latest_folder
 from pipelines.groundwater_grace.run import run as run_groundwater
 from pipelines.reservoirs_gww.run import derive
 from pipelines.reservoirs_gww.run import run as run_reservoirs
-from pipelines.rivers.run import discharge_points, merge_chains, simplify_line, spine_feature
+from pipelines.rivers.run import (
+    discharge_points,
+    merge_chains,
+    simplify_line,
+    spine_feature,
+    spine_points,
+    thin_by_cell,
+)
 from pipelines.rivers.run import run as run_rivers
 
 
@@ -411,3 +418,48 @@ def test_stats_merge_is_resumable_and_ages_out():
         s["id"]
         for s in merge_stats(previous, {"generatedAt": "x", "stations": []}, now)["stations"]
     } == {"A", "C"}
+
+
+# ---------------------------------------------------------------- discharge points
+
+
+def test_spine_points_sample_the_chain_midpoint_segment():
+    segs = [
+        {"id": 1, "nextDown": 2, "order": 7, "mean": 100.0, "coords": [[0, 0], [1, 0]]},
+        {"id": 2, "nextDown": 3, "order": 7, "mean": 105.0, "coords": [[1, 0], [2, 0]]},
+        {"id": 3, "nextDown": 0, "order": 7, "mean": 110.0, "coords": [[2, 0], [3, 0]]},
+    ]
+    reaches = merge_chains(segs)
+    assert len(reaches) == 1
+    (r,) = reaches
+    assert r["sampleMean"] == 105.0  # the middle segment, not the length-weighted chain mean
+    assert 1.0 <= r["sampleLon"] <= 2.0
+    pts = spine_points(reaches)
+    assert pts == [{"id": r["id"], "lon": 1.5, "lat": 0.0, "meanDischarge": 105.0}]
+
+
+def test_thin_by_cell_spreads_the_budget():
+    rows = [
+        {"id": 1, "lon": 0.1, "lat": 0.1, "meanDischarge": 900.0},
+        {"id": 2, "lon": 0.2, "lat": 0.2, "meanDischarge": 800.0},  # same cell as 1: dropped
+        {"id": 3, "lon": 5.0, "lat": 5.0, "meanDischarge": 10.0},
+        {"id": 4, "lon": -3.0, "lat": 2.0, "meanDischarge": 50.0},
+    ]
+    out = thin_by_cell(rows, cell_deg=0.5)
+    assert [r["id"] for r in out] == [1, 4, 3]
+    assert [r["id"] for r in thin_by_cell(rows, cell_deg=0.5, limit=2)] == [1, 4]
+
+
+def test_zero_discharge_is_missing_not_dry():
+    from pipelines.discharge_openmeteo.run import build_records
+
+    points = [{"id": 7, "lon": 1.0, "lat": 1.0, "meanDischarge": 20.0}]
+    responses = [
+        {
+            "daily": {
+                "time": ["2026-09-01", "2026-09-02", "2026-09-03"],
+                "river_discharge": [0.0, 0.0, 0.0],
+            }
+        }
+    ]
+    assert build_records(points, responses, "2026-09-02") == []

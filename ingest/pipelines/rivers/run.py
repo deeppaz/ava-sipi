@@ -150,20 +150,35 @@ def merge_chains(segments: list[dict[str, Any]], tolerance: float = 0.25) -> lis
         coords: list[list[float]] = []
         total_len = 0.0
         weighted = 0.0
+        lengths: list[float] = []
         for seg in chain:
             c = seg["coords"]
             if coords and coords[-1] == c[0]:
                 c = c[1:]
             coords.extend(c)
             ln = seg.get("lengthKm") or line_length_km(seg["coords"]) or 1.0
+            lengths.append(ln)
             total_len += ln
             weighted += seg["mean"] * ln
+        # Sample the flow model on the segment at the chain's length midpoint, and compare it with
+        # that segment's own long-term mean: a chain can be hundreds of km long, and its
+        # length-weighted mean is not what the model sees at one location.
+        half, acc, sample = total_len / 2, 0.0, chain[0]
+        for seg, ln in zip(chain, lengths, strict=False):
+            acc += ln
+            sample = seg
+            if acc >= half:
+                break
+        s_lon, s_lat = line_midpoint(sample["coords"])
         out.append(
             {
                 "id": head["id"],
                 "order": head["order"],
                 "mean": weighted / total_len if total_len else head["mean"],
                 "lengthKm": total_len,
+                "sampleLon": s_lon,
+                "sampleLat": s_lat,
+                "sampleMean": sample["mean"],
                 "coords": coords,
                 "nextDown": chain[-1].get("nextDown") or 0,
                 "mainRiver": head.get("mainRiver"),
@@ -226,6 +241,44 @@ def spine_feature(reach: dict[str, Any], tolerance: float = 0.01) -> dict[str, A
         "geometry": round_coords({"type": "LineString", "coordinates": coords}, 3),
         "properties": props,
     }
+
+
+def spine_points(reaches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """One discharge sample per spine reach, keyed by the reach id the map joins on."""
+    pts = []
+    for r in reaches:
+        lon = r.get("sampleLon")
+        lat = r.get("sampleLat")
+        if lon is None or lat is None:
+            lon, lat = line_midpoint(r["coords"])
+        pts.append(
+            {
+                "id": int(r["id"]),
+                "lon": round(float(lon), 4),
+                "lat": round(float(lat), 4),
+                "meanDischarge": round(float(r.get("sampleMean") or r["mean"]), 3),
+            }
+        )
+    pts.sort(key=lambda p: -p["meanDischarge"])
+    return pts
+
+
+def thin_by_cell(
+    rows: list[dict[str, Any]], cell_deg: float = 0.5, limit: int | None = None
+) -> list[dict[str, Any]]:
+    """Keep the largest reach per grid cell, largest first.
+
+    "The 30 000 largest reaches" were the thousands of short segments of a few giant rivers; one
+    sample per half-degree cell spreads the same budget over the whole network.
+    """
+    best: dict[tuple[int, int], dict[str, Any]] = {}
+    for r in rows:
+        key = (int(r["lon"] // cell_deg), int(r["lat"] // cell_deg))
+        cur = best.get(key)
+        if cur is None or r["meanDischarge"] > cur["meanDischarge"]:
+            best[key] = r
+    out = sorted(best.values(), key=lambda p: -p["meanDischarge"])
+    return out[:limit] if limit else out
 
 
 def discharge_points(
@@ -309,7 +362,9 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
 
     # ---- network tiles
     pm: Path | None = None
-    if not can_tile():
+    if os.environ.get("RIVERS_REUSE_TILES") == "1":
+        log.info("RIVERS_REUSE_TILES=1: keeping the published network tiles")
+    elif not can_tile():
         # The intermediate is gigabytes; do not write it when nothing can consume it.
         log.warning("no tippecanoe (native or TIPPECANOE_DOCKER_IMAGE): network PMTiles skipped")
     else:
@@ -355,10 +410,15 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
         )
     reaches = merge_chains(segments)
     features = [spine_feature(r) for r in reaches]
-    # discharge sample points: rank by mean discharge first, then walk only the ones we keep
+    # Discharge sample points: every spine reach first (the map joins ratios by these ids), then
+    # the network thinned to one reach per half-degree cell. Sorted largest first, so a daily run
+    # that can only afford the first N points still covers the rivers that matter.
     limit = int(os.environ.get("RIVER_POINTS_LIMIT", "30000"))
-    candidates = gdf[gdf["order"] >= POINTS_ORDER].nlargest(limit, "meanDischarge")
-    pts = []
+    pts = spine_points(reaches)
+    spine_ids = {p["id"] for p in pts}
+    candidates = gdf[(gdf["order"] >= POINTS_ORDER) & (~gdf["id"].isin(spine_ids))]
+    candidates = candidates.nlargest(min(len(candidates), limit * 8), "meanDischarge")
+    rows = []
     for row in candidates.itertuples(index=False):
         g = (
             row.geometry
@@ -366,7 +426,7 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
             else max(row.geometry.geoms, key=lambda p: p.length)
         )
         lon, lat = line_midpoint([[float(x), float(y)] for x, y in g.coords])
-        pts.append(
+        rows.append(
             {
                 "id": int(row.id),
                 "lon": round(lon, 4),
@@ -374,7 +434,8 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
                 "meanDischarge": round(float(row.meanDischarge), 3),
             }
         )
-    pts.sort(key=lambda p: -p["meanDischarge"])
+    pts += thin_by_cell(rows, limit=max(0, limit - len(pts)))
+    log.info("discharge points: %d spine + %d network", len(spine_ids), len(pts) - len(spine_ids))
     return {"type": "FeatureCollection", "features": features}, pts, pm
 
 
@@ -404,7 +465,7 @@ def run(cfg: PipelineConfig) -> LayerManifest:
     else:
         spine, points, pm = run_full(cfg)
         attribution = ATTRIBUTION
-        if pm is None:
+        if pm is None and os.environ.get("RIVERS_REUSE_TILES") != "1":
             notes.append("rivers.noNetworkTiles")
     validate("river-spine", spine)
     sp = write_json(tmp / "spine.geojson", spine)

@@ -89,6 +89,10 @@ def build_records(
             continue
         t0 = past[-1]
         today_val = float(series[t0])
+        if today_val <= 0:
+            # GloFAS reports 0 where its grid cell is not on the routed network; that is "no
+            # data", not a dry river, so the map keeps its neutral colour there.
+            continue
         mean = float(pt.get("meanDischarge") or 0)
         ratio = min(RATIO_CAP, today_val / mean) if mean > 0 else 1.0
         forecast = [round(float(series[t]), 3) for t in times if t > t0 and t in series][
