@@ -189,12 +189,21 @@ def run(cfg: PipelineConfig) -> LayerManifest:
     layer = "events"
     until = cfg.now
     since = until - timedelta(days=30)
-    with Fetcher(cache_dir=cfg.out_dir / ".cache", per_second=4) as fetcher:
-        search_results = load_fixture_or(
-            cfg,
-            "gdacs_search",
-            lambda: [_search(fetcher, et, since, until) for et in ("FL", "DR", "TC")],
-        )
+    with Fetcher(cache_dir=cfg.out_dir / ".cache", per_second=4, timeout=120, retries=2) as fetcher:
+
+        def search_all() -> list[dict[str, Any]]:
+            # GDACS is often slow; keep the event types that answered rather than losing the run
+            out: list[dict[str, Any]] = []
+            for et in ("FL", "DR", "TC"):
+                try:
+                    out.append(_search(fetcher, et, since, until))
+                except FetchError as exc:
+                    log.warning("GDACS %s query failed: %s", et, exc)
+            if not out:
+                raise FetchError("no GDACS event type answered")
+            return out
+
+        search_results = load_fixture_or(cfg, "gdacs_search", search_all)
         if isinstance(search_results, dict):
             search_results = [search_results]
         rss_text = None

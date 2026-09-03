@@ -40,6 +40,7 @@ jobs:
           USGS_TASK: latest
         run: uv run python cli.py run gauges_noaa gauges_usgs events_gdacs --out ./.out --publish
       - name: Publish root manifest + purge cache
+        if: '!cancelled()'
         env:
           INGEST_PUBLISH: 'true'
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
@@ -50,6 +51,7 @@ jobs:
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
         run: uv run python publish.py
       - name: Commit manifests
+        if: '!cancelled()'
         run: |
           git config user.name "ava-sipi-bot"
           git config user.email "bot@users.noreply.github.com"

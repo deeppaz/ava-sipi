@@ -37,8 +37,11 @@ jobs:
         run: uv run python restore.py --out ./.out river-points
       # drought_gdo compares the WMS TIME extent with the current manifest and exits early when unchanged (10-day cadence)
       - run: uv run python cli.py run discharge_openmeteo drought_gdo --out ./.out --publish
-      - run: uv run python publish.py
+      - name: Publish root manifest + purge cache
+        if: '!cancelled()'
+        run: uv run python publish.py
       - name: Commit manifests
+        if: '!cancelled()'
         run: |
           git config user.name "ava-sipi-bot"
           git config user.email "bot@users.noreply.github.com"

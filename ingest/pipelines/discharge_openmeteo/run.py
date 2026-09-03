@@ -10,6 +10,7 @@ import json
 import logging
 import math
 import os
+import time
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -25,8 +26,15 @@ log = logging.getLogger(__name__)
 
 FLOOD_URL = "https://flood-api.open-meteo.com/v1/flood"
 BATCH = 100
-PAST_DAYS = 30
+# Open-Meteo weights a request by locations x variables x weeks of data, and the free plan allows
+# ~600 units/minute and 10,000/day. Two past days is all the ratio needs (GloFAS lags a day); the
+# panel fetches the 30-day series per river on demand.
+PAST_DAYS = 2
 FORECAST_DAYS = 7
+#: Batches per minute; each batch of 100 locations over ~9 days costs roughly 100 units.
+BATCHES_PER_MINUTE = int(os.environ.get("OPENMETEO_BATCHES_PER_MINUTE", "5"))
+#: Points to query per run. The artifact keeps every candidate; this is the daily API budget.
+DAILY_POINT_LIMIT = int(os.environ.get("OPENMETEO_POINT_LIMIT", "5000"))
 RATIO_CAP = 12.0
 
 ATTRIBUTION = {
@@ -124,6 +132,12 @@ def run(cfg: PipelineConfig) -> LayerManifest:
         raise FileNotFoundError("rivers/latest/points.json missing — run the rivers pipeline first")
     if cfg.sample:
         points = points[: int(os.environ.get("OPENMETEO_SAMPLE_POINTS", "600"))]
+    elif len(points) > DAILY_POINT_LIMIT:
+        # points.json is sorted by mean discharge, so this keeps the largest rivers
+        log.info(
+            "querying the %d largest of %d points (API budget)", DAILY_POINT_LIMIT, len(points)
+        )
+        points = points[:DAILY_POINT_LIMIT]
 
     today = cfg.now.astimezone(UTC).strftime("%Y-%m-%d")
     responses: list[dict[str, Any]] = []
@@ -131,12 +145,16 @@ def run(cfg: PipelineConfig) -> LayerManifest:
         responses = load_fixture_or(cfg, "openmeteo_responses", lambda: [])
     else:
         api_key = os.environ.get("OPEN_METEO_API_KEY") or None
+        pace = 60.0 / max(BATCHES_PER_MINUTE, 1) if not api_key else 0.0
+        batches = _chunks(points, BATCH)
         with Fetcher(cache_dir=cfg.out_dir / ".cache", per_second=4, timeout=90) as fetcher:
-            for batch in _chunks(points, BATCH):
+            for i, batch in enumerate(batches):
+                if i and pace:
+                    time.sleep(pace)
                 try:
                     responses.extend(fetch_batch(fetcher, batch, api_key))
                 except FetchError as exc:
-                    log.warning("open-meteo batch failed: %s", exc)
+                    log.warning("open-meteo batch %d/%d failed: %s", i + 1, len(batches), exc)
                     responses.extend([{} for _ in batch])
     records = build_records(points, responses, today)
     doc = {"day": today, "source": "open-meteo-flood", "records": records}

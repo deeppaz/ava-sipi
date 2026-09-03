@@ -41,8 +41,11 @@ jobs:
         run: USGS_TASK=stats uv run python cli.py run gauges_usgs --out ./.out --publish
       - name: Reservoirs (Global Water Watch)
         run: uv run python cli.py run reservoirs_gww --out ./.out --publish
-      - run: uv run python publish.py
+      - name: Publish root manifest + purge cache
+        if: '!cancelled()'
+        run: uv run python publish.py
       - name: Commit manifests
+        if: '!cancelled()'
         run: |
           git config user.name "ava-sipi-bot"
           git config user.email "bot@users.noreply.github.com"
