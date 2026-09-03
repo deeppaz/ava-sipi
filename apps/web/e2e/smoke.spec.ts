@@ -12,6 +12,15 @@ async function waitForGlobe(page: Page) {
   await expect(page.getByTestId('pulse-line')).toContainText(/flood|sel|lehî/i, { timeout: 30_000 })
 }
 
+test('map container fills the stage (lazy maplibre css must not collapse it)', async ({ page }) => {
+  await page.goto('/')
+  await page.waitForSelector('.maplibregl-canvas', { timeout: 30000 })
+  const box = await page.locator('.map-root').boundingBox()
+  const view = page.viewportSize()
+  expect(box?.height ?? 0).toBeGreaterThan((view?.height ?? 0) * 0.9)
+  expect(box?.width ?? 0).toBeGreaterThan((view?.width ?? 0) * 0.9)
+})
+
 test('globe loads, three layers toggle, panel opens from an event', async ({ page }) => {
   await waitForGlobe(page)
   const rail = page.getByTestId('layer-rail')

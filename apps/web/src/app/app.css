@@ -6,10 +6,18 @@
   overflow: hidden;
   background: var(--abyss);
 }
-.app__map,
-.map-root {
+.app__map {
   position: absolute;
   inset: 0;
+}
+/* maplibre-gl.css arrives with the lazily-loaded map module, i.e. after this sheet, and sets
+   `.maplibregl-map { position: relative }`. The extra selector outranks it so the container keeps
+   filling its parent whatever the load order; height is explicit for the same reason. */
+.app .map-root {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 .map-root .maplibregl-canvas {
   outline: none;
