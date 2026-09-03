@@ -20,12 +20,26 @@ from common.geo import line_length_km, line_midpoint, round_coords
 from common.manifest import ArtifactRef, LayerManifest
 from common.pipeline import load_fixture_or, tmp_dir, versions_with, write_json
 from common.storage import Storage
-from common.tiles import TippecanoeMissingError, tippecanoe
+from common.tiles import has_tippecanoe, tippecanoe
 from common.validate import validate
 
 log = logging.getLogger(__name__)
 
-HYDRORIVERS_URL = "https://data.hydrosheds.org/file/HydroRIVERS/HydroRIVERS_v10_shp.zip"
+HYDRORIVERS_URL = os.environ.get(
+    # data.hydrosheds.org sits behind a Cloudflare challenge that 403s datacenter IPs, so a run
+    # on shared CI may need a mirror of the archive (docs/DEVIATIONS.md).
+    "HYDRORIVERS_URL",
+    "https://data.hydrosheds.org/file/HydroRIVERS/HydroRIVERS_v10_shp.zip",
+)
+# The challenge also inspects the request headers; ask like a browser.
+ARCHIVE_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/zip,application/octet-stream;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
 NE_RIVERS_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_rivers_lake_centerlines.geojson"
 NE_LAND_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson"
 NE_10M_RIVERS_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_rivers_lake_centerlines.geojson"
@@ -259,7 +273,7 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
     cache = cfg.out_dir / ".cache" / "rivers"
     cache.mkdir(parents=True, exist_ok=True)
     tmp = tmp_dir(cfg, "rivers")
-    with Fetcher(cache_dir=cache, per_second=2, timeout=600) as fetcher:
+    with Fetcher(cache_dir=cache, per_second=2, timeout=600, headers=ARCHIVE_HEADERS) as fetcher:
         shp = _download_hydrorivers(fetcher, cache)
         log.info("reading %s (ORD_STRA >= %d)", shp, MIN_ORDER)
         gdf = read_dataframe(shp, columns=FIELDS, where=f"ORD_STRA >= {MIN_ORDER}")
@@ -282,17 +296,20 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
         gdf["name"] = gdf["id"].map(name_map)
 
     # ---- network tiles
-    # pyogrio writes GeoJSONSeq in C. Serialising millions of reaches row by row in Python
-    # (a GeoSeries per row) took hours and blew the job budget.
-    net_path = tmp / "network.geojsonseq"
-    net = gdf[["id", "order", "meanDischarge", "name", "geometry"]].copy()
-    net["meanDischarge"] = net["meanDischarge"].astype(float).round(3)
-    log.info("writing %d reaches to %s", len(net), net_path.name)
-    write_dataframe(net, net_path, driver="GeoJSONSeq")
-    filter_path = tmp / "lod.json"
-    filter_path.write_text(json.dumps(LOD_FILTER), encoding="utf-8")
     pm: Path | None = None
-    try:
+    if not has_tippecanoe():
+        # The intermediate is gigabytes; do not write it when nothing can consume it.
+        log.warning("tippecanoe missing: network PMTiles skipped")
+    else:
+        # pyogrio writes GeoJSONSeq in C. Serialising millions of reaches row by row in Python
+        # (a GeoSeries per row) took hours and blew the job budget.
+        net_path = tmp / "network.geojsonseq"
+        net = gdf[["id", "order", "meanDischarge", "name", "geometry"]].copy()
+        net["meanDischarge"] = net["meanDischarge"].astype(float).round(3)
+        log.info("writing %d reaches to %s", len(net), net_path.name)
+        write_dataframe(net, net_path, driver="GeoJSONSeq")
+        filter_path = tmp / "lod.json"
+        filter_path.write_text(json.dumps(LOD_FILTER), encoding="utf-8")
         pm = tippecanoe(
             [net_path],
             tmp / "rivers.pmtiles",
@@ -302,8 +319,6 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
             include=["id", "order", "meanDischarge", "name"],
             extra=["-J", str(filter_path), "--use-attribute-for-id=id", "-P"],
         )
-    except TippecanoeMissingError:
-        log.warning("tippecanoe missing: network PMTiles skipped")
 
     # ---- spine
     spine_rows = gdf[gdf["order"] >= SPINE_ORDER]

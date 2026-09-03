@@ -35,6 +35,15 @@ Every "Doğrula" item was checked against the source's current documentation or 
 | Camera on the globe (spec §5.2 lets the user rotate freely) | deck.gl's `GlobeViewport` derives its view matrix from longitude, latitude and zoom only — bearing and pitch are never applied (`@deck.gl/core` 9.3 `globe-viewport.js`). MapLibre's globe applies both, so a right-drag rotation tore the data layers off the sphere. | **In globe projection the camera is pan + zoom only**: `dragRotate`, touch rotate/pitch and keyboard rotation are disabled and `maxPitch` is 0. Rotation and pitch are available in the flat projection (⌘K → "Projection: flat"), where deck's `MapView` matches MapLibre exactly. Programmatic cameras (stories, shared links) are clamped the same way by `cameraForProjection`. |
 | Globe → Mercator transition | MapLibre's `"globe"` projection is an expression that switches to Mercator around zoom 11–12; the app maxes at zoom 14 and lets MapLibre animate the transition. | Default behaviour kept. |
 
+### HydroRIVERS downloads from CI
+
+`data.hydrosheds.org` is behind a Cloudflare challenge that answers GitHub Actions IPs with a 403
+"Just a moment" page, while the same request from a residential IP succeeds. The pipeline sends
+browser-like headers and honours a `HYDRORIVERS_URL` environment override so a mirror can be used;
+if neither works, run `uv run python cli.py run rivers --publish` from a machine that can reach the
+archive. The site never breaks because of this: the layer keeps its previous artifacts and the
+manifest records the failure.
+
 ## Sample data (offline mode)
 
 - Rivers: Natural Earth 50 m centrelines stand in for HydroRIVERS (544 MB + tippecanoe). Flow
