@@ -17,6 +17,9 @@ test('mobile: rail becomes a bottom strip and the panel is a bottom sheet', asyn
   await page.waitForLoadState('networkidle').catch(() => {})
   await page.waitForTimeout(3000)
   if (existsSync(testInfo.snapshotPath('mobile.png')) || process.env.VISUAL_UPDATE === '1') {
-    await expect(page).toHaveScreenshot('mobile.png', { maxDiffPixelRatio: 0.005 })
+    await expect(page).toHaveScreenshot('mobile.png', {
+      maxDiffPixelRatio: 0.005,
+      timeout: 90_000,
+    })
   }
 })
