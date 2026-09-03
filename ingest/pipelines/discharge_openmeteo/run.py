@@ -152,15 +152,22 @@ def run(cfg: PipelineConfig) -> LayerManifest:
         api_key = os.environ.get("OPEN_METEO_API_KEY") or None
         pace = 60.0 / max(BATCHES_PER_MINUTE, 1) if not api_key else 0.0
         batches = _chunks(points, BATCH)
-        with Fetcher(cache_dir=cfg.out_dir / ".cache", per_second=4, timeout=90) as fetcher:
+        # A healthy answer arrives in ~2 s; the API sometimes leaves a socket hanging instead, and
+        # every hang used to cost the full 90 s timeout (the daily job missed its hour by minutes).
+        with Fetcher(
+            cache_dir=cfg.out_dir / ".cache", per_second=4, timeout=30, retries=3
+        ) as fetcher:
             for i, batch in enumerate(batches):
-                if i and pace:
-                    time.sleep(pace)
+                started = time.monotonic()
                 try:
                     responses.extend(fetch_batch(fetcher, batch, api_key))
                 except FetchError as exc:
                     log.warning("open-meteo batch %d/%d failed: %s", i + 1, len(batches), exc)
                     responses.extend([{} for _ in batch])
+                # pace by wall clock: a slow batch has already paid its share of the minute
+                remaining = pace - (time.monotonic() - started)
+                if remaining > 0 and i + 1 < len(batches):
+                    time.sleep(remaining)
     records = build_records(points, responses, today)
     doc = {"day": today, "source": "open-meteo-flood", "records": records}
     validate("discharge-file", doc)
