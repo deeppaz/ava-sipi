@@ -6,6 +6,8 @@ import json
 import logging
 import os
 import sys
+import tempfile
+from pathlib import Path
 
 import httpx
 
@@ -22,7 +24,10 @@ def main() -> int:
     text = json.dumps(root, ensure_ascii=False, separators=(",", ":"))
     (MANIFESTS_DIR / "manifest.json").write_text(text + "\n", encoding="utf-8")
     publish = os.environ.get("INGEST_PUBLISH", "false").lower() == "true"
-    storage = Storage(MANIFESTS_DIR.parent, os.environ.get("R2_PUBLIC_URL"), publish)
+    # Storage also mirrors what it uploads on disk; keep that copy out of the repo.
+    storage = Storage(
+        Path(tempfile.mkdtemp(prefix="ava-publish-")), os.environ.get("R2_PUBLIC_URL"), publish
+    )
     if publish:
         storage.put_text(text, "manifest.json", cache_seconds=60)
         log.info("root manifest published (%d layers)", len(root["layers"]))
