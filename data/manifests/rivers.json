@@ -1,10 +1,22 @@
 {
   "id": "rivers",
-  "version": "20260903T1143",
-  "generatedAt": "2026-09-03T11:43:33Z",
-  "sourceUpdatedAt": "2026-09-03T11:43:33Z",
+  "version": "20260903T1247",
+  "generatedAt": "2026-09-03T12:47:20Z",
+  "sourceUpdatedAt": "2026-09-03T00:00:00Z",
   "stale": false,
   "artifacts": [
+    {
+      "kind": "parquet",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260903T1247/20260903.parquet",
+      "bytes": 139603,
+      "name": "discharge"
+    },
+    {
+      "kind": "json",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260903T1247/20260903.json",
+      "bytes": 625491,
+      "name": "discharge-json"
+    },
     {
       "kind": "geojson",
       "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1143/spine.geojson",
@@ -22,59 +34,18 @@
       "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1143/rivers.pmtiles",
       "bytes": 333863880,
       "name": "network"
-    },
-    {
-      "kind": "parquet",
-      "url": "discharge/latest/20260902.parquet",
-      "bytes": 26246,
-      "name": "discharge"
-    },
-    {
-      "kind": "json",
-      "url": "discharge/latest/20260902.json",
-      "bytes": 68724,
-      "name": "discharge-json"
     }
   ],
   "attribution": {
-    "name": "HydroRIVERS v1.0 (HydroSHEDS) · Lehner & Grill 2013",
-    "url": "https://www.hydrosheds.org/products/hydrorivers",
-    "license": "HydroSHEDS License v1 (free for any use with attribution)"
+    "name": "Open-Meteo Flood API (Copernicus GloFAS v4) · HydroRIVERS mean discharge",
+    "url": "https://open-meteo.com/en/docs/flood-api",
+    "license": "CC BY 4.0 (Open-Meteo) · GloFAS: Copernicus licence"
   },
   "coverage": "global",
-  "legend": {
-    "unit": "ratio",
-    "stops": [
-      {
-        "value": 0.3,
-        "color": "#7A4A1C",
-        "label": "0.3×"
-      },
-      {
-        "value": 0.6,
-        "color": "#C8873A",
-        "label": "0.6×"
-      },
-      {
-        "value": 1.0,
-        "color": "#7FB8D6",
-        "label": "1×"
-      },
-      {
-        "value": 1.6,
-        "color": "#35E0E0",
-        "label": "1.6×"
-      },
-      {
-        "value": 3.0,
-        "color": "#EAF4F8",
-        "label": "3×"
-      }
-    ]
-  },
   "failures": 0,
   "sample": false,
   "versions": [
+    "20260903T1247",
     "20260903T1143",
     "20260903T0036",
     "20260902T1604"
