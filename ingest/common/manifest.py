@@ -108,13 +108,20 @@ def write_root_manifest(manifests_dir: Path = MANIFESTS_DIR, now: datetime | Non
     return path
 
 
+#: Consecutive failed runs before the UI calls a layer stale (spec §2.1).
+STALE_AFTER_FAILURES = 3
+
+
 def mark_failure(layer: str, manifests_dir: Path = MANIFESTS_DIR) -> int:
-    """Increment `failures` on the existing manifest (keeps old data visible, spec §2.1)."""
+    """Increment `failures` on the existing manifest (keeps old data visible, spec §2.1).
+
+    One missed refresh is not stale data — the layer only earns the badge after three.
+    """
     m = read_layer_manifest(layer, manifests_dir)
     if not m:
         return 0
     m["failures"] = int(m.get("failures", 0)) + 1
-    m["stale"] = True
+    m["stale"] = m["failures"] >= STALE_AFTER_FAILURES
     validate("layer-manifest", m)
     (manifests_dir / f"{layer}.json").write_text(
         json.dumps(m, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"

@@ -9,7 +9,13 @@ import pytest
 
 from common.colors import RIVER_RAMP, mix_oklch
 from common.geo import haversine_km, line_midpoint, polygon_centroid
-from common.manifest import ArtifactRef, LayerManifest, build_root_manifest, write_layer_manifest
+from common.manifest import (
+    ArtifactRef,
+    LayerManifest,
+    build_root_manifest,
+    mark_failure,
+    write_layer_manifest,
+)
 from common.pmtiles_writer import serialize_directory, write_pmtiles, zxy_to_tile_id
 from common.raster import Grid, grid_to_tiles, lut_from_ramp, tile_lonlat
 from common.units import cfs_to_m3s, ft_to_m, percentile_from_quantiles
@@ -130,3 +136,28 @@ def test_grid_to_tiles_and_pmtiles_roundtrip_with_js_reader(tmp_path: Path):
     info = json.loads(res.stdout.strip().splitlines()[-1])
     assert info["minZoom"] == 0 and info["maxZoom"] == 2 and info["tileType"] == 2
     assert info["n"] == 21 and info["len"] > 0 and info["format"] == "png"
+
+
+def test_stale_badge_only_after_three_failures(tmp_path: Path):
+    m = LayerManifest(
+        id="gauges",
+        version="20260902T1500",
+        generatedAt="2026-09-02T15:00:00Z",
+        sourceUpdatedAt="2026-09-02T14:00:00Z",
+        stale=False,
+        artifacts=[
+            ArtifactRef(kind="json", url="gauges/latest/latest.json", bytes=1, name="latest")
+        ],
+        attribution={
+            "name": "USGS",
+            "url": "https://waterdata.usgs.gov",
+            "license": "public domain",
+        },
+        coverage="regional",
+    )
+    write_layer_manifest(m, tmp_path)
+    assert mark_failure("gauges", tmp_path) == 1
+    assert json.loads((tmp_path / "gauges.json").read_text(encoding="utf-8"))["stale"] is False
+    mark_failure("gauges", tmp_path)
+    assert mark_failure("gauges", tmp_path) == 3
+    assert json.loads((tmp_path / "gauges.json").read_text(encoding="utf-8"))["stale"] is True
