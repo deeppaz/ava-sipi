@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import logging
 import math
+import os
 import shutil
 import subprocess
 from collections.abc import Callable, Sequence
@@ -24,6 +25,31 @@ def has_tippecanoe() -> bool:
     return shutil.which("tippecanoe") is not None
 
 
+def tippecanoe_image() -> str | None:
+    """Container image to tile with when there is no native binary (see infra/tippecanoe.Dockerfile)."""
+    image = os.environ.get("TIPPECANOE_DOCKER_IMAGE")
+    return image if image and shutil.which("docker") else None
+
+
+def can_tile() -> bool:
+    return has_tippecanoe() or tippecanoe_image() is not None
+
+
+def _containerise(args: list[str], root: Path, image: str) -> list[str]:
+    """Rewrite host paths under `root` to their bind-mounted counterparts."""
+    mapped = []
+    for arg in args:
+        candidate = Path(arg)
+        try:
+            if (candidate.is_absolute() and candidate.exists()) or candidate.parent == root:
+                mapped.append(f"/work/{candidate.relative_to(root).as_posix()}")
+                continue
+        except ValueError:
+            pass
+        mapped.append(arg)
+    return ["docker", "run", "--rm", "-v", f"{root.as_posix()}:/work", image, *mapped]
+
+
 def tippecanoe(
     inputs: Sequence[Path],
     out: Path,
@@ -34,8 +60,11 @@ def tippecanoe(
     extra: Sequence[str] = (),
 ) -> Path:
     """Build a vector PMTiles file. `include` keeps only the listed attributes (`-y`)."""
-    if not has_tippecanoe():
-        raise TippecanoeMissingError("tippecanoe not found on PATH")
+    image = tippecanoe_image()
+    if not has_tippecanoe() and not image:
+        raise TippecanoeMissingError(
+            "tippecanoe not found on PATH and TIPPECANOE_DOCKER_IMAGE unset"
+        )
     out.parent.mkdir(parents=True, exist_ok=True)
     cmd = [
         "tippecanoe",
@@ -56,6 +85,8 @@ def tippecanoe(
         cmd += ["-y", attr]
     cmd += list(extra)
     cmd += [str(p) for p in inputs]
+    if image:
+        cmd = _containerise(cmd, out.parent.resolve(), image)
     log.info("running %s", " ".join(cmd))
     subprocess.run(cmd, check=True)
     return out

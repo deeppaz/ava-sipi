@@ -20,7 +20,7 @@ from common.geo import line_length_km, line_midpoint, round_coords
 from common.manifest import ArtifactRef, LayerManifest
 from common.pipeline import load_fixture_or, tmp_dir, versions_with, write_json
 from common.storage import Storage
-from common.tiles import has_tippecanoe, tippecanoe
+from common.tiles import can_tile, tippecanoe
 from common.validate import validate
 
 log = logging.getLogger(__name__)
@@ -302,9 +302,9 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
 
     # ---- network tiles
     pm: Path | None = None
-    if not has_tippecanoe():
+    if not can_tile():
         # The intermediate is gigabytes; do not write it when nothing can consume it.
-        log.warning("tippecanoe missing: network PMTiles skipped")
+        log.warning("no tippecanoe (native or TIPPECANOE_DOCKER_IMAGE): network PMTiles skipped")
     else:
         # pyogrio writes GeoJSONSeq in C. Serialising millions of reaches row by row in Python
         # (a GeoSeries per row) took hours and blew the job budget.
