@@ -1,14 +1,14 @@
 {
   "id": "events",
-  "version": "20260902T1604",
-  "generatedAt": "2026-09-02T16:04:58Z",
-  "sourceUpdatedAt": "2026-09-02T16:10:13Z",
+  "version": "20260903T0018",
+  "generatedAt": "2026-09-03T00:18:28Z",
+  "sourceUpdatedAt": "2026-09-03T00:10:15Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "geojson",
-      "url": "events/latest/current.geojson",
-      "bytes": 108382,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260903T0018/current.geojson",
+      "bytes": 105475,
       "name": "current"
     }
   ],
@@ -18,9 +18,19 @@
     "license": "Free use with attribution (GDACS terms of use)"
   },
   "coverage": "global",
-  "bbox": [-179.2, -45.0322, 170.2, 57.1915],
+  "bbox": [
+    -179.2,
+    -45.0322,
+    170.2,
+    57.1915
+  ],
   "failures": 0,
-  "sample": true,
-  "versions": ["20260902T1604"],
-  "notes": ["events.window30d"]
+  "sample": false,
+  "versions": [
+    "20260903T0018",
+    "20260902T1604"
+  ],
+  "notes": [
+    "events.window30d"
+  ]
 }
