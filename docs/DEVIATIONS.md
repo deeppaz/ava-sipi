@@ -92,6 +92,12 @@ code path the CI uses natively.
   day; the 30-day series is fetched per river in the panel), queries the 5 000 largest rivers of
   the 30 000 candidates and paces five batches a minute (`OPENMETEO_POINT_LIMIT`,
   `OPENMETEO_BATCHES_PER_MINUTE`).
+- Discharge sample points are chosen **per river**, not per segment: one point for every spine
+  reach (sampled on the segment at the chain's length midpoint, compared with that segment's own
+  long-term mean), then the network thinned to the largest reach per half-degree cell, largest
+  first. The earlier "30 000 largest reaches" were thousands of short segments of a handful of
+  giant rivers, and only 10 of 909 spine reaches ever got a ratio. A GloFAS value of 0 means the
+  grid cell is off the routed network and is treated as missing, not as a dry river.
 - GDACS answers slowly at times; an event type that times out is dropped for that run instead of
   failing the whole live job, and the workflows publish and commit manifests even when one
   pipeline failed (`cli.py` records the failure in the manifest).
