@@ -96,6 +96,95 @@ export function syncRaster(map: MlMap, spec: RasterSpec): void {
   }
 }
 
+/**
+ * Full river network (spec §5.3 LOD: order ≥ 3 once zoomed in). The animated deck.gl spine only
+ * carries order ≥ 7 — everything finer arrives as vector tiles, drawn underneath it and filtered
+ * to order < 7 so the two never overlap. Colour comes from the same discharge ratio through
+ * MapLibre feature state, keyed by HYRIV_ID (the tiles are built with --use-attribute-for-id).
+ */
+export interface RiverNetworkSpec {
+  visible: boolean
+  url: string | null
+  /** segment id -> today's flow ratio */
+  ratios: Map<number, number>
+}
+
+const NETWORK_SOURCE = 'rivers-network'
+const NETWORK_LAYER = 'rivers-network-line'
+let ratioSignature = ''
+
+export function syncRiverNetwork(map: MlMap, spec: RiverNetworkSpec): void {
+  if (!spec.visible || !spec.url) {
+    if (map.getLayer(NETWORK_LAYER)) map.removeLayer(NETWORK_LAYER)
+    if (map.getSource(NETWORK_SOURCE)) map.removeSource(NETWORK_SOURCE)
+    current.delete(NETWORK_SOURCE)
+    ratioSignature = ''
+    return
+  }
+  const signature = spec.url
+  if (current.get(NETWORK_SOURCE) !== signature) {
+    if (map.getLayer(NETWORK_LAYER)) map.removeLayer(NETWORK_LAYER)
+    if (map.getSource(NETWORK_SOURCE)) map.removeSource(NETWORK_SOURCE)
+    map.addSource(NETWORK_SOURCE, { type: 'vector', url: `pmtiles://${absolute(spec.url)}` })
+    map.addLayer(
+      {
+        id: NETWORK_LAYER,
+        type: 'line',
+        source: NETWORK_SOURCE,
+        'source-layer': 'rivers',
+        minzoom: 4,
+        // the spine already draws these, animated
+        filter: ['<', ['get', 'order'], 7],
+        layout: { 'line-cap': 'round', 'line-join': 'round' },
+        paint: {
+          'line-color': [
+            'case',
+            ['!=', ['feature-state', 'ratio'], null],
+            [
+              'interpolate',
+              ['linear'],
+              ['feature-state', 'ratio'],
+              0.3,
+              TOKENS.parchDeep,
+              0.6,
+              TOKENS.parch,
+              1.0,
+              TOKENS.current,
+              1.6,
+              TOKENS.surge,
+              3.0,
+              TOKENS.foam,
+            ],
+            TOKENS.tide,
+          ],
+          // log(Q+1) like the spine, so a tributary never outweighs its trunk
+          'line-width': [
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            4,
+            ['*', 0.35, ['log10', ['+', ['coalesce', ['get', 'meanDischarge'], 0], 1]]],
+            10,
+            ['*', 1.1, ['log10', ['+', ['coalesce', ['get', 'meanDischarge'], 0], 1]]],
+          ],
+          'line-opacity': ['interpolate', ['linear'], ['zoom'], 4, 0, 5.5, 0.85],
+        },
+      },
+      beforeId(map),
+    )
+    current.set(NETWORK_SOURCE, signature)
+    ratioSignature = ''
+  }
+  // feature state persists across tile loads, so this only has to run when the ratios change
+  const nextSignature = `${signature}:${spec.ratios.size}`
+  if (spec.ratios.size > 0 && ratioSignature !== nextSignature) {
+    for (const [id, ratio] of spec.ratios) {
+      map.setFeatureState({ source: NETWORK_SOURCE, sourceLayer: 'rivers', id }, { ratio })
+    }
+    ratioSignature = nextSignature
+  }
+}
+
 export interface GlacierSpec {
   visible: boolean
   data: GlaciersData | undefined
@@ -183,6 +272,8 @@ export function meltOpacity(tSeconds: number, reducedMotion: boolean): number {
 
 export function resetNativeRegistry(): void {
   current.clear()
+  ratioSignature = ''
 }
 
 export const GLACIER_LAYER_IDS = [GLACIER_FILL, GLACIER_LINE] as const
+export const RIVER_NETWORK_LAYER_ID = NETWORK_LAYER

@@ -75,6 +75,11 @@ LOD_FILTER = {
 # ------------------------------------------------------------------ pure helpers (unit tested)
 
 
+def name_or_none(value: object) -> str | None:
+    """An unmatched pandas join leaves NaN, which is truthy — never let one reach the schema."""
+    return value if isinstance(value, str) and value.strip() else None
+
+
 def merge_chains(segments: list[dict[str, Any]], tolerance: float = 0.25) -> list[dict[str, Any]]:
     """Merge consecutive HydroRIVERS segments into longer spine reaches.
 
@@ -206,7 +211,7 @@ def spine_feature(reach: dict[str, Any], tolerance: float = 0.01) -> dict[str, A
         props["nextDown"] = int(reach["nextDown"])
     if reach.get("mainRiver") is not None:
         props["mainRiver"] = int(reach["mainRiver"])
-    if reach.get("name"):
+    if name_or_none(reach.get("name")):
         props["name"] = reach["name"]
     return {
         "type": "Feature",
@@ -338,7 +343,7 @@ def run_full(cfg: PipelineConfig) -> tuple[dict[str, Any], list[dict[str, Any]],
                 "mean": float(row.meanDischarge),
                 "lengthKm": float(row.lengthKm),
                 "coords": coords,
-                "name": getattr(row, "name", None),
+                "name": name_or_none(getattr(row, "name", None)),
             }
         )
     reaches = merge_chains(segments)

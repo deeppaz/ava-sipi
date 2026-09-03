@@ -11,12 +11,13 @@ import {
   resetNativeRegistry,
   syncGlaciers,
   syncRaster,
+  syncRiverNetwork,
 } from '@/layers/nativeLayers'
 import { formatNumber, formatPercent } from '@/lib/format'
 import { artifactUrl, layerManifest, useManifest } from '@/lib/manifest'
 import { classifyByLegend, samplePixel, valueByLegend } from '@/lib/rasterSample'
 import { discharge as toDischarge } from '@/lib/units'
-import { isDataLayer, useData } from '@/state/data'
+import { isDataLayer, type RiversData, useData } from '@/state/data'
 import { useRasterSamples } from '@/state/raster'
 import { type CameraRequest, forecastDays, useApp } from '@/state/store'
 import { LABEL_LAYER_ID } from './basemap'
@@ -30,6 +31,21 @@ import {
 
 type DeckEntry = typeof import('@/layers/deckEntry')
 type Overlay = InstanceType<DeckEntry['MapboxOverlay']>
+
+/** Segment id -> today's (or the forecast day's) flow ratio, for MapLibre feature state. */
+function riverRatios(data: RiversData | undefined, forecastDays: number): Map<number, number> {
+  const out = new Map<number, number>()
+  if (!data) return out
+  for (const [id, row] of data.discharge) {
+    const ratio =
+      forecastDays > 0
+        ? (row.forecast[Math.min(forecastDays, row.forecast.length) - 1] ?? 0) /
+          Math.max(row.ratio > 0 ? row.today / row.ratio : 1, 1e-9)
+        : row.ratio
+    if (Number.isFinite(ratio)) out.set(id, Math.min(12, ratio))
+  }
+  return out
+}
 
 const easeInOut = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2)
 
@@ -282,6 +298,7 @@ export function MapView() {
 
   // ---- native layers (rasters + glaciers)
   const glaciers = useData((s) => s.glaciers.data)
+  const riversLoaded = useData((s) => s.rivers.data)
   const reducedMotion = useApp((s) => s.reducedMotion)
   const droughtProduct = useApp((s) => s.droughtProduct)
   useEffect(() => {
@@ -316,7 +333,24 @@ export function MapView() {
       data: glaciers,
       meltOpacity: meltOpacity(0, reducedMotion),
     })
-  }, [ready, styleVersion, manifest, base, layers, time, glaciers, droughtProduct, reducedMotion])
+    const riversData = useData.getState().rivers.data
+    syncRiverNetwork(map, {
+      visible: layers.includes('rivers'),
+      url: riversData?.networkTilesUrl ?? null,
+      ratios: riverRatios(riversData, forecastDays(time)),
+    })
+  }, [
+    ready,
+    styleVersion,
+    manifest,
+    base,
+    layers,
+    time,
+    glaciers,
+    riversLoaded,
+    droughtProduct,
+    reducedMotion,
+  ])
 
   // glacier melt breathing (10 Hz is plenty for a 6 s cycle)
   useEffect(() => {
