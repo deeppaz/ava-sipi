@@ -29,12 +29,12 @@ jobs:
       - run: pnpm --filter @ava-sipi/web build
       - run: pnpm --filter @ava-sipi/web exec playwright install --with-deps chromium
       - name: Write baselines
-        run: pnpm --filter @ava-sipi/web exec playwright test e2e/visual.spec.ts --update-snapshots
+        run: pnpm --filter @ava-sipi/web exec playwright test e2e/visual.spec.ts e2e/mobile.spec.ts --update-snapshots
         env:
           CI: 'true'
           VISUAL_UPDATE: '1'
       - name: Verify they pass against themselves
-        run: pnpm --filter @ava-sipi/web exec playwright test e2e/visual.spec.ts
+        run: pnpm --filter @ava-sipi/web exec playwright test e2e/visual.spec.ts e2e/mobile.spec.ts
         env:
           CI: 'true'
       - name: Commit baselines
