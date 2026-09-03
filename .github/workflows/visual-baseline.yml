@@ -1,0 +1,50 @@
+# Writes the visual-regression baselines on the CI image (spec §8: six views, ≤ 0.5 % diff).
+# Baselines are GPU/OS specific, so only the linux ones are committed; local runs on other
+# platforms keep skipping until a baseline exists for them. Run this after an intentional visual
+# change, then review the diff in the commit it pushes.
+name: visual-baseline
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: manifests-commit
+  cancel-in-progress: false
+
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter @ava-sipi/web build
+      - run: pnpm --filter @ava-sipi/web exec playwright install --with-deps chromium
+      - name: Write baselines
+        run: pnpm --filter @ava-sipi/web exec playwright test e2e/visual.spec.ts --update-snapshots
+        env:
+          CI: 'true'
+          VISUAL_UPDATE: '1'
+      - name: Verify they pass against themselves
+        run: pnpm --filter @ava-sipi/web exec playwright test e2e/visual.spec.ts
+        env:
+          CI: 'true'
+      - name: Commit baselines
+        run: |
+          git config user.name "ava-sipi-bot"
+          git config user.email "bot@ava-sipi.invalid"
+          git add -f apps/web/e2e/*-snapshots/*-linux.png
+          git diff --cached --quiet && { echo "no baseline changes"; exit 0; }
+          git commit -m "test(e2e): visual baselines from the CI image $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push origin HEAD:main && break
+            sleep $((i * 10))
+          done

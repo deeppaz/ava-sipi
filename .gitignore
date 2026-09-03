@@ -20,5 +20,6 @@ Thumbs.db
 
 # generated media frames (GIF is committed, frames are not)
 docs/media/frames/
-apps/web/e2e/**/*-snapshots/
+apps/web/e2e/**/*-snapshots/*
+!apps/web/e2e/**/*-snapshots/*-linux.png
 .claude/settings.local.json
