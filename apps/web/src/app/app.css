@@ -44,6 +44,21 @@
   left: 8px;
 }
 
+.globe-skeleton {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(72vmin, 640px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 38% 32%, rgb(15 34 51 / 0.95), rgb(7 19 31 / 0.98) 62%), var(--abyss);
+  box-shadow: 0 0 0 1px rgb(62 110 142 / 0.18);
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* ---- top bar ---- */
 .topbar {
   position: absolute;

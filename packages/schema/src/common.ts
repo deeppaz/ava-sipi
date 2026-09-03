@@ -1,4 +1,7 @@
 import { z } from 'zod'
+import { LAYER_IDS } from './constants.js'
+
+export { LAYER_IDS }
 
 /** ISO-8601 UTC timestamp, e.g. 2026-09-02T14:30:00Z */
 export const ISODate = z.iso.datetime({ offset: true })
@@ -8,17 +11,6 @@ export type ISODate = z.infer<typeof ISODate>
 export const ISODay = z.iso.date()
 export type ISODay = z.infer<typeof ISODay>
 
-export const LAYER_IDS = [
-  'rivers',
-  'gauges',
-  'events',
-  'reservoirs',
-  'groundwater',
-  'drought',
-  'glaciers',
-  'snow',
-  'tides',
-] as const
 export const LayerId = z.enum(LAYER_IDS)
 export type LayerId = z.infer<typeof LayerId>
 

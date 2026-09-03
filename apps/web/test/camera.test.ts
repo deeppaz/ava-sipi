@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { cameraForProjection } from '@/map/createMap'
+import { cameraForProjection } from '@/map/camera'
 import { DEFAULT_CAMERA } from '@/state/store'
 
 describe('cameraForProjection', () => {

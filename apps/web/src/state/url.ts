@@ -2,7 +2,8 @@
  * URL state (spec §5.1): `?l=rivers,events&t=2026-09-02&c=38.9,41.1,5.2&p=globe&s=gauges:USGS-01646500&story=aral&step=2&embed=1`
  * Every share link carries the whole view. Language and units are deliberately not in the URL.
  */
-import { LAYER_IDS, type LayerId } from '@ava-sipi/schema'
+import type { LayerId } from '@ava-sipi/schema'
+import { LAYER_IDS } from '@ava-sipi/schema/constants'
 import { useEffect } from 'react'
 import {
   type AppState,

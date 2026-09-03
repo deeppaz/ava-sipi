@@ -24,10 +24,9 @@ import { LABEL_LAYER_ID } from './basemap'
 import {
   applyProjectionInteractions,
   cameraForProjection,
-  createMap,
   panelPadding,
   supportsWebGL2,
-} from './createMap'
+} from './camera'
 
 type DeckEntry = typeof import('@/layers/deckEntry')
 type Overlay = InstanceType<DeckEntry['MapboxOverlay']>
@@ -56,6 +55,7 @@ export function MapView() {
   const deckRef = useRef<DeckEntry | null>(null)
   const zoomRef = useRef(useApp.getState().camera.zoom)
   const [ready, setReady] = useState(false)
+  const [mapPainted, setMapPainted] = useState(false)
   const [styleVersion, setStyleVersion] = useState(0)
   const [webgl] = useState(() => supportsWebGL2())
   const { t, locale } = useI18n()
@@ -66,64 +66,81 @@ export function MapView() {
   useEffect(() => {
     const el = ref.current
     if (!el || !webgl) return
-    const map = createMap({ container: el, camera: useApp.getState().camera })
-    mapRef.current = map
-    map.on('load', () => {
-      // deck.gl arrives after the first paint of the globe (bundle budget, spec §5.6)
-      void import('@/layers/deckEntry').then((deck) => {
-        if (!mapRef.current) return
-        const overlay = new deck.MapboxOverlay({ interleaved: true, layers: [] })
-        map.addControl(overlay)
-        overlayRef.current = overlay
-        deckRef.current = deck
-        setReady(true)
+    let map: MlMap | undefined
+    let disposed = false
+    // maplibre-gl costs ~1.8 s of main-thread work on a throttled phone; let the shell paint
+    // first, then build the map. Two frames is enough for the browser to present it.
+    const start = () => {
+      void import('./createMap').then(({ createMap }) => {
+        if (disposed || !ref.current) return
+        map = createMap({ container: el, camera: useApp.getState().camera })
+        mapRef.current = map
+        attach(map)
       })
-    })
-    map.on('style.load', () => {
-      resetNativeRegistry()
-      setStyleVersion((v) => v + 1)
-    })
-    map.on('move', () => {
-      zoomRef.current = map.getZoom()
-    })
-    map.on('moveend', () => {
-      const c = map.getCenter()
-      useApp.getState().setCamera({
-        lon: c.lng,
-        lat: c.lat,
-        zoom: map.getZoom(),
-        bearing: map.getBearing(),
-        pitch: map.getPitch(),
-      })
-    })
-    map.on('click', (e) => {
-      const picked = overlayRef.current?.pickObject({ x: e.point.x, y: e.point.y, radius: 4 })
-      if (picked?.object) return // deck handled it
-      const st = useApp.getState()
-      const feats = map.queryRenderedFeatures(e.point, {
-        layers: GLACIER_LAYER_IDS.filter((id) => map.getLayer(id)),
-      })
-      const g = feats[0]
-      if (g?.properties?.id) {
-        st.select({
-          layer: 'glaciers',
-          id: String(g.properties.id),
-          lon: e.lngLat.lng,
-          lat: e.lngLat.lat,
+    }
+    requestAnimationFrame(() => requestAnimationFrame(start))
+
+    const attach = (map: MlMap) => {
+      map.on('load', () => {
+        setMapPainted(true)
+        // deck.gl arrives after the first paint of the globe (bundle budget, spec §5.6)
+        void import('@/layers/deckEntry').then((deck) => {
+          if (!mapRef.current) return
+          const overlay = new deck.MapboxOverlay({ interleaved: true, layers: [] })
+          map.addControl(overlay)
+          overlayRef.current = overlay
+          deckRef.current = deck
+          setReady(true)
         })
-        return
-      }
-      const rasterLayer = (['drought', 'groundwater'] as const).find(
-        (id) => st.layers.includes(id) && map.getLayer(id),
-      )
-      if (rasterLayer) {
-        void sampleRaster(rasterLayer, e.lngLat.lng, e.lngLat.lat)
-        return
-      }
-      st.select(null)
-    })
+      })
+      map.on('style.load', () => {
+        resetNativeRegistry()
+        setStyleVersion((v) => v + 1)
+      })
+      map.on('move', () => {
+        zoomRef.current = map.getZoom()
+      })
+      map.on('moveend', () => {
+        const c = map.getCenter()
+        useApp.getState().setCamera({
+          lon: c.lng,
+          lat: c.lat,
+          zoom: map.getZoom(),
+          bearing: map.getBearing(),
+          pitch: map.getPitch(),
+        })
+      })
+      map.on('click', (e) => {
+        const picked = overlayRef.current?.pickObject({ x: e.point.x, y: e.point.y, radius: 4 })
+        if (picked?.object) return // deck handled it
+        const st = useApp.getState()
+        const feats = map.queryRenderedFeatures(e.point, {
+          layers: GLACIER_LAYER_IDS.filter((id) => map.getLayer(id)),
+        })
+        const g = feats[0]
+        if (g?.properties?.id) {
+          st.select({
+            layer: 'glaciers',
+            id: String(g.properties.id),
+            lon: e.lngLat.lng,
+            lat: e.lngLat.lat,
+          })
+          return
+        }
+        const rasterLayer = (['drought', 'groundwater'] as const).find(
+          (id) => st.layers.includes(id) && map.getLayer(id),
+        )
+        if (rasterLayer) {
+          void sampleRaster(rasterLayer, e.lngLat.lng, e.lngLat.lat)
+          return
+        }
+        st.select(null)
+      })
+    }
+
     return () => {
-      map.remove()
+      disposed = true
+      map?.remove()
       mapRef.current = null
       overlayRef.current = null
     }
@@ -418,12 +435,17 @@ export function MapView() {
     )
   }
   return (
-    <section
-      ref={ref}
-      className="map-root"
-      aria-label={`${t('app.map')} — ${layerNames}`}
-      data-testid="map"
-      data-units={units}
-    ></section>
+    <>
+      <section
+        ref={ref}
+        className="map-root"
+        aria-label={`${t('app.map')} — ${layerNames}`}
+        data-testid="map"
+        data-units={units}
+      />
+      {/* Painted immediately so the first frame shows the globe's silhouette instead of an empty
+          page; it never stands in for data and goes as soon as MapLibre's first frame lands. */}
+      {!mapPainted ? <div className="globe-skeleton" aria-hidden="true" /> : null}
+    </>
   )
 }

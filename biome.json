@@ -17,7 +17,8 @@
       "!**/*.snap.png",
       "!packages/schema/json",
       "!**/.venv",
-      "!data"
+      "!data",
+      "!**/.claude/**"
     ]
   },
   "formatter": {
@@ -66,7 +67,10 @@
   },
   "overrides": [
     {
-      "includes": ["apps/web/src/panels/**", "apps/web/src/map/**"],
+      "includes": [
+        "apps/web/src/panels/**",
+        "apps/web/src/map/**"
+      ],
       "linter": {
         "rules": {
           "a11y": {

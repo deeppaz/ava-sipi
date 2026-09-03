@@ -2,7 +2,7 @@
  * Root manifest loading (spec §1.4): remote URL when configured, otherwise the bundled
  * sample manifest under /data. Artifact URLs resolve relative to the data base.
  */
-import { type Artifact, type LayerId, type LayerManifest, RootManifest } from '@ava-sipi/schema'
+import type { Artifact, LayerId, LayerManifest, RootManifest } from '@ava-sipi/schema'
 import { create } from 'zustand'
 import type { TimeState } from '@/state/store'
 import { env, SAMPLE_DATA_BASE, SAMPLE_MANIFEST_URL } from './env'
@@ -21,7 +21,9 @@ export interface ManifestState {
 
 async function tryLoad(url: string): Promise<RootManifest> {
   const raw = await fetchJson<unknown>(url, { timeoutMs: 12000, cache: 'no-cache' })
-  const parsed = RootManifest.safeParse(raw)
+  // zod is only needed for this one check; loading it here keeps it out of the first chunk
+  const { RootManifest: schema } = await import('@ava-sipi/schema')
+  const parsed = schema.safeParse(raw)
   if (!parsed.success) {
     throw new Error(
       `manifest at ${url} failed validation: ${parsed.error.issues[0]?.message ?? 'unknown'}`,

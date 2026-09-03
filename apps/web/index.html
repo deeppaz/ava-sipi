@@ -23,11 +23,49 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/manrope-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin />
   </head>
   <body>
+    <!-- Painted from HTML alone so the first frame is the globe and the wordmark, not a blank
+         page. React removes it as soon as the shell mounts; it never stands in for data. -->
+    <style>
+      #boot {
+        position: fixed;
+        inset: 0;
+        background: #07131f;
+        font-family: Georgia, 'Times New Roman', serif;
+      }
+      #boot i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: min(72vmin, 640px);
+        aspect-ratio: 1;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: radial-gradient(circle at 38% 32%, #0f2233f2, #07131ffa 62%);
+        box-shadow: 0 0 0 1px #3e6e8e2e;
+      }
+      #boot b {
+        position: absolute;
+        left: 26px;
+        top: 26px;
+        font-weight: 400;
+        font-size: 28px;
+        color: #eaf4f8;
+      }
+      #boot s {
+        position: absolute;
+        left: 26px;
+        top: 64px;
+        font-family: system-ui, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        color: #3e6e8e;
+      }
+    </style>
+    <div id="boot"><i></i><b>Ava Sipî</b><s>the living map of Earth's water</s></div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

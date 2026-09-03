@@ -6,7 +6,8 @@
   "description": "Zod data contracts for Ava Sipî — TypeScript types and JSON Schema export (single source for web, worker and Python ingest).",
   "license": "MIT",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./constants": "./src/constants.ts"
   },
   "types": "./src/index.ts",
   "scripts": {

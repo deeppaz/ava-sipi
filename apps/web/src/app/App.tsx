@@ -1,19 +1,30 @@
-import { useEffect, useState } from 'react'
+import { type ComponentType, lazy, Suspense, useEffect, useState } from 'react'
 import { useI18n } from '@/i18n'
 import { startFpsMonitor } from '@/lib/fps'
 import { useManifest } from '@/lib/manifest'
 import { MapView } from '@/map/MapView'
-import { CommandPalette } from '@/panels/CommandPalette'
-import { DetailPanel } from '@/panels/DetailPanel'
-import { EventsList } from '@/panels/EventsList'
 import { LayerRail } from '@/panels/LayerRail'
 import { ForecastWatermark, HoverTooltip, PerfNotice, Toast } from '@/panels/Overlays'
-import { StoryMode } from '@/panels/StoryMode'
 import { TimeSlider } from '@/panels/TimeSlider'
 import { TopBar } from '@/panels/TopBar'
 import { useApp } from '@/state/store'
 import { useUrlSync } from '@/state/url'
 import './app.css'
+
+/** Interaction-only surfaces; keeping them out of the first chunk halves the initial JS. */
+const lazyPanel = <P,>(load: () => Promise<{ [k: string]: unknown }>, name: string) =>
+  lazy(async () => ({ default: (await load())[name] as ComponentType<P> }))
+
+const DetailPanel = lazyPanel<{ mobile: boolean }>(
+  () => import('@/panels/DetailPanel'),
+  'DetailPanel',
+)
+const EventsList = lazyPanel<{ mobile: boolean }>(() => import('@/panels/EventsList'), 'EventsList')
+const CommandPalette = lazyPanel<Record<string, never>>(
+  () => import('@/panels/CommandPalette'),
+  'CommandPalette',
+)
+const StoryMode = lazyPanel<Record<string, never>>(() => import('@/panels/StoryMode'), 'StoryMode')
 
 function useMobile(): boolean {
   const [mobile, setMobile] = useState(() => window.innerWidth < 768)
@@ -36,6 +47,8 @@ export function App() {
   const source = useManifest((s) => s.source)
 
   useEffect(() => {
+    // the static boot skeleton in index.html has done its job once the shell is mounted
+    document.getElementById('boot')?.remove()
     void useManifest.getState().load()
   }, [])
   useEffect(() => startFpsMonitor((level) => setPerfLevel(level)), [setPerfLevel])
@@ -60,10 +73,12 @@ export function App() {
       )}
       {!embed ? <LayerRail mobile={mobile} /> : null}
       {!embed ? <TimeSlider /> : null}
-      <DetailPanel mobile={mobile} />
-      {!embed ? <EventsList mobile={mobile} /> : null}
-      {!embed ? <CommandPalette /> : null}
-      <StoryMode />
+      <Suspense fallback={null}>
+        <DetailPanel mobile={mobile} />
+        {!embed ? <EventsList mobile={mobile} /> : null}
+        {!embed ? <CommandPalette /> : null}
+        <StoryMode />
+      </Suspense>
       <HoverTooltip />
       <Toast />
       <PerfNotice />
