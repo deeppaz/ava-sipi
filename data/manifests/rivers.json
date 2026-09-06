@@ -1,20 +1,20 @@
 {
   "id": "rivers",
-  "version": "20260905T0746",
-  "generatedAt": "2026-09-05T07:46:47Z",
-  "sourceUpdatedAt": "2026-09-05T00:00:00Z",
+  "version": "20260906T0801",
+  "generatedAt": "2026-09-06T08:01:15Z",
+  "sourceUpdatedAt": "2026-09-06T00:00:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "parquet",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260905T0746/20260905.parquet",
-      "bytes": 165283,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260906T0801/20260906.parquet",
+      "bytes": 164822,
       "name": "discharge"
     },
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260905T0746/20260905.json",
-      "bytes": 548133,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260906T0801/20260906.json",
+      "bytes": 547177,
       "name": "discharge-json"
     },
     {
@@ -45,6 +45,7 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20260906T0801",
     "20260905T0746",
     "20260904T0806",
     "20260903T1315",
