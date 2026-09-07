@@ -1,14 +1,14 @@
 {
   "id": "reservoirs",
-  "version": "20260902T1604",
-  "generatedAt": "2026-09-02T16:04:58Z",
-  "sourceUpdatedAt": "2026-07-01T00:00:00Z",
+  "version": "20260907T1300",
+  "generatedAt": "2026-09-07T13:00:01Z",
+  "sourceUpdatedAt": "2026-08-01T00:00:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "json",
-      "url": "reservoirs/latest/latest.json",
-      "bytes": 5188,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/reservoirs/20260907T1300/latest.json",
+      "bytes": 983997,
       "name": "latest"
     }
   ],
@@ -44,7 +44,13 @@
     ]
   },
   "failures": 0,
-  "sample": true,
-  "versions": ["20260902T1604"],
-  "notes": ["reservoirs.proxy"]
+  "sample": false,
+  "versions": [
+    "20260907T1300",
+    "20260902T1604"
+  ],
+  "notes": [
+    "reservoirs.proxy",
+    "reservoirs.partialList"
+  ]
 }

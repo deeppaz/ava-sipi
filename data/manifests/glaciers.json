@@ -1,33 +1,27 @@
 {
   "id": "glaciers",
-  "version": "20260907T1141",
-  "generatedAt": "2026-09-07T11:41:48Z",
+  "version": "20260902T2154",
+  "generatedAt": "2026-09-02T21:54:42Z",
   "sourceUpdatedAt": "2025-12-31T00:00:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/massbalance.json",
-      "bytes": 20520,
+      "url": "glaciers/latest/massbalance.json",
+      "bytes": 20521,
       "name": "massbalance"
     },
     {
       "kind": "geojson",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/glaciers.geojson",
-      "bytes": 325118799,
+      "url": "glaciers/latest/glaciers.geojson",
+      "bytes": 387064,
       "name": "outlines"
-    },
-    {
-      "kind": "pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/glaciers.pmtiles",
-      "bytes": 144338582,
-      "name": "tiles"
     }
   ],
   "attribution": {
-    "name": "Randolph Glacier Inventory v7.0 (RGI Consortium 2023, GLIMS/NSIDC) · WGMS annual mass-change estimates (2026)",
-    "url": "https://doi.org/10.5067/f6jmovy5navz",
-    "license": "CC BY 4.0 (RGI 7.0) · WGMS open access with citation (doi:10.5904/wgms-amce-2026-02-10)"
+    "name": "Natural Earth 50m glaciated areas (sample) · WGMS annual mass-change estimates (2026)",
+    "url": "https://www.naturalearthdata.com/downloads/50m-physical-vectors/",
+    "license": "Public domain (Natural Earth) · WGMS open access with citation"
   },
   "coverage": "global",
   "legend": {
@@ -51,10 +45,7 @@
     ]
   },
   "failures": 0,
-  "sample": false,
-  "versions": [
-    "20260907T1141",
-    "20260902T2154"
-  ],
-  "notes": []
+  "sample": true,
+  "versions": ["20260902T2154"],
+  "notes": ["glaciers.sampleGeometry"]
 }
