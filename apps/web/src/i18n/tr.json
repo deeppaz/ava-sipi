@@ -127,6 +127,7 @@
   "drought.product.spi3": "SPI-3",
   "drought.change": "Öncekine göre değişim",
   "note.reservoirs.proxy": "Doluluk, ölçülen hacimden değil uydu yüzey alanından tahmin edilir.",
+  "note.reservoirs.partialList": "Baraj listesi bu hafta yarım kaldı (kaynak hatası); bazı barajlar eksik.",
   "note.groundwater.tws": "GRACE toplam su depolamasını ölçer; anomali toprak nemi, yeraltı suyu ve yüzey suyunu içerir.",
   "note.events.window30d": "Son 30 günün olayları.",
   "note.rivers.ratioSource": "Bugünkü akış bir GloFAS model değeridir (Open-Meteo), ölçüm değildir.",

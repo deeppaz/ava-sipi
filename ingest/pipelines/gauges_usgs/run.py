@@ -492,7 +492,17 @@ def run(cfg: PipelineConfig) -> LayerManifest:
                 len(ordered),
                 len(ids),
             )
-            stats_doc = merge_stats(previous, build_stats(fetcher, cfg, ids), cfg.now)
+            # Without an API key the USGS API answers ~130 requests briskly and then stalls each
+            # one for minutes; the shared fetcher's 120 s timeout let a handful of stalls eat the
+            # whole budget (262 stations in 100 min). Short timeout, few retries, move on.
+            with Fetcher(
+                cache_dir=cfg.out_dir / ".cache",
+                per_second=5 if cfg.usgs_api_key else 2,
+                timeout=30,
+                retries=2,
+            ) as stats_fetcher:
+                fresh = build_stats(stats_fetcher, cfg, ids)
+            stats_doc = merge_stats(previous, fresh, cfg.now)
             validate("gauge-stats", stats_doc)
             p = write_json(tmp / "stats.json", stats_doc)
             st = storage.put(p, layer, cfg.version, "stats.json", cache_seconds=86400)

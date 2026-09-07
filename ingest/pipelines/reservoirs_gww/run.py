@@ -28,7 +28,7 @@ LIST_PAGE = 1000
 
 #: Notes this pipeline decides on its own; a rerun replaces them rather than
 #: inheriting a stale one from a sibling pipeline writing the same layer.
-OWNED_NOTES: frozenset[str] = frozenset({"reservoirs.proxy"})
+OWNED_NOTES: frozenset[str] = frozenset({"reservoirs.proxy", "reservoirs.partialList"})
 
 
 ATTRIBUTION = {
@@ -128,6 +128,7 @@ def _median_series_start(now: datetime) -> str:
 
 
 def run(cfg: PipelineConfig) -> LayerManifest:
+    notes: list[str] = ["reservoirs.proxy"]
     layer = "reservoirs"
     storage = Storage(cfg.out_dir, cfg.public_base_url, cfg.publish)
     tmp = tmp_dir(cfg, layer)
@@ -163,9 +164,20 @@ def run(cfg: PipelineConfig) -> LayerManifest:
             countries = {}
             skip = 0
             while True:
-                page = fetcher.get_json(
-                    f"{BASE}/reservoir", params={"skip": skip, "limit": LIST_PAGE}, use_cache=False
-                )
+                try:
+                    page = fetcher.get_json(
+                        f"{BASE}/reservoir",
+                        params={"skip": skip, "limit": LIST_PAGE},
+                        use_cache=False,
+                    )
+                except FetchError as exc:
+                    # The list is ~70k rows in 1 000-row pages; a 503 on page 63 must not throw
+                    # away the 62 that answered. The manifest says the list is partial.
+                    if skip < LIST_PAGE * 10:
+                        raise
+                    log.warning("gww list truncated at skip=%d: %s", skip, exc)
+                    notes.append("reservoirs.partialList")
+                    break
                 feats = page.get("features") or []
                 # v1 scope: reservoirs that exist in GRanD (large dams with capacity metadata)
                 features.extend(f for f in feats if (f.get("properties") or {}).get("grand_id"))
@@ -250,7 +262,7 @@ def run(cfg: PipelineConfig) -> LayerManifest:
         },
         sample=cfg.sample,
         versions=versions_with(cfg),
-        notes=["reservoirs.proxy"],
+        notes=notes,
     )
 
 

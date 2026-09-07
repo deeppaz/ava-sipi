@@ -127,6 +127,7 @@
   "drought.product.spi3": "SPI-3",
   "drought.change": "Guherîn li gorî ya berê",
   "note.reservoirs.proxy": "Tijîbûn ji rûerdê satelîtê tê texmînkirin, ne ji hecma pîvandî.",
+  "note.reservoirs.partialList": "Lîsteya bendavan vê hefteyê nîvco ma (çewtiya çavkaniyê); hin bendav kêm in.",
   "note.groundwater.tws": "GRACE depokirina ava giştî dipîve; anomalî şiliya axê, ava binerdê û ava rûyê erdê dihewîne.",
   "note.events.window30d": "Bûyerên 30 rojên dawî.",
   "note.rivers.ratioSource": "Herikîna îro nirxeke modela GloFAS e (Open-Meteo), ne pîvan e.",

@@ -127,6 +127,7 @@
   "drought.product.spi3": "SPI-3",
   "drought.change": "Change since previous",
   "note.reservoirs.proxy": "Fill is estimated from satellite surface area, not from measured volume.",
+  "note.reservoirs.partialList": "The reservoir list was cut short this week (upstream error); some reservoirs are missing.",
   "note.groundwater.tws": "GRACE measures total water storage; the anomaly includes soil moisture, groundwater and surface water.",
   "note.events.window30d": "Events from the last 30 days.",
   "note.rivers.ratioSource": "Today's flow is a GloFAS model value (Open-Meteo), not a measurement.",
