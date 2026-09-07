@@ -76,8 +76,9 @@ and the layer reports the gap through a manifest note.
 
 `data/manifests/<layer>.json` is owned by the pipeline that wrote it; `manifest.json` is derived.
 After a run the bot fetches `main`, resets to it, copies the run's layer files on top, runs
-`cli.py root` and pushes — no merge, no conflict. `publish.py` in turn builds the root manifest it
-uploads from the committed layer files, which is why a lost commit would roll a layer back.
+`cli.py root` and pushes — no merge, no conflict — carrying only the layer files the run rewrote.
+`publish.py` builds the root manifest from the checkout's layer files but takes any layer whose
+published version is newer from the published root, so a stale checkout never rolls a layer back.
 
 ## Manifest notes are owned
 

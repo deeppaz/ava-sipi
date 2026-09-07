@@ -111,6 +111,12 @@ code path the CI uses natively.
   got stuck on conflicts, and a lost commit was not cosmetic: `publish.py` rebuilds the root
   manifest from the committed layer files, so a failed monthly commit silently reverted the real
   GRACE layer to the sample on the next run.
+- **The newer version wins, whoever publishes last.** Workflows run concurrently from checkouts
+  of different ages; a weekly run that started before the monthly run committed rebuilt the root
+  manifest from its stale copy and published sample groundwater over the real GRACE layer, and
+  its commit step carried that stale copy onto `main`. `publish.py` now takes each layer from
+  whichever side (checkout or published root) has the newer `version`, and the commit step
+  carries only the layer files the run itself rewrote.
 - A pipeline failure reddens the job only when the layer becomes stale (3 consecutive failures);
   a single 504 is recorded in the manifest, the layer keeps its previous artifacts and nobody is
   paged.
