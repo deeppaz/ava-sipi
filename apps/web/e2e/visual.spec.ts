@@ -20,8 +20,12 @@ function requireBaseline(testInfo: TestInfo, name: string) {
   )
 }
 
+/** Relative times ("Updated 1h ago") must not drift as the sample data ages. */
+const FROZEN_NOW = new Date('2026-09-03T14:00:00Z')
+
 async function settle(page: Page, url: string) {
   await page.emulateMedia({ reducedMotion: 'reduce' })
+  await page.clock.install({ time: FROZEN_NOW })
   await page.goto(url)
   await page.waitForFunction(() => {
     const c = document.querySelector<HTMLCanvasElement>('.maplibregl-canvas')

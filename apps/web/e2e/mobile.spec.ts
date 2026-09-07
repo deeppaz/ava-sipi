@@ -5,6 +5,8 @@ test('mobile: rail becomes a bottom strip and the panel is a bottom sheet', asyn
   page,
 }, testInfo) => {
   await page.emulateMedia({ reducedMotion: 'reduce' })
+  // same frozen clock as visual.spec.ts: relative times must not move the layout
+  await page.clock.install({ time: new Date('2026-09-03T14:00:00Z') })
   await page.goto('/?c=25,20,1.6&l=rivers,events')
   await page.waitForFunction(() => {
     const c = document.querySelector<HTMLCanvasElement>('.maplibregl-canvas')
