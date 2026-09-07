@@ -14,7 +14,7 @@ import {
   syncRiverNetwork,
 } from '@/layers/nativeLayers'
 import { formatNumber, formatPercent } from '@/lib/format'
-import { artifactUrl, layerManifest, useManifest } from '@/lib/manifest'
+import { layerManifest, useManifest } from '@/lib/manifest'
 import { classifyByLegend, samplePixel, valueByLegend } from '@/lib/rasterSample'
 import { discharge as toDischarge } from '@/lib/units'
 import { isDataLayer, type RiversData, useData } from '@/state/data'
