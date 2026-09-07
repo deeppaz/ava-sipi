@@ -7,7 +7,7 @@ import type { BuildContext } from '@/layers/context'
 import {
   GLACIER_LAYER_IDS,
   meltOpacity,
-  pickRasterArtifact,
+  rasterForTime,
   resetNativeRegistry,
   syncGlaciers,
   syncRaster,
@@ -403,12 +403,13 @@ export function MapView() {
           ? ['spi3', 'cdi']
           : ['cdi']
         : ['tws_latest', 'gws_percentile']
-    const art = pickRasterArtifact(lm, names)
-    if (!art) return
+    const picked = rasterForTime(lm, names, m.base, st.time)
+    if (!picked) return
+    const { art, url } = picked
     const id = `${lon.toFixed(3)},${lat.toFixed(3)}`
     st.select({ layer, id, lon, lat })
     try {
-      const px = await samplePixel(artifactUrl(lm, art, m.base, st.time), lon, lat)
+      const px = await samplePixel(url, lon, lat)
       const cls = lm.legend.unit === 'class' ? classifyByLegend(px, lm.legend) : null
       const value = lm.legend.unit === 'class' ? null : valueByLegend(px, lm.legend)
       useRasterSamples.getState().set(id, {

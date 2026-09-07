@@ -52,13 +52,61 @@ export function pickRasterArtifact(
   return undefined
 }
 
+const MONTHLY = /^([a-z0-9]+)-(\d{4}-\d{2})(-tiles)?$/
+
+/**
+ * Layers with a monthly archive publish one artifact per month (`tws-2002-04`, `tws-2002-04-tiles`,
+ * …) next to their `*_latest` alias. For a past day this returns the newest month at or before it
+ * (or the earliest month when the day precedes the archive), matching the tiles/raster flavour of
+ * `name`; undefined when the layer has no monthly archive for that flavour.
+ */
+export function monthlyArtifact(
+  lm: LayerManifest | undefined,
+  name: string,
+  day: string,
+): Artifact | undefined {
+  if (!lm) return undefined
+  const tiles = name.endsWith('-tiles')
+  const prefix = name.replace(/-tiles$/, '').split('_')[0]
+  const month = day.slice(0, 7)
+  let best: { month: string; art: Artifact } | undefined
+  let earliest: { month: string; art: Artifact } | undefined
+  for (const art of lm.artifacts) {
+    const m = art.name ? MONTHLY.exec(art.name) : null
+    if (!m || m[1] !== prefix || !!m[3] !== tiles) continue
+    const am = m[2] as string
+    if (!earliest || am < earliest.month) earliest = { month: am, art }
+    if (am <= month && (!best || am > best.month)) best = { month: am, art }
+  }
+  return (best ?? earliest)?.art
+}
+
+/** The artifact to draw for `time`, and its URL: a monthly artifact for a past day, else the alias. */
+export function rasterForTime(
+  lm: LayerManifest | undefined,
+  names: string[],
+  base: string,
+  time: TimeState,
+): { art: Artifact; url: string } | undefined {
+  if (!lm) return undefined
+  if (time.mode === 'past') {
+    for (const n of names) {
+      const art = monthlyArtifact(lm, n, time.day)
+      // a monthly artifact already names its own version directory: no version swap
+      if (art) return { art, url: artifactUrl(lm, art, base) }
+    }
+  }
+  const art = pickRasterArtifact(lm, names)
+  return art ? { art, url: artifactUrl(lm, art, base, time) } : undefined
+}
+
 export function syncRaster(map: MlMap, spec: RasterSpec): void {
-  const art = spec.visible ? pickRasterArtifact(spec.lm, spec.names) : undefined
-  if (!art || !spec.lm) {
+  const picked = spec.visible ? rasterForTime(spec.lm, spec.names, spec.base, spec.time) : undefined
+  if (!picked || !spec.lm) {
     removeLayer(map, spec.id)
     return
   }
-  const url = artifactUrl(spec.lm, art, spec.base, spec.time)
+  const { art, url } = picked
   const signature = `${art.kind}:${url}`
   if (current.get(spec.id) !== signature) {
     removeLayer(map, spec.id)
