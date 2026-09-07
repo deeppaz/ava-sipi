@@ -26,6 +26,9 @@ NE_GLACIERS_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vecto
 RGI_NSIDC_BASE = (
     "https://daacdata.apps.nsidc.org/pub/DATASETS/nsidc0770_rgi_v7/regional_files/RGI2000-v7.0-G/"
 )
+#: More than this many unreadable RGI regions fails the run instead of publishing a hole.
+MAX_MISSING_REGIONS = 4
+
 RGI_REGION_FILES = {
     "01": "RGI2000-v7.0-G-01_alaska.zip",
     "02": "RGI2000-v7.0-G-02_western_canada_usa.zip",
@@ -96,7 +99,12 @@ REGION_BOXES: list[tuple[str, tuple[float, float, float, float]]] = [
 #: Notes this pipeline decides on its own; a rerun replaces them rather than
 #: inheriting a stale one from a sibling pipeline writing the same layer.
 OWNED_NOTES: frozenset[str] = frozenset(
-    {"glaciers.noMassBalance", "glaciers.sampleGeometry", "glaciers.noEarthdata"}
+    {
+        "glaciers.noMassBalance",
+        "glaciers.sampleGeometry",
+        "glaciers.noEarthdata",
+        "glaciers.partialOutlines",
+    }
 )
 
 
@@ -230,8 +238,11 @@ def sample_outlines(ne_fc: dict[str, Any], mwe: dict[str, float]) -> dict[str, A
 
 def run_full_outlines(
     cfg: PipelineConfig, fetcher: Fetcher, mwe: dict[str, float]
-) -> tuple[Path | None, dict[str, Any]]:
-    """Download the 19 RGI regional zips (Earthdata login) and build PMTiles + a > 5 km² GeoJSON."""
+) -> tuple[Path | None, dict[str, Any], list[str]]:
+    """Download the 19 RGI regional zips (Earthdata login) and build PMTiles + a > 5 km² GeoJSON.
+
+    Returns the tiles path, the large-glacier collection and the regions that could not be read.
+    """
     from pyogrio import read_dataframe
 
     from pipelines.groundwater_grace.earthdata import earthdata_download
@@ -244,16 +255,24 @@ def run_full_outlines(
     big_features: list[dict[str, Any]] = []
     import json
 
+    missing: list[str] = []
     with seq.open("w", encoding="utf-8") as fh:
         for region, fname in RGI_REGION_FILES.items():
             zp = cache / fname
-            if not zp.exists():
-                earthdata_download(
-                    RGI_NSIDC_BASE + fname, zp, cfg.earthdata_username, cfg.earthdata_password
-                )
-            with zipfile.ZipFile(zp) as z:
-                shp = next(n for n in z.namelist() if n.endswith(".shp"))
-                z.extractall(cache / fname[:-4])
+            try:
+                if not zp.exists():
+                    earthdata_download(
+                        RGI_NSIDC_BASE + fname, zp, cfg.earthdata_username, cfg.earthdata_password
+                    )
+                with zipfile.ZipFile(zp) as z:
+                    shp = next(n for n in z.namelist() if n.endswith(".shp"))
+                    z.extractall(cache / fname[:-4])
+            except (OSError, RuntimeError, zipfile.BadZipFile, StopIteration) as exc:
+                # One region must not cost the other eighteen; the manifest says which is missing.
+                log.warning("RGI region %s unavailable: %s", region, exc)
+                missing.append(region)
+                zp.unlink(missing_ok=True)
+                continue
             gdf = read_dataframe(
                 cache / fname[:-4] / shp, columns=["rgi_id", "glac_name", "o1region", "area_km2"]
             )
@@ -284,7 +303,9 @@ def run_full_outlines(
         )
     except TippecanoeMissingError:
         log.warning("tippecanoe missing: glacier PMTiles skipped")
-    return pm, {"type": "FeatureCollection", "features": big_features}
+    if len(missing) > MAX_MISSING_REGIONS:
+        raise FetchError(f"{len(missing)} RGI regions unavailable: {', '.join(missing)}")
+    return pm, {"type": "FeatureCollection", "features": big_features}, missing
 
 
 def run(cfg: PipelineConfig) -> LayerManifest:
@@ -328,8 +349,10 @@ def run(cfg: PipelineConfig) -> LayerManifest:
             attribution = SAMPLE_ATTRIBUTION
             notes.append("glaciers.sampleGeometry")
         else:
-            pm, fc = run_full_outlines(cfg, fetcher, mwe)
+            pm, fc, missing = run_full_outlines(cfg, fetcher, mwe)
             attribution = ATTRIBUTION
+            if missing:
+                notes.append("glaciers.partialOutlines")
     validate("glacier-collection", fc)
     p = write_json(tmp / "glaciers.geojson", fc)
     st = storage.put(p, layer, cfg.version, "glaciers.geojson", cache_seconds=86400)

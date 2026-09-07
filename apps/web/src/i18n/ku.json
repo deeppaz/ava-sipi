@@ -12,14 +12,12 @@
   "app.commandPalette": "Paleta fermanan",
   "app.loading": "Glok tê barkirin",
   "app.skipToMap": "Derbasî nexşeyê bibe",
-
   "time.live": "zindî",
   "time.past": "{date}",
   "time.forecast": "Pêşbînî · {days} roj şûnde",
   "time.slider": "Dem",
   "time.backToLive": "Vegere zindî",
   "time.noHistory": "Ji bo qatên vekirî dîrok tune",
-
   "layer.rivers.name": "çem",
   "layer.rivers.description": "Tora çeman ku bi debiya îro li gorî navîniya dirêj-dem diherike.",
   "layer.gauges.name": "stasyon",
@@ -38,7 +36,6 @@
   "layer.snow.description": "Berfa erdê (di v1.5 de tê).",
   "layer.tides.name": "medûcezr",
   "layer.tides.description": "Asta ava peravê (di v1.5 de tê).",
-
   "rail.toggle": "Qata {layer} {state}",
   "rail.on": "veke",
   "rail.off": "bigire",
@@ -48,7 +45,6 @@
   "badge.sample": "daneyên nimûne",
   "badge.forecast": "pêşbînî",
   "badge.live": "zindî",
-
   "panel.close": "Bigire",
   "panel.source": "Biçe çavkaniyê",
   "panel.share": "Vê dîmenê parve bike",
@@ -67,7 +63,6 @@
   "panel.attribution": "Çavkanî",
   "panel.license": "Lîsans",
   "panel.version": "Guhertoya daneyan {version}",
-
   "gauge.discharge": "Debî",
   "gauge.stage": "Ast",
   "gauge.percentile": "Persentîla {p}. ji bo vê mehê",
@@ -81,7 +76,6 @@
   "flood.minor": "lehiya biçûk",
   "flood.moderate": "lehiya navîn",
   "flood.major": "lehiya mezin",
-
   "river.title": "Beşa çem",
   "river.meanDischarge": "Navîniya dirêj-dem",
   "river.today": "Îro",
@@ -95,7 +89,6 @@
   "river.normal": "asayî",
   "river.high": "bilind",
   "river.flood": "lehî",
-
   "event.type.flood": "lehî",
   "event.type.drought": "hişkesalî",
   "event.type.cyclone": "bahoz",
@@ -108,7 +101,6 @@
   "event.country": "Welat",
   "event.list": "Bûyer, 30 rojên dawî",
   "event.none": "Bûyera çalak tune.",
-
   "reservoir.fill": "Tijîbûn (nîşaneya rûerdê)",
   "reservoir.area": "Rûerd",
   "reservoir.capacity": "Kapasîte (GRanD)",
@@ -116,18 +108,15 @@
   "reservoir.series": "Rûerdê sê salan",
   "reservoir.rising": "bilind dibe",
   "reservoir.falling": "kêm dibe",
-
   "glacier.area": "Rûerd",
   "glacier.region": "Herêm",
   "glacier.massBalance": "Hevsengiya girseyê ya herêmî",
   "glacier.perYear": "di salê de",
   "glacier.melting": "girse winda dike",
-
   "groundwater.title": "Anomaliya depokirina avê",
   "groundwater.value": "Anomalî",
   "groundwater.percentile": "Persentîla ava binerdê",
   "groundwater.series": "Anomaliya mehane ji 2002 ve",
-
   "drought.title": "Hişkesalî",
   "drought.class": "Pol",
   "drought.class.none": "hişkesalî tune",
@@ -137,7 +126,6 @@
   "drought.product.cdi": "Nîşandera Hişkesaliyê ya Hevgirtî",
   "drought.product.spi3": "SPI-3",
   "drought.change": "Guherîn li gorî ya berê",
-
   "note.reservoirs.proxy": "Tijîbûn ji rûerdê satelîtê tê texmînkirin, ne ji hecma pîvandî.",
   "note.groundwater.tws": "GRACE depokirina ava giştî dipîve; anomalî şiliya axê, ava binerdê û ava rûyê erdê dihewîne.",
   "note.events.window30d": "Bûyerên 30 rojên dawî.",
@@ -149,14 +137,13 @@
   "note.gauges.noStationNames": "Di vê wêneya demkî de navên stasyonan tune ne.",
   "note.glaciers.noMassBalance": "Daneyên hevsengiya girseyê nehatin bidestxistin.",
   "note.glaciers.sampleGeometry": "Sînorên nimûne (Natural Earth), ne envantera RGI.",
+  "note.glaciers.partialOutlines": "Vê mehê hin herêmên RGI nehatin daxistin; sînorên wan kêm in.",
   "note.drought.noSpi": "SPI-3 ji xizmeta çavkaniyê nayê wergirtin.",
   "note.groundwater.percentileFallback": "Persentîla ava binerdê ya heftane tê nîşandan (ji bo GRACE mascon têketina Earthdata tune).",
-
   "empty.gauges": "Li vê herêmê stasyona zindî tune. Ji bo debiya çeman qata çeman veke.",
   "error.source": "{source} ji {minutes} deqîqeyan ve bersiv nade. Nirxên dawî ji {time}.",
   "error.manifest": "Manîfesta daneyan nayê gihîştin. Nimûneya hundirîn tê nîşandan.",
   "error.webgl": "Ev gerok nikare glokê xêz bike (WebGL 2 pêwîst e).",
-
   "cmd.placeholder": "Ferman an cihekî binivîse…",
   "cmd.toggleLayer": "Qatê veke/bigire: {layer}",
   "cmd.goTo": "Biçe {place}",
@@ -173,7 +160,6 @@
   "cmd.section.stories": "Çîrok",
   "cmd.section.settings": "Mîheng",
   "cmd.section.actions": "Çalakî",
-
   "units.metric": "metrîk",
   "units.imperial": "împeryal",
   "lang.en": "English",
@@ -183,21 +169,18 @@
   "state.off": "girtî",
   "projection.globe": "glok",
   "projection.mercator": "rast",
-
   "story.start": "Dest pê bike",
   "story.next": "Ya din",
   "story.prev": "Ya berê",
   "story.exit": "Ji çîrokê derkeve",
   "story.step": "Gav {n} / {total}",
   "story.keys": "Bişkokên ← → an jî bişemitîne",
-
   "search.type.river": "çem",
   "search.type.gauge": "stasyon",
   "search.type.reservoir": "bendav",
   "search.type.glacier": "cemed",
   "search.type.event": "bûyer",
   "search.type.place": "cih",
-
   "legend.title": "Nîşane",
   "legend.ratio": "herikîn / navîniya dirêj-dem",
   "legend.percentile": "persentîl",
@@ -207,17 +190,14 @@
   "legend.class": "pol",
   "legend.m w.e./yr": "m hevbera avê di salê de",
   "legend.patterns": "Nîşane ji bo korrengiyê: xalxalî zirav = pir kêm, birrî = kêm, rast = asayî, stûr = bilind, lêdan = lehî.",
-
   "embed.copied": "Koda embed hat kopîkirin",
   "screenshot.saved": "Wêneya ekranê hat tomarkirin",
   "clipboard.failed": "Nehat kopîkirin. Girêdanê bi destan hilbijêre.",
-
   "a11y.rail": "Qatên daneyan",
   "a11y.timeline": "Xeta demê",
   "a11y.panel": "Hûrgilî",
   "a11y.globe": "Glok. Bi bişkokên tîran bişemitîne, bi zêde û kêm nêzîk bike.",
   "a11y.fps": "Ji bo ku glok nerm bimîne tîrbûn hat kêmkirin",
-
   "stories.euphrates-tigris.title": "Firat û Dîcle",
   "stories.euphrates-tigris.subtitle": "Ji çiyayên Anatoliyayê heta Şettularabê",
   "stories.euphrates-tigris.step.1": "Du çem li bilindahiyên Anatoliyaya Rojhilat, di navbera sed kîlometreyan de, ji hev nêzîk derdikevin. Ava berfa wan deh hezar salan e Mezopotamyayê xwedî dike.",
@@ -225,14 +205,12 @@
   "stories.euphrates-tigris.step.3": "Li jêr, Firat di piraniya salan de bi beşeke biçûk a navîniya xwe ya dirêj-dem diherike. Herikîna modelkirî ya îro li hember navîniyê tê nîşandan.",
   "stories.euphrates-tigris.step.4": "Satelîtên GRACE di navbera 2003 û 2009an de li vê hewzeyê yek ji lezgîntirîn kêmbûnên ava binerdê ya cîhanê pîva: nêzîkî 144 km³ ava depokirî winda bû.",
   "stories.euphrates-tigris.step.5": "Li Şettularabê her du çem beriya Kendavê digihîjin hev. Di havînên hişk de ava şor niha heta dûr li jor diçe.",
-
   "stories.aral.title": "Gola Aralê",
   "stories.aral.subtitle": "Bîst salên biçûkbûnê, ji fezayê hatiye dîtin",
   "stories.aral.step.1": "Di 1960î de Gola Aralê çaremîn gola herî mezin a cîhanê bû. Avdana hewzeyên Amûderya û Sîrderyayê ketina avê kir dilopek.",
   "stories.aral.step.2": "GRACE ji 2002 ve depokirina ava herêmê dişopîne. Di demê de vegere paş û bibîne ka anomalî çawa kûr dibe.",
   "stories.aral.step.3": "Bendava Kok-Aral (2005) gola biçûk a bakur aram kir; hewzeya rojhilat di 2014an de bi tevahî hişk bû.",
   "stories.aral.step.4": "Bendavên jor ên wekî Toktogul niha ava ku carekê digihîşt golê digirin.",
-
   "stories.colorado.title": "Colorado",
   "stories.colorado.subtitle": "Gola Mead, Gola Powell û çemekî ku kêm caran digihîje deryayê",
   "stories.colorado.step.1": "Colorado ji çil mîlyon mirovan re avê dide. Herikîna wî bi peymaneke 1922an hatiye dabeşkirin ku li ser salên bi awayekî neasayî şil hatiye avakirin.",
@@ -240,7 +218,6 @@
   "stories.colorado.step.3": "Gola Powell, li jor, eyaletên Hewzeya Jorîn diparêze. Nîşaneya tijîbûna wê li gorî sê salên dawî tê nîşandan.",
   "stories.colorado.step.4": "Qata hişkesaliyê Nîşandera Hişkesaliyê ya Hevgirtî ya Copernicus li seranserê hewzeyê nîşan dide, her deh rojan tê nûkirin.",
   "stories.colorado.step.5": "Li deltayê çem bi gelemperî beriya ku bigihîje Kendava Kalîforniyayê di nav qûmê de diqede.",
-
   "stories.alps.title": "Cemedên Alpan",
   "stories.alps.subtitle": "Qeşaya herî zû paşve diçe di envanterê de",
   "stories.alps.step.1": "Ewropaya Navîn ji 2000 ve bi qasî sêyeka hecma cemedên xwe winda kiriye. WGMS her sal hevsengiya herêmî radigihîne.",

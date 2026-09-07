@@ -16,6 +16,7 @@ from pathlib import Path
 
 from common.config import DATA_DIR, MANIFESTS_DIR, PipelineConfig
 from common.manifest import (
+    STALE_AFTER_FAILURES,
     mark_failure,
     read_layer_manifest,
     write_layer_manifest,
@@ -70,7 +71,11 @@ def cmd_run(args: argparse.Namespace) -> int:
                 failures,
                 traceback.format_exc(),
             )
-            exit_code = 1
+            # A single upstream hiccup is recorded in the manifest and the layer keeps its previous
+            # artifacts (spec §2.1). The job goes red only once the layer is actually stale, so a
+            # 504 from one API does not page anyone.
+            if failures >= STALE_AFTER_FAILURES:
+                exit_code = 1
     write_root_manifest(manifests_dir)
     return exit_code
 

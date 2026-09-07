@@ -12,14 +12,12 @@
   "app.commandPalette": "Komut paleti",
   "app.loading": "Küre yükleniyor",
   "app.skipToMap": "Haritaya geç",
-
   "time.live": "canlı",
   "time.past": "{date}",
   "time.forecast": "Tahmin · {days} gün sonrası",
   "time.slider": "Zaman",
   "time.backToLive": "Canlıya dön",
   "time.noHistory": "Açık katmanlar için geçmiş yok",
-
   "layer.rivers.name": "nehirler",
   "layer.rivers.description": "Bugünkü debisi uzun dönem ortalamasına göre akan nehir ağı.",
   "layer.gauges.name": "istasyonlar",
@@ -38,7 +36,6 @@
   "layer.snow.description": "Kar örtüsü (v1.5 ile gelecek).",
   "layer.tides.name": "gelgit",
   "layer.tides.description": "Kıyı su seviyesi (v1.5 ile gelecek).",
-
   "rail.toggle": "{layer} katmanını {state}",
   "rail.on": "aç",
   "rail.off": "kapat",
@@ -48,7 +45,6 @@
   "badge.sample": "örnek veri",
   "badge.forecast": "tahmin",
   "badge.live": "canlı",
-
   "panel.close": "Kapat",
   "panel.source": "Kaynağa git",
   "panel.share": "Bu görünümü paylaş",
@@ -67,7 +63,6 @@
   "panel.attribution": "Kaynak",
   "panel.license": "Lisans",
   "panel.version": "Veri sürümü {version}",
-
   "gauge.discharge": "Debi",
   "gauge.stage": "Seviye",
   "gauge.percentile": "Bu ay için {p}. yüzdelik",
@@ -81,7 +76,6 @@
   "flood.minor": "küçük taşkın",
   "flood.moderate": "orta taşkın",
   "flood.major": "büyük taşkın",
-
   "river.title": "Nehir kolu",
   "river.meanDischarge": "Uzun dönem ortalama",
   "river.today": "Bugün",
@@ -95,7 +89,6 @@
   "river.normal": "normal",
   "river.high": "yüksek",
   "river.flood": "sel",
-
   "event.type.flood": "sel",
   "event.type.drought": "kuraklık",
   "event.type.cyclone": "kasırga",
@@ -108,7 +101,6 @@
   "event.country": "Ülke",
   "event.list": "Olaylar, son 30 gün",
   "event.none": "Aktif olay yok.",
-
   "reservoir.fill": "Doluluk (yüzey alanı vekili)",
   "reservoir.area": "Yüzey alanı",
   "reservoir.capacity": "Kapasite (GRanD)",
@@ -116,18 +108,15 @@
   "reservoir.series": "Üç yıllık yüzey alanı",
   "reservoir.rising": "yükseliyor",
   "reservoir.falling": "düşüyor",
-
   "glacier.area": "Alan",
   "glacier.region": "Bölge",
   "glacier.massBalance": "Bölgesel kütle dengesi",
   "glacier.perYear": "yılda",
   "glacier.melting": "kütle kaybediyor",
-
   "groundwater.title": "Su depolama anomalisi",
   "groundwater.value": "Anomali",
   "groundwater.percentile": "Yeraltı suyu yüzdeliği",
   "groundwater.series": "2002'den beri aylık anomali",
-
   "drought.title": "Kuraklık",
   "drought.class": "Sınıf",
   "drought.class.none": "kuraklık yok",
@@ -137,7 +126,6 @@
   "drought.product.cdi": "Birleşik Kuraklık Göstergesi",
   "drought.product.spi3": "SPI-3",
   "drought.change": "Öncekine göre değişim",
-
   "note.reservoirs.proxy": "Doluluk, ölçülen hacimden değil uydu yüzey alanından tahmin edilir.",
   "note.groundwater.tws": "GRACE toplam su depolamasını ölçer; anomali toprak nemi, yeraltı suyu ve yüzey suyunu içerir.",
   "note.events.window30d": "Son 30 günün olayları.",
@@ -149,14 +137,13 @@
   "note.gauges.noStationNames": "Bu anlık görüntüde istasyon adları yok.",
   "note.glaciers.noMassBalance": "Kütle dengesi verisine ulaşılamadı.",
   "note.glaciers.sampleGeometry": "Örnek sınırlar (Natural Earth), RGI envanteri değil.",
+  "note.glaciers.partialOutlines": "Bu ay bazı RGI bölgeleri indirilemedi; o bölgelerin sınırları eksik.",
   "note.drought.noSpi": "SPI-3 kaynak servisten alınamıyor.",
   "note.groundwater.percentileFallback": "Haftalık yeraltı suyu yüzdeliği gösteriliyor (GRACE mascon için Earthdata girişi yok).",
-
   "empty.gauges": "Bu bölgede canlı istasyon yok. Nehir debisi için nehirler katmanını aç.",
   "error.source": "{source} {minutes} dakikadır yanıt vermiyor. Son değerler {time}'den.",
   "error.manifest": "Veri manifestine ulaşılamıyor. Yerleşik örnek gösteriliyor.",
   "error.webgl": "Bu tarayıcı küreyi çizemiyor (WebGL 2 gerekli).",
-
   "cmd.placeholder": "Komut ya da yer yaz…",
   "cmd.toggleLayer": "Katman aç/kapa: {layer}",
   "cmd.goTo": "{place} konumuna git",
@@ -173,7 +160,6 @@
   "cmd.section.stories": "Hikayeler",
   "cmd.section.settings": "Ayarlar",
   "cmd.section.actions": "Eylemler",
-
   "units.metric": "metrik",
   "units.imperial": "imperial",
   "lang.en": "English",
@@ -183,21 +169,18 @@
   "state.off": "kapalı",
   "projection.globe": "küre",
   "projection.mercator": "düz",
-
   "story.start": "Başlat",
   "story.next": "Sonraki",
   "story.prev": "Önceki",
   "story.exit": "Hikayeden çık",
   "story.step": "Adım {n} / {total}",
   "story.keys": "← → tuşları ya da kaydırma",
-
   "search.type.river": "nehir",
   "search.type.gauge": "istasyon",
   "search.type.reservoir": "baraj",
   "search.type.glacier": "buzul",
   "search.type.event": "olay",
   "search.type.place": "yer",
-
   "legend.title": "Gösterge",
   "legend.ratio": "akış / uzun dönem ortalama",
   "legend.percentile": "yüzdelik",
@@ -207,17 +190,14 @@
   "legend.class": "sınıf",
   "legend.m w.e./yr": "yılda m su eşdeğeri",
   "legend.patterns": "Renk körlüğü için desenler: ince noktalı = çok düşük, kesikli = düşük, düz = normal, kalın = yüksek, nabız = sel.",
-
   "embed.copied": "Embed kodu kopyalandı",
   "screenshot.saved": "Ekran görüntüsü kaydedildi",
   "clipboard.failed": "Kopyalanamadı. Bağlantıyı elle seçin.",
-
   "a11y.rail": "Veri katmanları",
   "a11y.timeline": "Zaman çizelgesi",
   "a11y.panel": "Ayrıntılar",
   "a11y.globe": "Küre. Ok tuşlarıyla kaydır, artı ve eksi ile yakınlaştır.",
   "a11y.fps": "Küre akıcı kalsın diye yoğunluk düşürüldü",
-
   "stories.euphrates-tigris.title": "Fırat ve Dicle",
   "stories.euphrates-tigris.subtitle": "Anadolu dağlarından Şattülarap'a",
   "stories.euphrates-tigris.step.1": "İki nehir Doğu Anadolu yaylalarında birbirine yüz kilometre mesafede doğar. Kar suları on bin yıldır Mezopotamya'yı besliyor.",
@@ -225,14 +205,12 @@
   "stories.euphrates-tigris.step.3": "Aşağı havzada Fırat çoğu yıl uzun dönem ortalamasının küçük bir kesrinde akıyor. Bugünkü model akışı ortalamayla karşılaştırmalı gösteriliyor.",
   "stories.euphrates-tigris.step.4": "GRACE uyduları 2003–2009 arasında bu havzada dünyanın en hızlı yeraltı suyu kayıplarından birini ölçtü: yaklaşık 144 km³ depolanmış su.",
   "stories.euphrates-tigris.step.5": "Şattülarap'ta iki nehir Körfez'den önce birleşir. Kurak yazlarda tuzlu su artık çok yukarılara kadar giriyor.",
-
   "stories.aral.title": "Aral Gölü",
   "stories.aral.subtitle": "Yörüngeden izlenen yirmi yıllık küçülme",
   "stories.aral.step.1": "1960'ta Aral dünyanın dördüncü büyük gölüydü. Amuderya ve Siriderya havzalarındaki sulama girişini bir sızıntıya indirdi.",
   "stories.aral.step.2": "GRACE bölgenin su depolamasını 2002'den beri izliyor. Anomalinin derinleşmesini izlemek için zamanda geri kaydırın.",
   "stories.aral.step.3": "Kokaral seddi (2005) küçük kuzey gölünü sabitledi; doğu havzası 2014'te tamamen kurudu.",
   "stories.aral.step.4": "Toktogul gibi yukarı havza barajları bir zamanlar göle ulaşan suyu artık tutuyor.",
-
   "stories.colorado.title": "Colorado",
   "stories.colorado.subtitle": "Mead, Powell ve denize nadiren ulaşan bir nehir",
   "stories.colorado.step.1": "Colorado kırk milyon insana su sağlıyor. Akışı, alışılmadık ölçüde yağışlı yıllara dayanan 1922 tarihli bir anlaşmayla paylaştırılmış.",
@@ -240,7 +218,6 @@
   "stories.colorado.step.3": "Yukarıdaki Powell Gölü Yukarı Havza eyaletlerini tamponluyor. Doluluk vekili son üç yıla göre gösteriliyor.",
   "stories.colorado.step.4": "Kuraklık katmanı havza genelinde Copernicus Birleşik Kuraklık Göstergesini gösteriyor, on günde bir yenileniyor.",
   "stories.colorado.step.5": "Deltada nehir çoğunlukla Kaliforniya Körfezi'ne ulaşamadan kumda biter.",
-
   "stories.alps.title": "Alp buzulları",
   "stories.alps.subtitle": "Envanterin en hızlı gerileyen buzu",
   "stories.alps.step.1": "Orta Avrupa 2000'den beri buzul hacminin kabaca üçte birini kaybetti. WGMS bölgesel dengeyi her yıl raporluyor.",

@@ -8,6 +8,7 @@ let the session cookie carry us back.
 from __future__ import annotations
 
 import logging
+import time
 from pathlib import Path
 
 import httpx
@@ -17,8 +18,40 @@ URS_HOST = "urs.earthdata.nasa.gov"
 
 
 def earthdata_download(
-    url: str, dest: Path, username: str, password: str, timeout: float = 600.0
+    url: str,
+    dest: Path,
+    username: str,
+    password: str,
+    timeout: float = 600.0,
+    attempts: int = 4,
 ) -> Path:
+    """Download with the URS dance, retrying transient network failures.
+
+    One run lost 18 downloaded RGI regions to a single `Network is unreachable` on the 19th.
+    """
+    last: Exception | None = None
+    for attempt in range(1, attempts + 1):
+        try:
+            return _download_once(url, dest, username, password, timeout)
+        except (httpx.TransportError, httpx.HTTPStatusError) as exc:
+            status = getattr(getattr(exc, "response", None), "status_code", None)
+            if status is not None and status < 500:
+                raise
+            last = exc
+            wait = min(60, 5 * 2 ** (attempt - 1))
+            log.warning(
+                "%s: attempt %d/%d failed (%s); retrying in %ds",
+                dest.name,
+                attempt,
+                attempts,
+                exc,
+                wait,
+            )
+            time.sleep(wait)
+    raise RuntimeError(f"giving up on {url}") from last
+
+
+def _download_once(url: str, dest: Path, username: str, password: str, timeout: float) -> Path:
     dest.parent.mkdir(parents=True, exist_ok=True)
     with httpx.Client(timeout=timeout, follow_redirects=False) as client:
         current = url
