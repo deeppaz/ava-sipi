@@ -63,13 +63,19 @@ jobs:
           # Layer manifests are owned by the pipeline that wrote them and the root manifest is
           # derived, so a concurrent commit is resolved by regenerating, never by merging: take
           # main, drop this run's layer files on top, rebuild manifest.json, commit, push.
+          # Only the layer files this run actually rewrote travel to main. Copying every file
+          # would carry this checkout's (possibly older) copies of the other layers over newer
+          # commits made while the run was going — that rolled the GRACE layer back once.
           mkdir -p /tmp/run-manifests
-          cp ../data/manifests/*.json /tmp/run-manifests/
+          for f in $(git diff --name-only -- ../data/manifests | grep -v '/manifest\.json$' || true); do
+            cp "../$f" /tmp/run-manifests/ 2>/dev/null || cp "$f" /tmp/run-manifests/
+          done
+          ls /tmp/run-manifests
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --hard origin/main
             for f in /tmp/run-manifests/*.json; do
-              [ "$(basename "$f")" = "manifest.json" ] && continue
+              [ -e "$f" ] || continue
               cp "$f" ../data/manifests/
             done
             uv run python cli.py root

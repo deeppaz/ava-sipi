@@ -161,3 +161,27 @@ def test_stale_badge_only_after_three_failures(tmp_path: Path):
     mark_failure("gauges", tmp_path)
     assert mark_failure("gauges", tmp_path) == 3
     assert json.loads((tmp_path / "gauges.json").read_text(encoding="utf-8"))["stale"] is True
+
+
+def test_publish_keeps_the_newer_layer_from_either_side():
+    from publish import newest_per_layer
+
+    local = {
+        "generatedAt": "x",
+        "layers": {
+            "groundwater": {"version": "20260902T2204", "sample": True},
+            "gauges": {"version": "20260907T1111", "sample": False},
+        },
+    }
+    published = {
+        "layers": {
+            "groundwater": {"version": "20260907T1038", "sample": False},
+            "gauges": {"version": "20260907T0843", "sample": False},
+            "glaciers": {"version": "20260907T1141", "sample": False},
+        }
+    }
+    out = newest_per_layer(local, published)
+    assert out["layers"]["groundwater"]["version"] == "20260907T1038"  # stale checkout loses
+    assert out["layers"]["gauges"]["version"] == "20260907T1111"  # this run's newer file wins
+    assert "glaciers" in out["layers"]  # a layer this checkout never had is kept
+    assert newest_per_layer(local, None) is local
