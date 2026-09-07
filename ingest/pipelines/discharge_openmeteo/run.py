@@ -35,8 +35,11 @@ FORECAST_DAYS = 7
 BATCHES_PER_MINUTE = int(os.environ.get("OPENMETEO_BATCHES_PER_MINUTE", "5"))
 #: Hard cap on points per run; the unit budget below is what normally limits a run.
 DAILY_POINT_LIMIT = int(os.environ.get("OPENMETEO_POINT_LIMIT", "5000"))
-#: Locations queried per run (one location over ~9 days ≈ one unit of the free plan's 10 000/day).
-UNIT_BUDGET = int(os.environ.get("OPENMETEO_UNIT_BUDGET", "9000"))
+#: Locations queried per run: one location over ~9 days ≈ one unit. The free plan allows 10 000 a
+#: day but also 5 000 an hour, and a run finishes well inside an hour, so the hourly cap is the
+#: binding one (batches 68–70 of a 9 000-unit run came back 429). With OPEN_METEO_API_KEY set the
+#: limits are far higher and the budget can be raised through this variable.
+UNIT_BUDGET = int(os.environ.get("OPENMETEO_UNIT_BUDGET", "4500"))
 RATIO_CAP = 12.0
 
 # GloFAS v4 is a 0.05° grid and Open-Meteo answers for the nearest cell. A river centreline's

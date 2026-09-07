@@ -103,7 +103,8 @@ code path the CI uses natively.
   12). An uncalibrated point is probed at its own cell and the four neighbours, the largest
   answer is taken as the channel and the offset is kept in `rivers/latest/cells.json`, restored
   each run, so later runs pay one location per point. Runs are bounded by a unit budget
-  (`OPENMETEO_UNIT_BUDGET`, 9 000) rather than a point count; the spine is always first.
+  (`OPENMETEO_UNIT_BUDGET`, 4 500: the free plan's 5 000-an-hour cap binds before its
+  10 000-a-day one) rather than a point count; the spine is always first.
 - **Manifests are committed by regeneration, never merged.** Layer manifests are owned by the
   pipeline that wrote them and `manifest.json` is derived from them, so the bot takes `main`,
   drops the run's layer files on top, rebuilds the root and pushes. The earlier rebase-and-retry
