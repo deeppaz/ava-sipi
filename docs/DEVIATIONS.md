@@ -98,6 +98,24 @@ code path the CI uses natively.
   first. The earlier "30 000 largest reaches" were thousands of short segments of a handful of
   giant rivers, and only 10 of 909 spine reaches ever got a ratio. A GloFAS value of 0 means the
   grid cell is off the routed network and is treated as missing, not as a dry river.
+- **GloFAS channel cells.** Open-Meteo answers for the nearest 0.05° cell and a centreline
+  midpoint is often one cell off the routed channel (the Mississippi read 0.3 m³/s, the Yangtze
+  12). An uncalibrated point is probed at its own cell and the four neighbours, the largest
+  answer is taken as the channel and the offset is kept in `rivers/latest/cells.json`, restored
+  each run, so later runs pay one location per point. Runs are bounded by a unit budget
+  (`OPENMETEO_UNIT_BUDGET`, 9 000) rather than a point count; the spine is always first.
+- **Manifests are committed by regeneration, never merged.** Layer manifests are owned by the
+  pipeline that wrote them and `manifest.json` is derived from them, so the bot takes `main`,
+  drops the run's layer files on top, rebuilds the root and pushes. The earlier rebase-and-retry
+  got stuck on conflicts, and a lost commit was not cosmetic: `publish.py` rebuilds the root
+  manifest from the committed layer files, so a failed monthly commit silently reverted the real
+  GRACE layer to the sample on the next run.
+- A pipeline failure reddens the job only when the layer becomes stale (3 consecutive failures);
+  a single 504 is recorded in the manifest, the layer keeps its previous artifacts and nobody is
+  paged.
+- GitHub runs the 15-minute `ingest-live` schedule far less often than asked on this repository
+  (7–10 runs a day were observed instead of 96). The UI shows the age of every reading; a
+  self-hosted runner or an external trigger would restore the cadence.
 - GDACS answers slowly at times; an event type that times out is dropped for that run instead of
   failing the whole live job, and the workflows publish and commit manifests even when one
   pipeline failed (`cli.py` records the failure in the manifest).

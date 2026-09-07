@@ -72,6 +72,13 @@ job would silently lose station names, percentiles and flood categories, and the
 job would have no river points. A 404 is not an error — it just means that pipeline has not run yet,
 and the layer reports the gap through a manifest note.
 
+## Manifests are committed by regeneration
+
+`data/manifests/<layer>.json` is owned by the pipeline that wrote it; `manifest.json` is derived.
+After a run the bot fetches `main`, resets to it, copies the run's layer files on top, runs
+`cli.py root` and pushes — no merge, no conflict. `publish.py` in turn builds the root manifest it
+uploads from the committed layer files, which is why a lost commit would roll a layer back.
+
 ## Manifest notes are owned
 
 Several pipelines write one layer (`discharge_openmeteo` and `rivers` both write `rivers`). When a
