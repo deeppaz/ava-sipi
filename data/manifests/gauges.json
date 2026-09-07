@@ -16,18 +16,6 @@
       "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json",
       "bytes": 3007223,
       "name": "noaa"
-    },
-    {
-      "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T0843/stats.json",
-      "bytes": 165343,
-      "name": "stats"
-    },
-    {
-      "kind": "parquet",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T0842/stations.parquet",
-      "bytes": 6188762,
-      "name": "stations"
     }
   ],
   "attribution": {
@@ -132,5 +120,7 @@
     "20260903T0017",
     "20260902T2309"
   ],
-  "notes": []
+  "notes": [
+    "gauges.noPercentiles"
+  ]
 }
