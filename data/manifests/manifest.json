@@ -1,1 +1,2152 @@
-{"generatedAt":"2026-09-07T14:14:10Z","layers":{"rivers":{"id":"rivers","version":"20260907T1034","generatedAt":"2026-09-07T10:34:36Z","sourceUpdatedAt":"2026-09-07T00:00:00Z","stale":false,"artifacts":[{"kind":"json","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260907T1034/cells.json","bytes":59507,"name":"cells"},{"kind":"parquet","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260907T1034/20260907.parquet","bytes":60455,"name":"discharge"},{"kind":"json","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260907T1034/20260907.json","bytes":173169,"name":"discharge-json"},{"kind":"geojson","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1315/spine.geojson","bytes":874820,"name":"spine"},{"kind":"json","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1315/points.json","bytes":1116418,"name":"points"},{"kind":"pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1143/rivers.pmtiles","bytes":333863880,"name":"network"}],"attribution":{"name":"Open-Meteo Flood API (Copernicus GloFAS v4) · HydroRIVERS mean discharge","url":"https://open-meteo.com/en/docs/flood-api","license":"CC BY 4.0 (Open-Meteo) · GloFAS: Copernicus licence"},"coverage":"global","failures":0,"sample":false,"versions":["20260907T1034","20260907T0831","20260906T0801","20260905T0746","20260904T0806","20260903T1315","20260903T1247","20260903T1143","20260903T0036","20260902T1604"],"notes":["rivers.ratioSource"]},"gauges":{"id":"gauges","version":"20260907T1111","generatedAt":"2026-09-07T11:11:35Z","sourceUpdatedAt":"2026-09-07T13:00:00Z","stale":false,"artifacts":[{"kind":"json","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T1111/latest.json","bytes":3173187,"name":"latest"},{"kind":"json","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T1111/stats.json","bytes":1045612,"name":"stats"},{"kind":"json","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json","bytes":3007223,"name":"noaa"},{"kind":"parquet","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T1111/stations.parquet","bytes":6188762,"name":"stations"}],"attribution":{"name":"U.S. Geological Survey Water Data for the Nation","url":"https://waterdata.usgs.gov","license":"U.S. public domain"},"coverage":"regional","legend":{"unit":"percentile","stops":[{"value":0,"color":"#C8873A","label":"< 10"},{"value":10,"color":"#D9A45B","label":"10–25"},{"value":25,"color":"#7FB8D6","label":"25–75"},{"value":75,"color":"#35E0E0","label":"75–90"},{"value":90,"color":"#EAF4F8","label":"> 90"}]},"bbox":[-163.67756,13.30694,144.73614,70.28138],"failures":0,"sample":false,"versions":["20260907T1111","20260907T1005","20260907T0454","20260907T0453","20260907T0014","20260906T2224","20260906T2043","20260906T2042","20260906T1822","20260906T1820","20260906T1608","20260906T1248","20260906T1245","20260906T0848","20260906T0847","20260906T0419","20260906T0416","20260905T2356","20260905T2211","20260905T2210","20260905T2024","20260905T1808","20260905T1807","20260905T1557","20260905T1556","20260905T1258","20260905T1257","20260905T0917","20260905T0916","20260905T0528","20260905T0051","20260905T0050","20260904T2258","20260904T2057","20260904T1819","20260904T1818","20260904T1502","20260904T1109","20260904T1106","20260904T0557","20260904T0556","20260904T0103","20260903T2310","20260903T2309","20260903T2056","20260903T2055","20260903T1759","20260903T1758","20260903T1419","20260903T1417","20260903T0509","20260903T0508","20260903T0036","20260903T0034","20260903T0018","20260903T0017","20260902T2309"],"notes":[]},"events":{"id":"events","version":"20260907T1005","generatedAt":"2026-09-07T10:05:22Z","sourceUpdatedAt":"2026-09-07T09:58:06Z","stale":false,"artifacts":[{"kind":"geojson","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260907T1005/current.geojson","bytes":90525,"name":"current"}],"attribution":{"name":"GDACS — Global Disaster Alert and Coordination System (EC JRC / UN OCHA)","url":"https://www.gdacs.org","license":"Free use with attribution (GDACS terms of use)"},"coverage":"global","bbox":[-179.2,-45.0322,170.2,57.1915],"failures":0,"sample":false,"versions":["20260907T1005","20260907T0454","20260907T0015","20260906T2225","20260906T2043","20260906T1822","20260906T1608","20260906T1248","20260906T0848","20260906T0419","20260905T2357","20260905T2211","20260905T2025","20260905T1809","20260905T1258","20260905T0917","20260905T0528","20260905T0051","20260904T2259","20260904T2058","20260904T1819","20260904T1502","20260904T1109","20260904T0557","20260904T0103","20260903T2310","20260903T2056","20260903T1759","20260903T1419","20260903T0509","20260903T0036","20260903T0018","20260902T1604"],"notes":["events.window30d"]},"reservoirs":{"id":"reservoirs","version":"20260907T1300","generatedAt":"2026-09-07T13:00:01Z","sourceUpdatedAt":"2026-08-01T00:00:00Z","stale":false,"artifacts":[{"kind":"json","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/reservoirs/20260907T1300/latest.json","bytes":983997,"name":"latest"}],"attribution":{"name":"Global Water Watch (Deltares, World Resources Institute, WWF) · GRanD","url":"https://www.globalwaterwatch.earth","license":"CC BY 4.0"},"coverage":"global","legend":{"unit":"%","stops":[{"value":0,"color":"#7A4A1C","label":"0"},{"value":40,"color":"#C8873A","label":"40"},{"value":70,"color":"#7FB8D6","label":"70"},{"value":100,"color":"#EAF4F8","label":"100"}]},"failures":0,"sample":false,"versions":["20260907T1300","20260902T1604"],"notes":["reservoirs.proxy","reservoirs.partialList"]},"groundwater":{"id":"groundwater","version":"20260907T1038","generatedAt":"2026-09-07T10:38:13Z","sourceUpdatedAt":"2026-06-01T00:00:00Z","stale":false,"artifacts":[{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200204.pmtiles","bytes":2148770,"name":"tws-2002-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200205.pmtiles","bytes":2173458,"name":"tws-2002-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200208.pmtiles","bytes":2423398,"name":"tws-2002-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200209.pmtiles","bytes":2460961,"name":"tws-2002-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200210.pmtiles","bytes":2473708,"name":"tws-2002-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200211.pmtiles","bytes":2326072,"name":"tws-2002-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200212.pmtiles","bytes":2322300,"name":"tws-2002-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200301.pmtiles","bytes":2216074,"name":"tws-2003-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200302.pmtiles","bytes":2155677,"name":"tws-2003-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200303.pmtiles","bytes":2189222,"name":"tws-2003-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200304.pmtiles","bytes":2175031,"name":"tws-2003-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200305.pmtiles","bytes":2217039,"name":"tws-2003-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200307.pmtiles","bytes":2355372,"name":"tws-2003-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200308.pmtiles","bytes":2534775,"name":"tws-2003-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200309.pmtiles","bytes":2553780,"name":"tws-2003-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200310.pmtiles","bytes":2584247,"name":"tws-2003-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200311.pmtiles","bytes":2384697,"name":"tws-2003-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200312.pmtiles","bytes":2113282,"name":"tws-2003-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200401.pmtiles","bytes":2040525,"name":"tws-2004-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200402.pmtiles","bytes":2015008,"name":"tws-2004-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200403.pmtiles","bytes":2061350,"name":"tws-2004-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200404.pmtiles","bytes":2092513,"name":"tws-2004-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200405.pmtiles","bytes":2053362,"name":"tws-2004-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200406.pmtiles","bytes":2034071,"name":"tws-2004-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200407.pmtiles","bytes":2164332,"name":"tws-2004-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200408.pmtiles","bytes":2358792,"name":"tws-2004-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200409.pmtiles","bytes":2390983,"name":"tws-2004-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200410.pmtiles","bytes":2429299,"name":"tws-2004-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200411.pmtiles","bytes":2018248,"name":"tws-2004-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200412.pmtiles","bytes":1874615,"name":"tws-2004-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200501.pmtiles","bytes":1932092,"name":"tws-2005-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200502.pmtiles","bytes":2045318,"name":"tws-2005-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200503.pmtiles","bytes":2087384,"name":"tws-2005-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200504.pmtiles","bytes":2083915,"name":"tws-2005-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200505.pmtiles","bytes":2081139,"name":"tws-2005-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200506.pmtiles","bytes":1992075,"name":"tws-2005-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200507.pmtiles","bytes":2161882,"name":"tws-2005-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200508.pmtiles","bytes":2276806,"name":"tws-2005-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200509.pmtiles","bytes":2334302,"name":"tws-2005-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200510.pmtiles","bytes":2273761,"name":"tws-2005-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200511.pmtiles","bytes":2092114,"name":"tws-2005-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200512.pmtiles","bytes":1816738,"name":"tws-2005-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200601.pmtiles","bytes":1873024,"name":"tws-2006-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200602.pmtiles","bytes":1898190,"name":"tws-2006-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200603.pmtiles","bytes":1999421,"name":"tws-2006-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200604.pmtiles","bytes":2011946,"name":"tws-2006-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200605.pmtiles","bytes":2003988,"name":"tws-2006-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200606.pmtiles","bytes":1996404,"name":"tws-2006-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200607.pmtiles","bytes":2239279,"name":"tws-2006-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200608.pmtiles","bytes":2353819,"name":"tws-2006-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200609.pmtiles","bytes":2402730,"name":"tws-2006-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200610.pmtiles","bytes":2448279,"name":"tws-2006-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200611.pmtiles","bytes":2261715,"name":"tws-2006-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200612.pmtiles","bytes":1932606,"name":"tws-2006-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200701.pmtiles","bytes":1843675,"name":"tws-2007-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200702.pmtiles","bytes":1958881,"name":"tws-2007-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200703.pmtiles","bytes":1966739,"name":"tws-2007-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200704.pmtiles","bytes":2027375,"name":"tws-2007-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200705.pmtiles","bytes":2061759,"name":"tws-2007-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200706.pmtiles","bytes":2045960,"name":"tws-2007-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200707.pmtiles","bytes":2242892,"name":"tws-2007-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200708.pmtiles","bytes":2347271,"name":"tws-2007-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200709.pmtiles","bytes":2443451,"name":"tws-2007-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200710.pmtiles","bytes":2505472,"name":"tws-2007-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200711.pmtiles","bytes":2354492,"name":"tws-2007-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200712.pmtiles","bytes":2106660,"name":"tws-2007-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200801.pmtiles","bytes":1989852,"name":"tws-2008-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200802.pmtiles","bytes":2055066,"name":"tws-2008-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200803.pmtiles","bytes":2104874,"name":"tws-2008-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200804.pmtiles","bytes":2108430,"name":"tws-2008-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200805.pmtiles","bytes":2124034,"name":"tws-2008-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200806.pmtiles","bytes":2204112,"name":"tws-2008-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200807.pmtiles","bytes":2339359,"name":"tws-2008-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200808.pmtiles","bytes":2539475,"name":"tws-2008-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200809.pmtiles","bytes":2631658,"name":"tws-2008-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200810.pmtiles","bytes":2583512,"name":"tws-2008-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200811.pmtiles","bytes":2439375,"name":"tws-2008-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200812.pmtiles","bytes":2218553,"name":"tws-2008-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200901.pmtiles","bytes":2127660,"name":"tws-2009-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200902.pmtiles","bytes":2082309,"name":"tws-2009-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200903.pmtiles","bytes":2113765,"name":"tws-2009-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200904.pmtiles","bytes":2159627,"name":"tws-2009-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200905.pmtiles","bytes":2207042,"name":"tws-2009-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200906.pmtiles","bytes":2225628,"name":"tws-2009-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200907.pmtiles","bytes":2395601,"name":"tws-2009-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200908.pmtiles","bytes":2546062,"name":"tws-2009-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200909.pmtiles","bytes":2601218,"name":"tws-2009-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200910.pmtiles","bytes":2607240,"name":"tws-2009-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200911.pmtiles","bytes":2516937,"name":"tws-2009-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200912.pmtiles","bytes":2303119,"name":"tws-2009-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201001.pmtiles","bytes":2214091,"name":"tws-2010-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201002.pmtiles","bytes":2195695,"name":"tws-2010-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201003.pmtiles","bytes":2159466,"name":"tws-2010-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201004.pmtiles","bytes":2125269,"name":"tws-2010-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201005.pmtiles","bytes":2116624,"name":"tws-2010-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201006.pmtiles","bytes":2255366,"name":"tws-2010-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201007.pmtiles","bytes":2481572,"name":"tws-2010-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201008.pmtiles","bytes":2624177,"name":"tws-2010-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201009.pmtiles","bytes":2651137,"name":"tws-2010-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201010.pmtiles","bytes":2627248,"name":"tws-2010-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201011.pmtiles","bytes":2479304,"name":"tws-2010-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201012.pmtiles","bytes":2338705,"name":"tws-2010-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201102.pmtiles","bytes":2198885,"name":"tws-2011-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201103.pmtiles","bytes":2211966,"name":"tws-2011-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201104.pmtiles","bytes":2222831,"name":"tws-2011-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201105.pmtiles","bytes":2242871,"name":"tws-2011-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201107.pmtiles","bytes":2623989,"name":"tws-2011-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201108.pmtiles","bytes":2629705,"name":"tws-2011-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201109.pmtiles","bytes":2641504,"name":"tws-2011-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201110.pmtiles","bytes":2719546,"name":"tws-2011-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201111.pmtiles","bytes":2671215,"name":"tws-2011-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201201.pmtiles","bytes":2310795,"name":"tws-2012-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201201.pmtiles","bytes":2369621,"name":"tws-2012-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201202.pmtiles","bytes":2299532,"name":"tws-2012-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201203.pmtiles","bytes":2286497,"name":"tws-2012-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201204.pmtiles","bytes":2290963,"name":"tws-2012-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201206.pmtiles","bytes":2467606,"name":"tws-2012-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201207.pmtiles","bytes":2676969,"name":"tws-2012-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201208.pmtiles","bytes":2710440,"name":"tws-2012-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201209.pmtiles","bytes":2687466,"name":"tws-2012-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201211.pmtiles","bytes":2568328,"name":"tws-2012-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201212.pmtiles","bytes":2562806,"name":"tws-2012-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201301.pmtiles","bytes":2448200,"name":"tws-2013-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201302.pmtiles","bytes":2421309,"name":"tws-2013-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201304.pmtiles","bytes":2298333,"name":"tws-2013-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201305.pmtiles","bytes":2235516,"name":"tws-2013-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201306.pmtiles","bytes":2333520,"name":"tws-2013-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201307.pmtiles","bytes":2628268,"name":"tws-2013-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201310.pmtiles","bytes":2656996,"name":"tws-2013-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201311.pmtiles","bytes":2503394,"name":"tws-2013-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201312.pmtiles","bytes":2394427,"name":"tws-2013-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201401.pmtiles","bytes":2316950,"name":"tws-2014-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201403.pmtiles","bytes":2333987,"name":"tws-2014-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201404.pmtiles","bytes":2370077,"name":"tws-2014-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201405.pmtiles","bytes":2329138,"name":"tws-2014-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201406.pmtiles","bytes":2395374,"name":"tws-2014-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201408.pmtiles","bytes":2677776,"name":"tws-2014-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201409.pmtiles","bytes":2724318,"name":"tws-2014-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201410.pmtiles","bytes":2677841,"name":"tws-2014-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201411.pmtiles","bytes":2557730,"name":"tws-2014-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201501.pmtiles","bytes":2372799,"name":"tws-2015-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201502.pmtiles","bytes":2355796,"name":"tws-2015-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201503.pmtiles","bytes":2369478,"name":"tws-2015-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201504.pmtiles","bytes":2366062,"name":"tws-2015-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201504.pmtiles","bytes":2380939,"name":"tws-2015-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201507.pmtiles","bytes":2655529,"name":"tws-2015-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201508.pmtiles","bytes":2680883,"name":"tws-2015-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201509.pmtiles","bytes":2689427,"name":"tws-2015-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201512.pmtiles","bytes":2519436,"name":"tws-2015-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201601.pmtiles","bytes":2479358,"name":"tws-2016-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201602.pmtiles","bytes":2408135,"name":"tws-2016-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201603.pmtiles","bytes":2366224,"name":"tws-2016-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201605.pmtiles","bytes":2341488,"name":"tws-2016-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201606.pmtiles","bytes":2441929,"name":"tws-2016-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201607.pmtiles","bytes":2613614,"name":"tws-2016-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201608.pmtiles","bytes":2634061,"name":"tws-2016-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201611.pmtiles","bytes":2586670,"name":"tws-2016-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201612.pmtiles","bytes":2541914,"name":"tws-2016-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201701.pmtiles","bytes":2456424,"name":"tws-2017-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201703.pmtiles","bytes":2392200,"name":"tws-2017-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201704.pmtiles","bytes":2426850,"name":"tws-2017-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201705.pmtiles","bytes":2432797,"name":"tws-2017-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201706.pmtiles","bytes":2453082,"name":"tws-2017-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201806.pmtiles","bytes":2490332,"name":"tws-2018-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201807.pmtiles","bytes":2630129,"name":"tws-2018-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201810.pmtiles","bytes":2586094,"name":"tws-2018-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201811.pmtiles","bytes":2592408,"name":"tws-2018-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201812.pmtiles","bytes":2562764,"name":"tws-2018-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201901.pmtiles","bytes":2499465,"name":"tws-2019-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201902.pmtiles","bytes":2455209,"name":"tws-2019-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201903.pmtiles","bytes":2450928,"name":"tws-2019-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201904.pmtiles","bytes":2426523,"name":"tws-2019-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201905.pmtiles","bytes":2413537,"name":"tws-2019-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201906.pmtiles","bytes":2506668,"name":"tws-2019-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201907.pmtiles","bytes":2708763,"name":"tws-2019-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201908.pmtiles","bytes":2703257,"name":"tws-2019-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201909.pmtiles","bytes":2700885,"name":"tws-2019-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201910.pmtiles","bytes":2663125,"name":"tws-2019-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201911.pmtiles","bytes":2555780,"name":"tws-2019-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201912.pmtiles","bytes":2518513,"name":"tws-2019-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202001.pmtiles","bytes":2509406,"name":"tws-2020-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202002.pmtiles","bytes":2465598,"name":"tws-2020-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202003.pmtiles","bytes":2413227,"name":"tws-2020-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202004.pmtiles","bytes":2432604,"name":"tws-2020-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202005.pmtiles","bytes":2433042,"name":"tws-2020-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202006.pmtiles","bytes":2539549,"name":"tws-2020-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202007.pmtiles","bytes":2689922,"name":"tws-2020-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202008.pmtiles","bytes":2693770,"name":"tws-2020-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202009.pmtiles","bytes":2622378,"name":"tws-2020-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202010.pmtiles","bytes":2605929,"name":"tws-2020-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202011.pmtiles","bytes":2583111,"name":"tws-2020-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202012.pmtiles","bytes":2565790,"name":"tws-2020-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202101.pmtiles","bytes":2492873,"name":"tws-2021-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202102.pmtiles","bytes":2504420,"name":"tws-2021-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202103.pmtiles","bytes":2410644,"name":"tws-2021-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202104.pmtiles","bytes":2416801,"name":"tws-2021-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202105.pmtiles","bytes":2393762,"name":"tws-2021-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202106.pmtiles","bytes":2554846,"name":"tws-2021-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202107.pmtiles","bytes":2653993,"name":"tws-2021-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202108.pmtiles","bytes":2634586,"name":"tws-2021-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202109.pmtiles","bytes":2606537,"name":"tws-2021-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202110.pmtiles","bytes":2608666,"name":"tws-2021-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202111.pmtiles","bytes":2600861,"name":"tws-2021-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202112.pmtiles","bytes":2593041,"name":"tws-2021-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202201.pmtiles","bytes":2581229,"name":"tws-2022-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202202.pmtiles","bytes":2564288,"name":"tws-2022-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202203.pmtiles","bytes":2521441,"name":"tws-2022-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202204.pmtiles","bytes":2507175,"name":"tws-2022-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202205.pmtiles","bytes":2517474,"name":"tws-2022-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202206.pmtiles","bytes":2589790,"name":"tws-2022-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202207.pmtiles","bytes":2657369,"name":"tws-2022-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202208.pmtiles","bytes":2621265,"name":"tws-2022-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202209.pmtiles","bytes":2608322,"name":"tws-2022-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202210.pmtiles","bytes":2585282,"name":"tws-2022-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202211.pmtiles","bytes":2612625,"name":"tws-2022-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202212.pmtiles","bytes":2629222,"name":"tws-2022-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202301.pmtiles","bytes":2567548,"name":"tws-2023-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202302.pmtiles","bytes":2512364,"name":"tws-2023-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202303.pmtiles","bytes":2474980,"name":"tws-2023-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202304.pmtiles","bytes":2431708,"name":"tws-2023-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202305.pmtiles","bytes":2444682,"name":"tws-2023-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202306.pmtiles","bytes":2578161,"name":"tws-2023-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202307.pmtiles","bytes":2707229,"name":"tws-2023-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202308.pmtiles","bytes":2647658,"name":"tws-2023-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202309.pmtiles","bytes":2607697,"name":"tws-2023-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202310.pmtiles","bytes":2578806,"name":"tws-2023-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202311.pmtiles","bytes":2565209,"name":"tws-2023-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202312.pmtiles","bytes":2550275,"name":"tws-2023-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202401.pmtiles","bytes":2552442,"name":"tws-2024-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202402.pmtiles","bytes":2446984,"name":"tws-2024-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202403.pmtiles","bytes":2424036,"name":"tws-2024-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202404.pmtiles","bytes":2423331,"name":"tws-2024-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202405.pmtiles","bytes":2435524,"name":"tws-2024-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202406.pmtiles","bytes":2507747,"name":"tws-2024-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202407.pmtiles","bytes":2579253,"name":"tws-2024-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202408.pmtiles","bytes":2565565,"name":"tws-2024-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202409.pmtiles","bytes":2552702,"name":"tws-2024-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202410.pmtiles","bytes":2510728,"name":"tws-2024-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202411.pmtiles","bytes":2516635,"name":"tws-2024-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202412.pmtiles","bytes":2541234,"name":"tws-2024-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202501.pmtiles","bytes":2543476,"name":"tws-2025-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202502.pmtiles","bytes":2496557,"name":"tws-2025-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202503.pmtiles","bytes":2515949,"name":"tws-2025-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202504.pmtiles","bytes":2465397,"name":"tws-2025-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202505.pmtiles","bytes":2460966,"name":"tws-2025-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202506.pmtiles","bytes":2516072,"name":"tws-2025-06"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202507.pmtiles","bytes":2597226,"name":"tws-2025-07"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202508.pmtiles","bytes":2592226,"name":"tws-2025-08"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202509.pmtiles","bytes":2552466,"name":"tws-2025-09"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202510.pmtiles","bytes":2533179,"name":"tws-2025-10"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202511.pmtiles","bytes":2548655,"name":"tws-2025-11"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202512.pmtiles","bytes":2574190,"name":"tws-2025-12"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202601.pmtiles","bytes":2519954,"name":"tws-2026-01"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202602.pmtiles","bytes":2557078,"name":"tws-2026-02"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202603.pmtiles","bytes":2518332,"name":"tws-2026-03"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202604.pmtiles","bytes":2483603,"name":"tws-2026-04"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202605.pmtiles","bytes":2469536,"name":"tws-2026-05"},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202606.pmtiles","bytes":2551363,"name":"tws-2026-06"},{"kind":"png","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_latest.png","bytes":633332,"name":"tws_latest","bbox":[-180.0,-85.05112878,180.0,85.05112878]},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_latest.pmtiles","bytes":2551461,"name":"tws_latest-tiles"},{"kind":"png","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_mean24.png","bytes":635551,"name":"tws_mean24","bbox":[-180.0,-85.05112878,180.0,85.05112878]},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_mean24.pmtiles","bytes":2555724,"name":"tws_mean24-tiles"},{"kind":"png","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_trend.png","bytes":382874,"name":"tws_trend","bbox":[-180.0,-85.05112878,180.0,85.05112878]},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_trend.pmtiles","bytes":1539210,"name":"tws_trend-tiles"},{"kind":"json","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/series/","bytes":0,"name":"series-blocks"},{"kind":"png","url":"groundwater/latest/gws_percentile.png","bytes":1579438,"name":"gws_percentile","bbox":[-180.0,-85.05112878,180.0,85.05112878]},{"kind":"raster-pmtiles","url":"groundwater/latest/gws_percentile.pmtiles","bytes":6606668,"name":"gws_percentile-tiles"}],"attribution":{"name":"NASA JPL GRACE/GRACE-FO Mascon RL06.3 (Watkins et al. 2015; Wiese et al. 2016) · NASA GRACE-DA groundwater indicators (GSFC / NDMC, UNL)","url":"https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4","license":"NASA open data (free with citation)"},"coverage":"global","legend":{"unit":"cm","stops":[{"value":-20,"color":"#7A4A1C","label":"−20"},{"value":-10,"color":"#C8873A","label":"−10"},{"value":0,"color":"transparent","label":"0"},{"value":10,"color":"#7FB8D6","label":"+10"},{"value":20,"color":"#35E0E0","label":"+20"}]},"bbox":[-180.0,-85.05112878,180.0,85.05112878],"failures":0,"sample":false,"versions":["20260907T1038","20260902T2204"],"notes":[]},"drought":{"id":"drought","version":"20260907T1109","generatedAt":"2026-09-07T11:09:14Z","sourceUpdatedAt":"2026-06-11T00:00:00Z","stale":false,"artifacts":[{"kind":"png","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20260907T1109/cdi.png","bytes":40503,"name":"cdi","bbox":[-180.0,-85.05112878,180.0,85.05112878]},{"kind":"raster-pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20260907T1109/cdi.pmtiles","bytes":1754863,"name":"cdi-tiles"}],"attribution":{"name":"Copernicus Emergency Management Service — Global Drought Observatory (European Commission, JRC)","url":"https://drought.emergency.copernicus.eu","license":"Copernicus data: free, full and open access with attribution"},"coverage":"global","legend":{"unit":"class","stops":[{"value":0,"color":"transparent","label":"none"},{"value":1,"color":"#D9A45B","label":"watch"},{"value":2,"color":"#C8873A","label":"warning"},{"value":3,"color":"#7A4A1C","label":"alert"}]},"failures":0,"sample":false,"versions":["20260907T1109","20260907T0855","20260906T0823","20260905T0809","20260904T0828","20260903T1308","20260902T1604"],"notes":["drought.noSpi"]},"glaciers":{"id":"glaciers","version":"20260907T1141","generatedAt":"2026-09-07T11:41:48Z","sourceUpdatedAt":"2025-12-31T00:00:00Z","stale":false,"artifacts":[{"kind":"json","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/massbalance.json","bytes":20520,"name":"massbalance"},{"kind":"geojson","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/glaciers.geojson","bytes":325118799,"name":"outlines"},{"kind":"pmtiles","url":"https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/glaciers.pmtiles","bytes":144338582,"name":"tiles"}],"attribution":{"name":"Randolph Glacier Inventory v7.0 (RGI Consortium 2023, GLIMS/NSIDC) · WGMS annual mass-change estimates (2026)","url":"https://doi.org/10.5067/f6jmovy5navz","license":"CC BY 4.0 (RGI 7.0) · WGMS open access with citation (doi:10.5904/wgms-amce-2026-02-10)"},"coverage":"global","legend":{"unit":"m w.e./yr","stops":[{"value":-2,"color":"#C8873A","label":"−2"},{"value":-1,"color":"#CFE6F0","label":"−1"},{"value":0,"color":"#EAF4F8","label":"0"}]},"failures":0,"sample":false,"versions":["20260907T1141","20260902T2154"],"notes":[]}}}
+{
+  "generatedAt": "2026-09-07T15:58:12Z",
+  "layers": {
+    "rivers": {
+      "id": "rivers",
+      "version": "20260907T1034",
+      "generatedAt": "2026-09-07T10:34:36Z",
+      "sourceUpdatedAt": "2026-09-07T00:00:00Z",
+      "stale": false,
+      "artifacts": [
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260907T1034/cells.json",
+          "bytes": 59507,
+          "name": "cells"
+        },
+        {
+          "kind": "parquet",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260907T1034/20260907.parquet",
+          "bytes": 60455,
+          "name": "discharge"
+        },
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260907T1034/20260907.json",
+          "bytes": 173169,
+          "name": "discharge-json"
+        },
+        {
+          "kind": "geojson",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1315/spine.geojson",
+          "bytes": 874820,
+          "name": "spine"
+        },
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1315/points.json",
+          "bytes": 1116418,
+          "name": "points"
+        },
+        {
+          "kind": "pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260903T1143/rivers.pmtiles",
+          "bytes": 333863880,
+          "name": "network"
+        }
+      ],
+      "attribution": {
+        "name": "Open-Meteo Flood API (Copernicus GloFAS v4) · HydroRIVERS mean discharge",
+        "url": "https://open-meteo.com/en/docs/flood-api",
+        "license": "CC BY 4.0 (Open-Meteo) · GloFAS: Copernicus licence"
+      },
+      "coverage": "global",
+      "failures": 0,
+      "sample": false,
+      "versions": [
+        "20260907T1034",
+        "20260907T0831",
+        "20260906T0801",
+        "20260905T0746",
+        "20260904T0806",
+        "20260903T1315",
+        "20260903T1247",
+        "20260903T1143",
+        "20260903T0036",
+        "20260902T1604"
+      ],
+      "notes": [
+        "rivers.ratioSource"
+      ]
+    },
+    "gauges": {
+      "id": "gauges",
+      "version": "20260907T1553",
+      "generatedAt": "2026-09-07T15:53:44Z",
+      "sourceUpdatedAt": "2026-09-07T16:00:00Z",
+      "stale": false,
+      "artifacts": [
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T1553/latest.json",
+          "bytes": 3172873,
+          "name": "latest"
+        },
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json",
+          "bytes": 3011271,
+          "name": "noaa"
+        },
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T1111/stats.json",
+          "bytes": 1045612,
+          "name": "stats"
+        },
+        {
+          "kind": "parquet",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T1111/stations.parquet",
+          "bytes": 6188762,
+          "name": "stations"
+        }
+      ],
+      "attribution": {
+        "name": "U.S. Geological Survey Water Data for the Nation",
+        "url": "https://waterdata.usgs.gov",
+        "license": "U.S. public domain"
+      },
+      "coverage": "regional",
+      "legend": {
+        "unit": "percentile",
+        "stops": [
+          {
+            "value": 0,
+            "color": "#C8873A",
+            "label": "< 10"
+          },
+          {
+            "value": 10,
+            "color": "#D9A45B",
+            "label": "10–25"
+          },
+          {
+            "value": 25,
+            "color": "#7FB8D6",
+            "label": "25–75"
+          },
+          {
+            "value": 75,
+            "color": "#35E0E0",
+            "label": "75–90"
+          },
+          {
+            "value": 90,
+            "color": "#EAF4F8",
+            "label": "> 90"
+          }
+        ]
+      },
+      "bbox": [
+        -163.67756,
+        13.30694,
+        144.73614,
+        70.28138
+      ],
+      "failures": 0,
+      "sample": false,
+      "versions": [
+        "20260907T1553",
+        "20260907T1552",
+        "20260907T1111",
+        "20260907T1005",
+        "20260907T0454",
+        "20260907T0453",
+        "20260907T0014",
+        "20260906T2224",
+        "20260906T2043",
+        "20260906T2042",
+        "20260906T1822",
+        "20260906T1820",
+        "20260906T1608",
+        "20260906T1248",
+        "20260906T1245",
+        "20260906T0848",
+        "20260906T0847",
+        "20260906T0419",
+        "20260906T0416",
+        "20260905T2356",
+        "20260905T2211",
+        "20260905T2210",
+        "20260905T2024",
+        "20260905T1808",
+        "20260905T1807",
+        "20260905T1557",
+        "20260905T1556",
+        "20260905T1258",
+        "20260905T1257",
+        "20260905T0917",
+        "20260905T0916",
+        "20260905T0528",
+        "20260905T0051",
+        "20260905T0050",
+        "20260904T2258",
+        "20260904T2057",
+        "20260904T1819",
+        "20260904T1818",
+        "20260904T1502",
+        "20260904T1109",
+        "20260904T1106",
+        "20260904T0557",
+        "20260904T0556",
+        "20260904T0103",
+        "20260903T2310",
+        "20260903T2309",
+        "20260903T2056",
+        "20260903T2055",
+        "20260903T1759",
+        "20260903T1758",
+        "20260903T1419",
+        "20260903T1417",
+        "20260903T0509",
+        "20260903T0508",
+        "20260903T0036",
+        "20260903T0034",
+        "20260903T0018",
+        "20260903T0017",
+        "20260902T2309"
+      ],
+      "notes": []
+    },
+    "events": {
+      "id": "events",
+      "version": "20260907T1553",
+      "generatedAt": "2026-09-07T15:53:54Z",
+      "sourceUpdatedAt": "2026-09-07T15:45:16Z",
+      "stale": false,
+      "artifacts": [
+        {
+          "kind": "geojson",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260907T1553/current.geojson",
+          "bytes": 90525,
+          "name": "current"
+        }
+      ],
+      "attribution": {
+        "name": "GDACS — Global Disaster Alert and Coordination System (EC JRC / UN OCHA)",
+        "url": "https://www.gdacs.org",
+        "license": "Free use with attribution (GDACS terms of use)"
+      },
+      "coverage": "global",
+      "bbox": [
+        -179.2,
+        -45.0322,
+        170.2,
+        57.1915
+      ],
+      "failures": 0,
+      "sample": false,
+      "versions": [
+        "20260907T1553",
+        "20260907T1005",
+        "20260907T0454",
+        "20260907T0015",
+        "20260906T2225",
+        "20260906T2043",
+        "20260906T1822",
+        "20260906T1608",
+        "20260906T1248",
+        "20260906T0848",
+        "20260906T0419",
+        "20260905T2357",
+        "20260905T2211",
+        "20260905T2025",
+        "20260905T1809",
+        "20260905T1258",
+        "20260905T0917",
+        "20260905T0528",
+        "20260905T0051",
+        "20260904T2259",
+        "20260904T2058",
+        "20260904T1819",
+        "20260904T1502",
+        "20260904T1109",
+        "20260904T0557",
+        "20260904T0103",
+        "20260903T2310",
+        "20260903T2056",
+        "20260903T1759",
+        "20260903T1419",
+        "20260903T0509",
+        "20260903T0036",
+        "20260903T0018",
+        "20260902T1604"
+      ],
+      "notes": [
+        "events.window30d"
+      ]
+    },
+    "reservoirs": {
+      "id": "reservoirs",
+      "version": "20260907T1300",
+      "generatedAt": "2026-09-07T13:00:01Z",
+      "sourceUpdatedAt": "2026-08-01T00:00:00Z",
+      "stale": false,
+      "artifacts": [
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/reservoirs/20260907T1300/latest.json",
+          "bytes": 983997,
+          "name": "latest"
+        }
+      ],
+      "attribution": {
+        "name": "Global Water Watch (Deltares, World Resources Institute, WWF) · GRanD",
+        "url": "https://www.globalwaterwatch.earth",
+        "license": "CC BY 4.0"
+      },
+      "coverage": "global",
+      "legend": {
+        "unit": "%",
+        "stops": [
+          {
+            "value": 0,
+            "color": "#7A4A1C",
+            "label": "0"
+          },
+          {
+            "value": 40,
+            "color": "#C8873A",
+            "label": "40"
+          },
+          {
+            "value": 70,
+            "color": "#7FB8D6",
+            "label": "70"
+          },
+          {
+            "value": 100,
+            "color": "#EAF4F8",
+            "label": "100"
+          }
+        ]
+      },
+      "failures": 0,
+      "sample": false,
+      "versions": [
+        "20260907T1300",
+        "20260902T1604"
+      ],
+      "notes": [
+        "reservoirs.proxy",
+        "reservoirs.partialList"
+      ]
+    },
+    "groundwater": {
+      "id": "groundwater",
+      "version": "20260907T1038",
+      "generatedAt": "2026-09-07T10:38:13Z",
+      "sourceUpdatedAt": "2026-06-01T00:00:00Z",
+      "stale": false,
+      "artifacts": [
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200204.pmtiles",
+          "bytes": 2148770,
+          "name": "tws-2002-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200205.pmtiles",
+          "bytes": 2173458,
+          "name": "tws-2002-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200208.pmtiles",
+          "bytes": 2423398,
+          "name": "tws-2002-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200209.pmtiles",
+          "bytes": 2460961,
+          "name": "tws-2002-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200210.pmtiles",
+          "bytes": 2473708,
+          "name": "tws-2002-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200211.pmtiles",
+          "bytes": 2326072,
+          "name": "tws-2002-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200212.pmtiles",
+          "bytes": 2322300,
+          "name": "tws-2002-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200301.pmtiles",
+          "bytes": 2216074,
+          "name": "tws-2003-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200302.pmtiles",
+          "bytes": 2155677,
+          "name": "tws-2003-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200303.pmtiles",
+          "bytes": 2189222,
+          "name": "tws-2003-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200304.pmtiles",
+          "bytes": 2175031,
+          "name": "tws-2003-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200305.pmtiles",
+          "bytes": 2217039,
+          "name": "tws-2003-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200307.pmtiles",
+          "bytes": 2355372,
+          "name": "tws-2003-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200308.pmtiles",
+          "bytes": 2534775,
+          "name": "tws-2003-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200309.pmtiles",
+          "bytes": 2553780,
+          "name": "tws-2003-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200310.pmtiles",
+          "bytes": 2584247,
+          "name": "tws-2003-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200311.pmtiles",
+          "bytes": 2384697,
+          "name": "tws-2003-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200312.pmtiles",
+          "bytes": 2113282,
+          "name": "tws-2003-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200401.pmtiles",
+          "bytes": 2040525,
+          "name": "tws-2004-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200402.pmtiles",
+          "bytes": 2015008,
+          "name": "tws-2004-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200403.pmtiles",
+          "bytes": 2061350,
+          "name": "tws-2004-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200404.pmtiles",
+          "bytes": 2092513,
+          "name": "tws-2004-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200405.pmtiles",
+          "bytes": 2053362,
+          "name": "tws-2004-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200406.pmtiles",
+          "bytes": 2034071,
+          "name": "tws-2004-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200407.pmtiles",
+          "bytes": 2164332,
+          "name": "tws-2004-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200408.pmtiles",
+          "bytes": 2358792,
+          "name": "tws-2004-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200409.pmtiles",
+          "bytes": 2390983,
+          "name": "tws-2004-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200410.pmtiles",
+          "bytes": 2429299,
+          "name": "tws-2004-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200411.pmtiles",
+          "bytes": 2018248,
+          "name": "tws-2004-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200412.pmtiles",
+          "bytes": 1874615,
+          "name": "tws-2004-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200501.pmtiles",
+          "bytes": 1932092,
+          "name": "tws-2005-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200502.pmtiles",
+          "bytes": 2045318,
+          "name": "tws-2005-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200503.pmtiles",
+          "bytes": 2087384,
+          "name": "tws-2005-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200504.pmtiles",
+          "bytes": 2083915,
+          "name": "tws-2005-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200505.pmtiles",
+          "bytes": 2081139,
+          "name": "tws-2005-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200506.pmtiles",
+          "bytes": 1992075,
+          "name": "tws-2005-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200507.pmtiles",
+          "bytes": 2161882,
+          "name": "tws-2005-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200508.pmtiles",
+          "bytes": 2276806,
+          "name": "tws-2005-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200509.pmtiles",
+          "bytes": 2334302,
+          "name": "tws-2005-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200510.pmtiles",
+          "bytes": 2273761,
+          "name": "tws-2005-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200511.pmtiles",
+          "bytes": 2092114,
+          "name": "tws-2005-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200512.pmtiles",
+          "bytes": 1816738,
+          "name": "tws-2005-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200601.pmtiles",
+          "bytes": 1873024,
+          "name": "tws-2006-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200602.pmtiles",
+          "bytes": 1898190,
+          "name": "tws-2006-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200603.pmtiles",
+          "bytes": 1999421,
+          "name": "tws-2006-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200604.pmtiles",
+          "bytes": 2011946,
+          "name": "tws-2006-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200605.pmtiles",
+          "bytes": 2003988,
+          "name": "tws-2006-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200606.pmtiles",
+          "bytes": 1996404,
+          "name": "tws-2006-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200607.pmtiles",
+          "bytes": 2239279,
+          "name": "tws-2006-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200608.pmtiles",
+          "bytes": 2353819,
+          "name": "tws-2006-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200609.pmtiles",
+          "bytes": 2402730,
+          "name": "tws-2006-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200610.pmtiles",
+          "bytes": 2448279,
+          "name": "tws-2006-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200611.pmtiles",
+          "bytes": 2261715,
+          "name": "tws-2006-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200612.pmtiles",
+          "bytes": 1932606,
+          "name": "tws-2006-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200701.pmtiles",
+          "bytes": 1843675,
+          "name": "tws-2007-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200702.pmtiles",
+          "bytes": 1958881,
+          "name": "tws-2007-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200703.pmtiles",
+          "bytes": 1966739,
+          "name": "tws-2007-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200704.pmtiles",
+          "bytes": 2027375,
+          "name": "tws-2007-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200705.pmtiles",
+          "bytes": 2061759,
+          "name": "tws-2007-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200706.pmtiles",
+          "bytes": 2045960,
+          "name": "tws-2007-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200707.pmtiles",
+          "bytes": 2242892,
+          "name": "tws-2007-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200708.pmtiles",
+          "bytes": 2347271,
+          "name": "tws-2007-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200709.pmtiles",
+          "bytes": 2443451,
+          "name": "tws-2007-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200710.pmtiles",
+          "bytes": 2505472,
+          "name": "tws-2007-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200711.pmtiles",
+          "bytes": 2354492,
+          "name": "tws-2007-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200712.pmtiles",
+          "bytes": 2106660,
+          "name": "tws-2007-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200801.pmtiles",
+          "bytes": 1989852,
+          "name": "tws-2008-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200802.pmtiles",
+          "bytes": 2055066,
+          "name": "tws-2008-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200803.pmtiles",
+          "bytes": 2104874,
+          "name": "tws-2008-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200804.pmtiles",
+          "bytes": 2108430,
+          "name": "tws-2008-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200805.pmtiles",
+          "bytes": 2124034,
+          "name": "tws-2008-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200806.pmtiles",
+          "bytes": 2204112,
+          "name": "tws-2008-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200807.pmtiles",
+          "bytes": 2339359,
+          "name": "tws-2008-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200808.pmtiles",
+          "bytes": 2539475,
+          "name": "tws-2008-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200809.pmtiles",
+          "bytes": 2631658,
+          "name": "tws-2008-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200810.pmtiles",
+          "bytes": 2583512,
+          "name": "tws-2008-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200811.pmtiles",
+          "bytes": 2439375,
+          "name": "tws-2008-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200812.pmtiles",
+          "bytes": 2218553,
+          "name": "tws-2008-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200901.pmtiles",
+          "bytes": 2127660,
+          "name": "tws-2009-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200902.pmtiles",
+          "bytes": 2082309,
+          "name": "tws-2009-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200903.pmtiles",
+          "bytes": 2113765,
+          "name": "tws-2009-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200904.pmtiles",
+          "bytes": 2159627,
+          "name": "tws-2009-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200905.pmtiles",
+          "bytes": 2207042,
+          "name": "tws-2009-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200906.pmtiles",
+          "bytes": 2225628,
+          "name": "tws-2009-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200907.pmtiles",
+          "bytes": 2395601,
+          "name": "tws-2009-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200908.pmtiles",
+          "bytes": 2546062,
+          "name": "tws-2009-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200909.pmtiles",
+          "bytes": 2601218,
+          "name": "tws-2009-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200910.pmtiles",
+          "bytes": 2607240,
+          "name": "tws-2009-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200911.pmtiles",
+          "bytes": 2516937,
+          "name": "tws-2009-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_200912.pmtiles",
+          "bytes": 2303119,
+          "name": "tws-2009-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201001.pmtiles",
+          "bytes": 2214091,
+          "name": "tws-2010-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201002.pmtiles",
+          "bytes": 2195695,
+          "name": "tws-2010-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201003.pmtiles",
+          "bytes": 2159466,
+          "name": "tws-2010-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201004.pmtiles",
+          "bytes": 2125269,
+          "name": "tws-2010-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201005.pmtiles",
+          "bytes": 2116624,
+          "name": "tws-2010-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201006.pmtiles",
+          "bytes": 2255366,
+          "name": "tws-2010-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201007.pmtiles",
+          "bytes": 2481572,
+          "name": "tws-2010-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201008.pmtiles",
+          "bytes": 2624177,
+          "name": "tws-2010-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201009.pmtiles",
+          "bytes": 2651137,
+          "name": "tws-2010-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201010.pmtiles",
+          "bytes": 2627248,
+          "name": "tws-2010-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201011.pmtiles",
+          "bytes": 2479304,
+          "name": "tws-2010-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201012.pmtiles",
+          "bytes": 2338705,
+          "name": "tws-2010-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201102.pmtiles",
+          "bytes": 2198885,
+          "name": "tws-2011-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201103.pmtiles",
+          "bytes": 2211966,
+          "name": "tws-2011-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201104.pmtiles",
+          "bytes": 2222831,
+          "name": "tws-2011-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201105.pmtiles",
+          "bytes": 2242871,
+          "name": "tws-2011-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201107.pmtiles",
+          "bytes": 2623989,
+          "name": "tws-2011-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201108.pmtiles",
+          "bytes": 2629705,
+          "name": "tws-2011-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201109.pmtiles",
+          "bytes": 2641504,
+          "name": "tws-2011-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201110.pmtiles",
+          "bytes": 2719546,
+          "name": "tws-2011-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201111.pmtiles",
+          "bytes": 2671215,
+          "name": "tws-2011-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201201.pmtiles",
+          "bytes": 2310795,
+          "name": "tws-2012-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201201.pmtiles",
+          "bytes": 2369621,
+          "name": "tws-2012-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201202.pmtiles",
+          "bytes": 2299532,
+          "name": "tws-2012-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201203.pmtiles",
+          "bytes": 2286497,
+          "name": "tws-2012-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201204.pmtiles",
+          "bytes": 2290963,
+          "name": "tws-2012-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201206.pmtiles",
+          "bytes": 2467606,
+          "name": "tws-2012-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201207.pmtiles",
+          "bytes": 2676969,
+          "name": "tws-2012-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201208.pmtiles",
+          "bytes": 2710440,
+          "name": "tws-2012-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201209.pmtiles",
+          "bytes": 2687466,
+          "name": "tws-2012-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201211.pmtiles",
+          "bytes": 2568328,
+          "name": "tws-2012-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201212.pmtiles",
+          "bytes": 2562806,
+          "name": "tws-2012-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201301.pmtiles",
+          "bytes": 2448200,
+          "name": "tws-2013-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201302.pmtiles",
+          "bytes": 2421309,
+          "name": "tws-2013-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201304.pmtiles",
+          "bytes": 2298333,
+          "name": "tws-2013-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201305.pmtiles",
+          "bytes": 2235516,
+          "name": "tws-2013-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201306.pmtiles",
+          "bytes": 2333520,
+          "name": "tws-2013-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201307.pmtiles",
+          "bytes": 2628268,
+          "name": "tws-2013-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201310.pmtiles",
+          "bytes": 2656996,
+          "name": "tws-2013-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201311.pmtiles",
+          "bytes": 2503394,
+          "name": "tws-2013-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201312.pmtiles",
+          "bytes": 2394427,
+          "name": "tws-2013-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201401.pmtiles",
+          "bytes": 2316950,
+          "name": "tws-2014-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201403.pmtiles",
+          "bytes": 2333987,
+          "name": "tws-2014-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201404.pmtiles",
+          "bytes": 2370077,
+          "name": "tws-2014-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201405.pmtiles",
+          "bytes": 2329138,
+          "name": "tws-2014-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201406.pmtiles",
+          "bytes": 2395374,
+          "name": "tws-2014-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201408.pmtiles",
+          "bytes": 2677776,
+          "name": "tws-2014-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201409.pmtiles",
+          "bytes": 2724318,
+          "name": "tws-2014-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201410.pmtiles",
+          "bytes": 2677841,
+          "name": "tws-2014-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201411.pmtiles",
+          "bytes": 2557730,
+          "name": "tws-2014-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201501.pmtiles",
+          "bytes": 2372799,
+          "name": "tws-2015-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201502.pmtiles",
+          "bytes": 2355796,
+          "name": "tws-2015-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201503.pmtiles",
+          "bytes": 2369478,
+          "name": "tws-2015-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201504.pmtiles",
+          "bytes": 2366062,
+          "name": "tws-2015-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201504.pmtiles",
+          "bytes": 2380939,
+          "name": "tws-2015-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201507.pmtiles",
+          "bytes": 2655529,
+          "name": "tws-2015-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201508.pmtiles",
+          "bytes": 2680883,
+          "name": "tws-2015-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201509.pmtiles",
+          "bytes": 2689427,
+          "name": "tws-2015-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201512.pmtiles",
+          "bytes": 2519436,
+          "name": "tws-2015-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201601.pmtiles",
+          "bytes": 2479358,
+          "name": "tws-2016-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201602.pmtiles",
+          "bytes": 2408135,
+          "name": "tws-2016-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201603.pmtiles",
+          "bytes": 2366224,
+          "name": "tws-2016-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201605.pmtiles",
+          "bytes": 2341488,
+          "name": "tws-2016-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201606.pmtiles",
+          "bytes": 2441929,
+          "name": "tws-2016-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201607.pmtiles",
+          "bytes": 2613614,
+          "name": "tws-2016-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201608.pmtiles",
+          "bytes": 2634061,
+          "name": "tws-2016-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201611.pmtiles",
+          "bytes": 2586670,
+          "name": "tws-2016-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201612.pmtiles",
+          "bytes": 2541914,
+          "name": "tws-2016-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201701.pmtiles",
+          "bytes": 2456424,
+          "name": "tws-2017-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201703.pmtiles",
+          "bytes": 2392200,
+          "name": "tws-2017-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201704.pmtiles",
+          "bytes": 2426850,
+          "name": "tws-2017-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201705.pmtiles",
+          "bytes": 2432797,
+          "name": "tws-2017-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201706.pmtiles",
+          "bytes": 2453082,
+          "name": "tws-2017-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201806.pmtiles",
+          "bytes": 2490332,
+          "name": "tws-2018-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201807.pmtiles",
+          "bytes": 2630129,
+          "name": "tws-2018-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201810.pmtiles",
+          "bytes": 2586094,
+          "name": "tws-2018-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201811.pmtiles",
+          "bytes": 2592408,
+          "name": "tws-2018-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201812.pmtiles",
+          "bytes": 2562764,
+          "name": "tws-2018-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201901.pmtiles",
+          "bytes": 2499465,
+          "name": "tws-2019-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201902.pmtiles",
+          "bytes": 2455209,
+          "name": "tws-2019-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201903.pmtiles",
+          "bytes": 2450928,
+          "name": "tws-2019-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201904.pmtiles",
+          "bytes": 2426523,
+          "name": "tws-2019-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201905.pmtiles",
+          "bytes": 2413537,
+          "name": "tws-2019-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201906.pmtiles",
+          "bytes": 2506668,
+          "name": "tws-2019-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201907.pmtiles",
+          "bytes": 2708763,
+          "name": "tws-2019-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201908.pmtiles",
+          "bytes": 2703257,
+          "name": "tws-2019-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201909.pmtiles",
+          "bytes": 2700885,
+          "name": "tws-2019-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201910.pmtiles",
+          "bytes": 2663125,
+          "name": "tws-2019-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201911.pmtiles",
+          "bytes": 2555780,
+          "name": "tws-2019-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_201912.pmtiles",
+          "bytes": 2518513,
+          "name": "tws-2019-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202001.pmtiles",
+          "bytes": 2509406,
+          "name": "tws-2020-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202002.pmtiles",
+          "bytes": 2465598,
+          "name": "tws-2020-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202003.pmtiles",
+          "bytes": 2413227,
+          "name": "tws-2020-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202004.pmtiles",
+          "bytes": 2432604,
+          "name": "tws-2020-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202005.pmtiles",
+          "bytes": 2433042,
+          "name": "tws-2020-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202006.pmtiles",
+          "bytes": 2539549,
+          "name": "tws-2020-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202007.pmtiles",
+          "bytes": 2689922,
+          "name": "tws-2020-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202008.pmtiles",
+          "bytes": 2693770,
+          "name": "tws-2020-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202009.pmtiles",
+          "bytes": 2622378,
+          "name": "tws-2020-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202010.pmtiles",
+          "bytes": 2605929,
+          "name": "tws-2020-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202011.pmtiles",
+          "bytes": 2583111,
+          "name": "tws-2020-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202012.pmtiles",
+          "bytes": 2565790,
+          "name": "tws-2020-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202101.pmtiles",
+          "bytes": 2492873,
+          "name": "tws-2021-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202102.pmtiles",
+          "bytes": 2504420,
+          "name": "tws-2021-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202103.pmtiles",
+          "bytes": 2410644,
+          "name": "tws-2021-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202104.pmtiles",
+          "bytes": 2416801,
+          "name": "tws-2021-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202105.pmtiles",
+          "bytes": 2393762,
+          "name": "tws-2021-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202106.pmtiles",
+          "bytes": 2554846,
+          "name": "tws-2021-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202107.pmtiles",
+          "bytes": 2653993,
+          "name": "tws-2021-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202108.pmtiles",
+          "bytes": 2634586,
+          "name": "tws-2021-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202109.pmtiles",
+          "bytes": 2606537,
+          "name": "tws-2021-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202110.pmtiles",
+          "bytes": 2608666,
+          "name": "tws-2021-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202111.pmtiles",
+          "bytes": 2600861,
+          "name": "tws-2021-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202112.pmtiles",
+          "bytes": 2593041,
+          "name": "tws-2021-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202201.pmtiles",
+          "bytes": 2581229,
+          "name": "tws-2022-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202202.pmtiles",
+          "bytes": 2564288,
+          "name": "tws-2022-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202203.pmtiles",
+          "bytes": 2521441,
+          "name": "tws-2022-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202204.pmtiles",
+          "bytes": 2507175,
+          "name": "tws-2022-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202205.pmtiles",
+          "bytes": 2517474,
+          "name": "tws-2022-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202206.pmtiles",
+          "bytes": 2589790,
+          "name": "tws-2022-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202207.pmtiles",
+          "bytes": 2657369,
+          "name": "tws-2022-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202208.pmtiles",
+          "bytes": 2621265,
+          "name": "tws-2022-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202209.pmtiles",
+          "bytes": 2608322,
+          "name": "tws-2022-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202210.pmtiles",
+          "bytes": 2585282,
+          "name": "tws-2022-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202211.pmtiles",
+          "bytes": 2612625,
+          "name": "tws-2022-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202212.pmtiles",
+          "bytes": 2629222,
+          "name": "tws-2022-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202301.pmtiles",
+          "bytes": 2567548,
+          "name": "tws-2023-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202302.pmtiles",
+          "bytes": 2512364,
+          "name": "tws-2023-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202303.pmtiles",
+          "bytes": 2474980,
+          "name": "tws-2023-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202304.pmtiles",
+          "bytes": 2431708,
+          "name": "tws-2023-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202305.pmtiles",
+          "bytes": 2444682,
+          "name": "tws-2023-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202306.pmtiles",
+          "bytes": 2578161,
+          "name": "tws-2023-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202307.pmtiles",
+          "bytes": 2707229,
+          "name": "tws-2023-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202308.pmtiles",
+          "bytes": 2647658,
+          "name": "tws-2023-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202309.pmtiles",
+          "bytes": 2607697,
+          "name": "tws-2023-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202310.pmtiles",
+          "bytes": 2578806,
+          "name": "tws-2023-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202311.pmtiles",
+          "bytes": 2565209,
+          "name": "tws-2023-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202312.pmtiles",
+          "bytes": 2550275,
+          "name": "tws-2023-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202401.pmtiles",
+          "bytes": 2552442,
+          "name": "tws-2024-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202402.pmtiles",
+          "bytes": 2446984,
+          "name": "tws-2024-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202403.pmtiles",
+          "bytes": 2424036,
+          "name": "tws-2024-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202404.pmtiles",
+          "bytes": 2423331,
+          "name": "tws-2024-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202405.pmtiles",
+          "bytes": 2435524,
+          "name": "tws-2024-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202406.pmtiles",
+          "bytes": 2507747,
+          "name": "tws-2024-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202407.pmtiles",
+          "bytes": 2579253,
+          "name": "tws-2024-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202408.pmtiles",
+          "bytes": 2565565,
+          "name": "tws-2024-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202409.pmtiles",
+          "bytes": 2552702,
+          "name": "tws-2024-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202410.pmtiles",
+          "bytes": 2510728,
+          "name": "tws-2024-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202411.pmtiles",
+          "bytes": 2516635,
+          "name": "tws-2024-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202412.pmtiles",
+          "bytes": 2541234,
+          "name": "tws-2024-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202501.pmtiles",
+          "bytes": 2543476,
+          "name": "tws-2025-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202502.pmtiles",
+          "bytes": 2496557,
+          "name": "tws-2025-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202503.pmtiles",
+          "bytes": 2515949,
+          "name": "tws-2025-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202504.pmtiles",
+          "bytes": 2465397,
+          "name": "tws-2025-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202505.pmtiles",
+          "bytes": 2460966,
+          "name": "tws-2025-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202506.pmtiles",
+          "bytes": 2516072,
+          "name": "tws-2025-06"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202507.pmtiles",
+          "bytes": 2597226,
+          "name": "tws-2025-07"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202508.pmtiles",
+          "bytes": 2592226,
+          "name": "tws-2025-08"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202509.pmtiles",
+          "bytes": 2552466,
+          "name": "tws-2025-09"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202510.pmtiles",
+          "bytes": 2533179,
+          "name": "tws-2025-10"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202511.pmtiles",
+          "bytes": 2548655,
+          "name": "tws-2025-11"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202512.pmtiles",
+          "bytes": 2574190,
+          "name": "tws-2025-12"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202601.pmtiles",
+          "bytes": 2519954,
+          "name": "tws-2026-01"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202602.pmtiles",
+          "bytes": 2557078,
+          "name": "tws-2026-02"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202603.pmtiles",
+          "bytes": 2518332,
+          "name": "tws-2026-03"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202604.pmtiles",
+          "bytes": 2483603,
+          "name": "tws-2026-04"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202605.pmtiles",
+          "bytes": 2469536,
+          "name": "tws-2026-05"
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_202606.pmtiles",
+          "bytes": 2551363,
+          "name": "tws-2026-06"
+        },
+        {
+          "kind": "png",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_latest.png",
+          "bytes": 633332,
+          "name": "tws_latest",
+          "bbox": [
+            -180.0,
+            -85.05112878,
+            180.0,
+            85.05112878
+          ]
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_latest.pmtiles",
+          "bytes": 2551461,
+          "name": "tws_latest-tiles"
+        },
+        {
+          "kind": "png",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_mean24.png",
+          "bytes": 635551,
+          "name": "tws_mean24",
+          "bbox": [
+            -180.0,
+            -85.05112878,
+            180.0,
+            85.05112878
+          ]
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_mean24.pmtiles",
+          "bytes": 2555724,
+          "name": "tws_mean24-tiles"
+        },
+        {
+          "kind": "png",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_trend.png",
+          "bytes": 382874,
+          "name": "tws_trend",
+          "bbox": [
+            -180.0,
+            -85.05112878,
+            180.0,
+            85.05112878
+          ]
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/tws_trend.pmtiles",
+          "bytes": 1539210,
+          "name": "tws_trend-tiles"
+        },
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20260907T1038/series/",
+          "bytes": 0,
+          "name": "series-blocks"
+        },
+        {
+          "kind": "png",
+          "url": "groundwater/latest/gws_percentile.png",
+          "bytes": 1579438,
+          "name": "gws_percentile",
+          "bbox": [
+            -180.0,
+            -85.05112878,
+            180.0,
+            85.05112878
+          ]
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "groundwater/latest/gws_percentile.pmtiles",
+          "bytes": 6606668,
+          "name": "gws_percentile-tiles"
+        }
+      ],
+      "attribution": {
+        "name": "NASA JPL GRACE/GRACE-FO Mascon RL06.3 (Watkins et al. 2015; Wiese et al. 2016) · NASA GRACE-DA groundwater indicators (GSFC / NDMC, UNL)",
+        "url": "https://podaac.jpl.nasa.gov/dataset/TELLUS_GRAC-GRFO_MASCON_CRI_GRID_RL06.3_V4",
+        "license": "NASA open data (free with citation)"
+      },
+      "coverage": "global",
+      "legend": {
+        "unit": "cm",
+        "stops": [
+          {
+            "value": -20,
+            "color": "#7A4A1C",
+            "label": "−20"
+          },
+          {
+            "value": -10,
+            "color": "#C8873A",
+            "label": "−10"
+          },
+          {
+            "value": 0,
+            "color": "transparent",
+            "label": "0"
+          },
+          {
+            "value": 10,
+            "color": "#7FB8D6",
+            "label": "+10"
+          },
+          {
+            "value": 20,
+            "color": "#35E0E0",
+            "label": "+20"
+          }
+        ]
+      },
+      "bbox": [
+        -180.0,
+        -85.05112878,
+        180.0,
+        85.05112878
+      ],
+      "failures": 0,
+      "sample": false,
+      "versions": [
+        "20260907T1038",
+        "20260902T2204"
+      ],
+      "notes": []
+    },
+    "drought": {
+      "id": "drought",
+      "version": "20260907T1109",
+      "generatedAt": "2026-09-07T11:09:14Z",
+      "sourceUpdatedAt": "2026-06-11T00:00:00Z",
+      "stale": false,
+      "artifacts": [
+        {
+          "kind": "png",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20260907T1109/cdi.png",
+          "bytes": 40503,
+          "name": "cdi",
+          "bbox": [
+            -180.0,
+            -85.05112878,
+            180.0,
+            85.05112878
+          ]
+        },
+        {
+          "kind": "raster-pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20260907T1109/cdi.pmtiles",
+          "bytes": 1754863,
+          "name": "cdi-tiles"
+        }
+      ],
+      "attribution": {
+        "name": "Copernicus Emergency Management Service — Global Drought Observatory (European Commission, JRC)",
+        "url": "https://drought.emergency.copernicus.eu",
+        "license": "Copernicus data: free, full and open access with attribution"
+      },
+      "coverage": "global",
+      "legend": {
+        "unit": "class",
+        "stops": [
+          {
+            "value": 0,
+            "color": "transparent",
+            "label": "none"
+          },
+          {
+            "value": 1,
+            "color": "#D9A45B",
+            "label": "watch"
+          },
+          {
+            "value": 2,
+            "color": "#C8873A",
+            "label": "warning"
+          },
+          {
+            "value": 3,
+            "color": "#7A4A1C",
+            "label": "alert"
+          }
+        ]
+      },
+      "failures": 0,
+      "sample": false,
+      "versions": [
+        "20260907T1109",
+        "20260907T0855",
+        "20260906T0823",
+        "20260905T0809",
+        "20260904T0828",
+        "20260903T1308",
+        "20260902T1604"
+      ],
+      "notes": [
+        "drought.noSpi"
+      ]
+    },
+    "glaciers": {
+      "id": "glaciers",
+      "version": "20260907T1141",
+      "generatedAt": "2026-09-07T11:41:48Z",
+      "sourceUpdatedAt": "2025-12-31T00:00:00Z",
+      "stale": false,
+      "artifacts": [
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/massbalance.json",
+          "bytes": 20520,
+          "name": "massbalance"
+        },
+        {
+          "kind": "geojson",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/glaciers.geojson",
+          "bytes": 325118799,
+          "name": "outlines"
+        },
+        {
+          "kind": "pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/glaciers.pmtiles",
+          "bytes": 144338582,
+          "name": "tiles"
+        }
+      ],
+      "attribution": {
+        "name": "Randolph Glacier Inventory v7.0 (RGI Consortium 2023, GLIMS/NSIDC) · WGMS annual mass-change estimates (2026)",
+        "url": "https://doi.org/10.5067/f6jmovy5navz",
+        "license": "CC BY 4.0 (RGI 7.0) · WGMS open access with citation (doi:10.5904/wgms-amce-2026-02-10)"
+      },
+      "coverage": "global",
+      "legend": {
+        "unit": "m w.e./yr",
+        "stops": [
+          {
+            "value": -2,
+            "color": "#C8873A",
+            "label": "−2"
+          },
+          {
+            "value": -1,
+            "color": "#CFE6F0",
+            "label": "−1"
+          },
+          {
+            "value": 0,
+            "color": "#EAF4F8",
+            "label": "0"
+          }
+        ]
+      },
+      "failures": 0,
+      "sample": false,
+      "versions": [
+        "20260907T1141",
+        "20260902T2154"
+      ],
+      "notes": []
+    }
+  }
+}

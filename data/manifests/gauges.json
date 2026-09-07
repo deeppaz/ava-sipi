@@ -1,27 +1,27 @@
 {
   "id": "gauges",
-  "version": "20260907T1111",
-  "generatedAt": "2026-09-07T11:11:35Z",
-  "sourceUpdatedAt": "2026-09-07T13:00:00Z",
+  "version": "20260907T1553",
+  "generatedAt": "2026-09-07T15:53:44Z",
+  "sourceUpdatedAt": "2026-09-07T16:00:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T1111/latest.json",
-      "bytes": 3173187,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T1553/latest.json",
+      "bytes": 3172873,
       "name": "latest"
+    },
+    {
+      "kind": "json",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json",
+      "bytes": 3011271,
+      "name": "noaa"
     },
     {
       "kind": "json",
       "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260907T1111/stats.json",
       "bytes": 1045612,
       "name": "stats"
-    },
-    {
-      "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json",
-      "bytes": 3007223,
-      "name": "noaa"
     },
     {
       "kind": "parquet",
@@ -75,6 +75,8 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20260907T1553",
+    "20260907T1552",
     "20260907T1111",
     "20260907T1005",
     "20260907T0454",
