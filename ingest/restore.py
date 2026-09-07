@@ -24,6 +24,7 @@ ARTIFACTS: dict[str, tuple[str, Path | None]] = {
         "rivers/latest/points.json",
         REPO_ROOT / "data" / "samples" / "rivers" / "latest" / "points.json",
     ),
+    "river-cells": ("rivers/latest/cells.json", None),
     "gauge-stations": ("gauges/latest/stations.parquet", None),
     "gauge-stats": ("gauges/latest/stats.json", None),
     "gauge-noaa": ("gauges/latest/noaa.json", None),

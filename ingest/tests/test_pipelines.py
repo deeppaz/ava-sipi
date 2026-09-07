@@ -463,3 +463,51 @@ def test_zero_discharge_is_missing_not_dry():
         }
     ]
     assert build_records(points, responses, "2026-09-02") == []
+
+
+# ---------------------------------------------------------------- channel-cell calibration
+
+
+def _resp(values):
+    return {
+        "daily": {
+            "time": ["2026-09-01", "2026-09-02", "2026-09-03", "2026-09-04"],
+            "river_discharge": values,
+        }
+    }
+
+
+def test_plan_probes_uncalibrated_points_and_respects_the_budget():
+    from pipelines.discharge_openmeteo.run import OFFSETS, plan_queries
+
+    points = [{"id": 1, "lat": 0.0, "lon": 0.0}, {"id": 2, "lat": 1.0, "lon": 1.0}]
+    cells = {"1": {"dlon": 0.05, "dlat": 0.0, "hits": 3}}
+    plan = plan_queries(points, cells, budget=100)
+    assert plan[0] == (0, (0.05, 0.0))  # calibrated: one location at the remembered offset
+    assert [off for i, off in plan if i == 1] == list(OFFSETS)  # uncalibrated: all probes
+    assert plan_queries(points, cells, budget=3) == [(0, (0.05, 0.0))]  # no room for 5 probes
+
+
+def test_choose_cells_takes_the_channel_and_remembers_it():
+    from pipelines.discharge_openmeteo.run import OFFSETS, choose_cells, plan_queries
+
+    points = [{"id": 9, "lat": 30.0, "lon": -90.0, "meanDischarge": 6000.0}]
+    cells = {}
+    plan = plan_queries(points, cells)
+    # floodplain cell at the centre, the channel one cell east
+    responses = [
+        _resp([0.3, 0.3, 0.3, 0.3]),
+        _resp([5200.0, 5100.0, 5000.0, 4900.0]),
+        _resp([2.0, 2.0, 2.0, 2.0]),
+        _resp([None, None, None, None]),
+        _resp([0.0, 0.0, 0.0, 0.0]),
+    ]
+    recs = choose_cells(points, plan, responses, "2026-09-02", cells)
+    assert recs[0]["today"] == 5100.0 and abs(recs[0]["ratio"] - 0.85) < 1e-6
+    assert recs[0]["lat"] == 30.0 and recs[0]["lon"] == -90.0  # the river point, not the cell
+    assert cells["9"] == {"dlon": OFFSETS[1][0], "dlat": OFFSETS[1][1], "hits": 1}
+    # next run: one query at the remembered cell; a dead answer forgets the calibration
+    plan2 = plan_queries(points, cells)
+    assert plan2 == [(0, (0.05, 0.0))]
+    assert choose_cells(points, plan2, [_resp([0.0, 0.0, 0.0, 0.0])], "2026-09-02", cells) == []
+    assert "9" not in cells
