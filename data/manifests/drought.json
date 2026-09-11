@@ -1,13 +1,13 @@
 {
   "id": "drought",
-  "version": "20260910T0835",
-  "generatedAt": "2026-09-10T08:35:48Z",
+  "version": "20260911T0831",
+  "generatedAt": "2026-09-11T08:31:33Z",
   "sourceUpdatedAt": "2026-06-11T00:00:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "png",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20260910T0835/cdi.png",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20260911T0831/cdi.png",
       "bytes": 40503,
       "name": "cdi",
       "bbox": [
@@ -19,7 +19,7 @@
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20260910T0835/cdi.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20260911T0831/cdi.pmtiles",
       "bytes": 1754863,
       "name": "cdi-tiles"
     }
@@ -58,6 +58,7 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20260911T0831",
     "20260910T0835",
     "20260909T0837",
     "20260908T0834",
