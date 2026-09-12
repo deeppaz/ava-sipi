@@ -1,26 +1,26 @@
 {
   "id": "rivers",
-  "version": "20260911T0812",
-  "generatedAt": "2026-09-11T08:12:08Z",
-  "sourceUpdatedAt": "2026-09-11T00:00:00Z",
+  "version": "20260912T0802",
+  "generatedAt": "2026-09-12T08:02:12Z",
+  "sourceUpdatedAt": "2026-09-12T00:00:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260911T0812/cells.json",
-      "bytes": 132327,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20260912T0802/cells.json",
+      "bytes": 142303,
       "name": "cells"
     },
     {
       "kind": "parquet",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260911T0812/20260911.parquet",
-      "bytes": 118644,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260912T0802/20260912.parquet",
+      "bytes": 126052,
       "name": "discharge"
     },
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260911T0812/20260911.json",
-      "bytes": 391528,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20260912T0802/20260912.json",
+      "bytes": 420413,
       "name": "discharge-json"
     },
     {
@@ -51,6 +51,7 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20260912T0802",
     "20260911T0812",
     "20260910T0817",
     "20260909T0817",
