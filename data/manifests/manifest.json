@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T15:05:36Z",
+  "generatedAt": "2026-09-16T18:57:22Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -80,21 +80,21 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20260916T1505",
-      "generatedAt": "2026-09-16T15:05:01Z",
-      "sourceUpdatedAt": "2026-09-16T15:02:00Z",
+      "version": "20260916T1857",
+      "generatedAt": "2026-09-16T18:57:00Z",
+      "sourceUpdatedAt": "2026-09-16T19:00:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260916T1505/latest.json",
-          "bytes": 3203336,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260916T1857/latest.json",
+          "bytes": 3204804,
           "name": "latest"
         },
         {
           "kind": "json",
           "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json",
-          "bytes": 3017967,
+          "bytes": 3017797,
           "name": "noaa"
         },
         {
@@ -155,6 +155,8 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20260916T1857",
+        "20260916T1855",
         "20260916T1505",
         "20260916T1014",
         "20260916T0521",
@@ -320,14 +322,14 @@
     },
     "events": {
       "id": "events",
-      "version": "20260916T1505",
-      "generatedAt": "2026-09-16T15:05:14Z",
-      "sourceUpdatedAt": "2026-09-16T14:51:18Z",
+      "version": "20260916T1857",
+      "generatedAt": "2026-09-16T18:57:09Z",
+      "sourceUpdatedAt": "2026-09-16T18:51:14Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260916T1505/current.geojson",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260916T1857/current.geojson",
           "bytes": 87007,
           "name": "current"
         }
@@ -347,6 +349,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20260916T1857",
         "20260916T1505",
         "20260916T1015",
         "20260916T0521",
