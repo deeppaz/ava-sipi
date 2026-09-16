@@ -1,13 +1,13 @@
 {
   "id": "events",
-  "version": "20260916T1857",
-  "generatedAt": "2026-09-16T18:57:09Z",
-  "sourceUpdatedAt": "2026-09-16T18:51:14Z",
+  "version": "20260916T2159",
+  "generatedAt": "2026-09-16T21:59:37Z",
+  "sourceUpdatedAt": "2026-09-16T21:51:04Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "geojson",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260916T1857/current.geojson",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260916T2159/current.geojson",
       "bytes": 87007,
       "name": "current"
     }
@@ -27,6 +27,7 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20260916T2159",
     "20260916T1857",
     "20260916T1505",
     "20260916T1015",
