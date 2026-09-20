@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T21:29:24Z",
+  "generatedAt": "2026-09-20T23:28:09Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -84,21 +84,21 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20260920T2128",
-      "generatedAt": "2026-09-20T21:28:59Z",
-      "sourceUpdatedAt": "2026-09-20T21:30:00Z",
+      "version": "20260920T2327",
+      "generatedAt": "2026-09-20T23:27:46Z",
+      "sourceUpdatedAt": "2026-09-20T23:30:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260920T2128/latest.json",
-          "bytes": 3202071,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260920T2327/latest.json",
+          "bytes": 3201893,
           "name": "latest"
         },
         {
           "kind": "json",
           "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json",
-          "bytes": 3020754,
+          "bytes": 3020265,
           "name": "noaa"
         },
         {
@@ -159,6 +159,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20260920T2327",
         "20260920T2128",
         "20260920T1859",
         "20260920T1625",
@@ -368,14 +369,14 @@
     },
     "events": {
       "id": "events",
-      "version": "20260920T2129",
-      "generatedAt": "2026-09-20T21:29:08Z",
+      "version": "20260920T2327",
+      "generatedAt": "2026-09-20T23:27:56Z",
       "sourceUpdatedAt": "2026-09-20T20:21:09Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260920T2129/current.geojson",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260920T2327/current.geojson",
           "bytes": 91127,
           "name": "current"
         }
@@ -395,6 +396,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20260920T2327",
         "20260920T2129",
         "20260920T1900",
         "20260920T1625",
