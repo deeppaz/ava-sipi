@@ -5,6 +5,7 @@
 <p align="center"><em>the living map of Earth's water</em></p>
 
 **Ava Sipî** is a live map of Earth's water: rivers flowing at their real rate, floods and droughts as they happen, groundwater and glaciers over two decades.
+**"Ava Sipî"** (also spelled Ava Spî) is **Kurdish (Kurmanci)** for "white water" — from av (water) and sipî/spî (white). It is often used as a name for rivers and places, and as a poetic image for clear, pure water.
 
 <p align="center">
   <img src="docs/media/ava-sipi.gif" width="800" alt="Globe → zoom to the Euphrates → flood pulse → GRACE time slider" />
