@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T20:50:53Z",
+  "generatedAt": "2026-09-30T00:14:13Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -93,21 +93,21 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20260929T2050",
-      "generatedAt": "2026-09-29T20:50:28Z",
-      "sourceUpdatedAt": "2026-09-29T20:47:36Z",
+      "version": "20260930T0013",
+      "generatedAt": "2026-09-30T00:13:47Z",
+      "sourceUpdatedAt": "2026-09-30T00:15:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260929T2050/latest.json",
-          "bytes": 3253346,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260930T0013/latest.json",
+          "bytes": 3253700,
           "name": "latest"
         },
         {
           "kind": "json",
           "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json",
-          "bytes": 3019666,
+          "bytes": 3018828,
           "name": "noaa"
         },
         {
@@ -168,6 +168,8 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20260930T0013",
+        "20260930T0012",
         "20260929T2050",
         "20260929T2049",
         "20260929T1609",
@@ -460,15 +462,15 @@
     },
     "events": {
       "id": "events",
-      "version": "20260929T2050",
-      "generatedAt": "2026-09-29T20:50:38Z",
-      "sourceUpdatedAt": "2026-09-29T20:50:23Z",
+      "version": "20260930T0013",
+      "generatedAt": "2026-09-30T00:13:55Z",
+      "sourceUpdatedAt": "2026-09-30T00:10:55Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260929T2050/current.geojson",
-          "bytes": 98036,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20260930T0013/current.geojson",
+          "bytes": 96002,
           "name": "current"
         }
       ],
@@ -481,12 +483,13 @@
       "bbox": [
         -169.9,
         -42.3008,
-        166.8,
+        150.2,
         58.3871
       ],
       "failures": 0,
       "sample": false,
       "versions": [
+        "20260930T0013",
         "20260929T2050",
         "20260929T1609",
         "20260929T0939",
