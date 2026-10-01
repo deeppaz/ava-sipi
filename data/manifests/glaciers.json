@@ -1,26 +1,26 @@
 {
   "id": "glaciers",
-  "version": "20260907T1141",
-  "generatedAt": "2026-09-07T11:41:48Z",
+  "version": "20261001T1226",
+  "generatedAt": "2026-10-01T12:26:42Z",
   "sourceUpdatedAt": "2025-12-31T00:00:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/massbalance.json",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20261001T1226/massbalance.json",
       "bytes": 20520,
       "name": "massbalance"
     },
     {
       "kind": "geojson",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/glaciers.geojson",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20261001T1226/glaciers.geojson",
       "bytes": 325118799,
       "name": "outlines"
     },
     {
       "kind": "pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20260907T1141/glaciers.pmtiles",
-      "bytes": 144338582,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/glaciers/20261001T1226/glaciers.pmtiles",
+      "bytes": 144338581,
       "name": "tiles"
     }
   ],
@@ -53,6 +53,7 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20261001T1226",
     "20260907T1141",
     "20260902T2154"
   ],
