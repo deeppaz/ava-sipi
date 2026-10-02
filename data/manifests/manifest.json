@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T23:48:59Z",
+  "generatedAt": "2026-10-02T05:03:10Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -95,15 +95,15 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20261001T2348",
-      "generatedAt": "2026-10-01T23:48:37Z",
-      "sourceUpdatedAt": "2026-10-01T23:45:30Z",
+      "version": "20261002T0502",
+      "generatedAt": "2026-10-02T05:02:49Z",
+      "sourceUpdatedAt": "2026-10-02T05:00:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261001T2348/latest.json",
-          "bytes": 3249262,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261002T0502/latest.json",
+          "bytes": 3249813,
           "name": "latest"
         },
         {
@@ -170,6 +170,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261002T0502",
         "20261001T2348",
         "20261001T1949",
         "20261001T1946",
@@ -479,15 +480,15 @@
     },
     "events": {
       "id": "events",
-      "version": "20261001T2348",
-      "generatedAt": "2026-10-01T23:48:46Z",
-      "sourceUpdatedAt": "2026-10-01T23:41:38Z",
+      "version": "20261002T0502",
+      "generatedAt": "2026-10-02T05:02:58Z",
+      "sourceUpdatedAt": "2026-10-02T05:00:18Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261001T2348/current.geojson",
-          "bytes": 98282,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261002T0502/current.geojson",
+          "bytes": 87369,
           "name": "current"
         }
       ],
@@ -506,6 +507,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261002T0502",
         "20261001T2348",
         "20261001T1949",
         "20261001T1433",
