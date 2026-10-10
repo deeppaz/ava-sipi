@@ -1,14 +1,14 @@
 {
   "id": "gauges",
-  "version": "20261010T1622",
-  "generatedAt": "2026-10-10T16:22:56Z",
-  "sourceUpdatedAt": "2026-10-10T16:30:00Z",
+  "version": "20261010T2018",
+  "generatedAt": "2026-10-10T20:18:05Z",
+  "sourceUpdatedAt": "2026-10-10T20:15:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261010T1622/latest.json",
-      "bytes": 3252752,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261010T2018/latest.json",
+      "bytes": 3251539,
       "name": "latest"
     },
     {
@@ -75,6 +75,7 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20261010T2018",
     "20261010T1622",
     "20261010T1120",
     "20261010T1119",
