@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T11:31:46Z",
+  "generatedAt": "2026-10-12T14:24:32Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -106,16 +106,22 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20261012T0948",
-      "generatedAt": "2026-10-12T09:48:09Z",
-      "sourceUpdatedAt": "2026-10-12T09:45:00Z",
+      "version": "20261012T1125",
+      "generatedAt": "2026-10-12T11:25:48Z",
+      "sourceUpdatedAt": "2026-10-12T13:15:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261012T0948/latest.json",
-          "bytes": 3253625,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261012T1125/latest.json",
+          "bytes": 3271035,
           "name": "latest"
+        },
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261012T1125/stats.json",
+          "bytes": 5793889,
+          "name": "stats"
         },
         {
           "kind": "json",
@@ -124,15 +130,9 @@
           "name": "noaa"
         },
         {
-          "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260914T0920/stats.json",
-          "bytes": 2191035,
-          "name": "stats"
-        },
-        {
           "kind": "parquet",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260914T0920/stations.parquet",
-          "bytes": 6187033,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261012T1125/stations.parquet",
+          "bytes": 6188614,
           "name": "stations"
         }
       ],
@@ -181,6 +181,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261012T1125",
         "20261012T0948",
         "20261012T0947",
         "20261012T0240",
@@ -834,15 +835,15 @@
     },
     "reservoirs": {
       "id": "reservoirs",
-      "version": "20260914T1101",
-      "generatedAt": "2026-09-14T11:01:43Z",
-      "sourceUpdatedAt": "2026-08-01T00:00:00Z",
+      "version": "20261012T1312",
+      "generatedAt": "2026-10-12T13:12:15Z",
+      "sourceUpdatedAt": "2026-09-01T00:00:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/reservoirs/20260914T1101/latest.json",
-          "bytes": 983997,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/reservoirs/20261012T1312/latest.json",
+          "bytes": 984049,
           "name": "latest"
         }
       ],
@@ -880,6 +881,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261012T1312",
         "20260914T1101",
         "20260907T1300",
         "20260902T1604"

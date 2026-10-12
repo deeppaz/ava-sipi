@@ -1,15 +1,21 @@
 {
   "id": "gauges",
-  "version": "20261012T0948",
-  "generatedAt": "2026-10-12T09:48:09Z",
-  "sourceUpdatedAt": "2026-10-12T09:45:00Z",
+  "version": "20261012T1125",
+  "generatedAt": "2026-10-12T11:25:48Z",
+  "sourceUpdatedAt": "2026-10-12T13:15:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261012T0948/latest.json",
-      "bytes": 3253625,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261012T1125/latest.json",
+      "bytes": 3271035,
       "name": "latest"
+    },
+    {
+      "kind": "json",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261012T1125/stats.json",
+      "bytes": 5793889,
+      "name": "stats"
     },
     {
       "kind": "json",
@@ -18,15 +24,9 @@
       "name": "noaa"
     },
     {
-      "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260914T0920/stats.json",
-      "bytes": 2191035,
-      "name": "stats"
-    },
-    {
       "kind": "parquet",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20260914T0920/stations.parquet",
-      "bytes": 6187033,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261012T1125/stations.parquet",
+      "bytes": 6188614,
       "name": "stations"
     }
   ],
@@ -75,6 +75,7 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20261012T1125",
     "20261012T0948",
     "20261012T0947",
     "20261012T0240",
