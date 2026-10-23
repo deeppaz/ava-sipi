@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T19:01:18Z",
+  "generatedAt": "2026-10-23T22:04:14Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -117,15 +117,15 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20261023T1859",
-      "generatedAt": "2026-10-23T18:59:20Z",
-      "sourceUpdatedAt": "2026-10-23T19:00:00Z",
+      "version": "20261023T2203",
+      "generatedAt": "2026-10-23T22:03:07Z",
+      "sourceUpdatedAt": "2026-10-23T22:00:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261023T1859/latest.json",
-          "bytes": 3275437,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261023T2203/latest.json",
+          "bytes": 3274031,
           "name": "latest"
         },
         {
@@ -192,6 +192,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261023T2203",
         "20261023T1859",
         "20261023T1858",
         "20261023T1448",
@@ -590,21 +591,20 @@
         "20260911T0506",
         "20260911T0026",
         "20260911T0024",
-        "20260910T2223",
-        "20260910T2222"
+        "20260910T2223"
       ],
       "notes": []
     },
     "events": {
       "id": "events",
-      "version": "20261023T1859",
-      "generatedAt": "2026-10-23T18:59:30Z",
+      "version": "20261023T2203",
+      "generatedAt": "2026-10-23T22:03:15Z",
       "sourceUpdatedAt": "2026-10-23T05:58:16Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261023T1859/current.geojson",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261023T2203/current.geojson",
           "bytes": 93196,
           "name": "current"
         }
@@ -624,6 +624,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261023T2203",
         "20261023T1859",
         "20261023T1449",
         "20261023T0951",
