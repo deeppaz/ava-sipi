@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T01:54:01Z",
+  "generatedAt": "2026-10-28T08:11:01Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -121,15 +121,15 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20261028T0147",
-      "generatedAt": "2026-10-28T01:47:05Z",
-      "sourceUpdatedAt": "2026-10-28T01:45:00Z",
+      "version": "20261028T0810",
+      "generatedAt": "2026-10-28T08:10:08Z",
+      "sourceUpdatedAt": "2026-10-28T08:15:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261028T0147/latest.json",
-          "bytes": 3272914,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261028T0810/latest.json",
+          "bytes": 3274571,
           "name": "latest"
         },
         {
@@ -196,6 +196,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261028T0810",
         "20261028T0147",
         "20261028T0146",
         "20261027T2234",
@@ -594,22 +595,21 @@
         "20260914T1843",
         "20260914T1842",
         "20260914T1315",
-        "20260914T1313",
-        "20260914T0920"
+        "20260914T1313"
       ],
       "notes": []
     },
     "events": {
       "id": "events",
-      "version": "20261028T0147",
-      "generatedAt": "2026-10-28T01:47:12Z",
-      "sourceUpdatedAt": "2026-10-28T01:36:12Z",
+      "version": "20261028T0810",
+      "generatedAt": "2026-10-28T08:10:17Z",
+      "sourceUpdatedAt": "2026-10-28T05:59:26Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261028T0147/current.geojson",
-          "bytes": 84559,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261028T0810/current.geojson",
+          "bytes": 37173,
           "name": "current"
         }
       ],
@@ -620,14 +620,15 @@
       },
       "coverage": "global",
       "bbox": [
-        -175.9,
+        -106.0,
         -33.4766,
-        180.0,
+        127.4429,
         64.9068
       ],
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261028T0810",
         "20261028T0147",
         "20261027T2234",
         "20261027T1825",
