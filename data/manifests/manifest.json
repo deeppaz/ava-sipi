@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T02:39:20Z",
+  "generatedAt": "2026-10-30T09:08:24Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -123,15 +123,15 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20261030T0238",
-      "generatedAt": "2026-10-30T02:38:59Z",
-      "sourceUpdatedAt": "2026-10-30T02:45:00Z",
+      "version": "20261030T0904",
+      "generatedAt": "2026-10-30T09:04:48Z",
+      "sourceUpdatedAt": "2026-10-30T09:15:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261030T0238/latest.json",
-          "bytes": 3277608,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261030T0904/latest.json",
+          "bytes": 3277814,
           "name": "latest"
         },
         {
@@ -198,6 +198,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261030T0904",
         "20261030T0238",
         "20261029T2311",
         "20261029T2310",
@@ -596,22 +597,21 @@
         "20260916T0042",
         "20260915T2217",
         "20260915T2215",
-        "20260915T1906",
-        "20260915T1513"
+        "20260915T1906"
       ],
       "notes": []
     },
     "events": {
       "id": "events",
-      "version": "20261030T0239",
-      "generatedAt": "2026-10-30T02:39:07Z",
-      "sourceUpdatedAt": "2026-10-30T02:37:38Z",
+      "version": "20261030T0904",
+      "generatedAt": "2026-10-30T09:04:57Z",
+      "sourceUpdatedAt": "2026-10-30T09:04:32Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261030T0239/current.geojson",
-          "bytes": 90096,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261030T0904/current.geojson",
+          "bytes": 90554,
           "name": "current"
         }
       ],
@@ -630,6 +630,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261030T0904",
         "20261030T0239",
         "20261029T2311",
         "20261029T1853",
