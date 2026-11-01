@@ -1,1567 +1,1567 @@
 {
   "id": "groundwater",
-  "version": "20261001T1122",
-  "generatedAt": "2026-10-01T11:22:13Z",
+  "version": "20261101T1140",
+  "generatedAt": "2026-11-01T11:40:37Z",
   "sourceUpdatedAt": "2026-07-01T00:00:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200204.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200204.pmtiles",
       "bytes": 2148505,
       "name": "tws-2002-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200205.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200205.pmtiles",
       "bytes": 2174332,
       "name": "tws-2002-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200208.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200208.pmtiles",
       "bytes": 2424741,
       "name": "tws-2002-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200209.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200209.pmtiles",
       "bytes": 2460207,
       "name": "tws-2002-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200210.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200210.pmtiles",
       "bytes": 2473654,
       "name": "tws-2002-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200211.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200211.pmtiles",
       "bytes": 2324765,
       "name": "tws-2002-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200212.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200212.pmtiles",
       "bytes": 2322341,
       "name": "tws-2002-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200301.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200301.pmtiles",
       "bytes": 2214776,
       "name": "tws-2003-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200302.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200302.pmtiles",
       "bytes": 2156791,
       "name": "tws-2003-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200303.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200303.pmtiles",
       "bytes": 2188606,
       "name": "tws-2003-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200304.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200304.pmtiles",
       "bytes": 2176267,
       "name": "tws-2003-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200305.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200305.pmtiles",
       "bytes": 2215725,
       "name": "tws-2003-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200307.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200307.pmtiles",
       "bytes": 2354836,
       "name": "tws-2003-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200308.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200308.pmtiles",
       "bytes": 2534395,
       "name": "tws-2003-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200309.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200309.pmtiles",
       "bytes": 2555797,
       "name": "tws-2003-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200310.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200310.pmtiles",
       "bytes": 2585058,
       "name": "tws-2003-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200311.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200311.pmtiles",
       "bytes": 2384068,
       "name": "tws-2003-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200312.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200312.pmtiles",
       "bytes": 2113164,
       "name": "tws-2003-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200401.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200401.pmtiles",
       "bytes": 2040235,
       "name": "tws-2004-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200402.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200402.pmtiles",
       "bytes": 2015706,
       "name": "tws-2004-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200403.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200403.pmtiles",
       "bytes": 2061059,
       "name": "tws-2004-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200404.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200404.pmtiles",
       "bytes": 2091548,
       "name": "tws-2004-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200405.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200405.pmtiles",
       "bytes": 2053421,
       "name": "tws-2004-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200406.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200406.pmtiles",
       "bytes": 2034372,
       "name": "tws-2004-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200407.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200407.pmtiles",
       "bytes": 2163810,
       "name": "tws-2004-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200408.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200408.pmtiles",
       "bytes": 2358539,
       "name": "tws-2004-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200409.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200409.pmtiles",
       "bytes": 2391864,
       "name": "tws-2004-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200410.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200410.pmtiles",
       "bytes": 2427976,
       "name": "tws-2004-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200411.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200411.pmtiles",
       "bytes": 2017890,
       "name": "tws-2004-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200412.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200412.pmtiles",
       "bytes": 1874945,
       "name": "tws-2004-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200501.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200501.pmtiles",
       "bytes": 1927492,
       "name": "tws-2005-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200502.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200502.pmtiles",
       "bytes": 2046629,
       "name": "tws-2005-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200503.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200503.pmtiles",
       "bytes": 2089478,
       "name": "tws-2005-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200504.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200504.pmtiles",
       "bytes": 2087351,
       "name": "tws-2005-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200505.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200505.pmtiles",
       "bytes": 2081403,
       "name": "tws-2005-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200506.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200506.pmtiles",
       "bytes": 1991061,
       "name": "tws-2005-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200507.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200507.pmtiles",
       "bytes": 2158135,
       "name": "tws-2005-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200508.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200508.pmtiles",
       "bytes": 2276125,
       "name": "tws-2005-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200509.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200509.pmtiles",
       "bytes": 2333623,
       "name": "tws-2005-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200510.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200510.pmtiles",
       "bytes": 2273708,
       "name": "tws-2005-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200511.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200511.pmtiles",
       "bytes": 2092073,
       "name": "tws-2005-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200512.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200512.pmtiles",
       "bytes": 1815777,
       "name": "tws-2005-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200601.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200601.pmtiles",
       "bytes": 1872964,
       "name": "tws-2006-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200602.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200602.pmtiles",
       "bytes": 1898756,
       "name": "tws-2006-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200603.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200603.pmtiles",
       "bytes": 1998907,
       "name": "tws-2006-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200604.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200604.pmtiles",
       "bytes": 2011910,
       "name": "tws-2006-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200605.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200605.pmtiles",
       "bytes": 2002586,
       "name": "tws-2006-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200606.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200606.pmtiles",
       "bytes": 2000527,
       "name": "tws-2006-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200607.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200607.pmtiles",
       "bytes": 2237955,
       "name": "tws-2006-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200608.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200608.pmtiles",
       "bytes": 2352352,
       "name": "tws-2006-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200609.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200609.pmtiles",
       "bytes": 2403553,
       "name": "tws-2006-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200610.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200610.pmtiles",
       "bytes": 2447582,
       "name": "tws-2006-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200611.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200611.pmtiles",
       "bytes": 2262240,
       "name": "tws-2006-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200612.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200612.pmtiles",
       "bytes": 1930544,
       "name": "tws-2006-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200701.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200701.pmtiles",
       "bytes": 1843983,
       "name": "tws-2007-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200702.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200702.pmtiles",
       "bytes": 1958381,
       "name": "tws-2007-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200703.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200703.pmtiles",
       "bytes": 1963296,
       "name": "tws-2007-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200704.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200704.pmtiles",
       "bytes": 2026479,
       "name": "tws-2007-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200705.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200705.pmtiles",
       "bytes": 2062871,
       "name": "tws-2007-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200706.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200706.pmtiles",
       "bytes": 2047925,
       "name": "tws-2007-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200707.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200707.pmtiles",
       "bytes": 2242365,
       "name": "tws-2007-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200708.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200708.pmtiles",
       "bytes": 2347910,
       "name": "tws-2007-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200709.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200709.pmtiles",
       "bytes": 2448751,
       "name": "tws-2007-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200710.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200710.pmtiles",
       "bytes": 2504331,
       "name": "tws-2007-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200711.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200711.pmtiles",
       "bytes": 2351994,
       "name": "tws-2007-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200712.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200712.pmtiles",
       "bytes": 2105771,
       "name": "tws-2007-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200801.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200801.pmtiles",
       "bytes": 1990488,
       "name": "tws-2008-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200802.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200802.pmtiles",
       "bytes": 2054300,
       "name": "tws-2008-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200803.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200803.pmtiles",
       "bytes": 2108842,
       "name": "tws-2008-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200804.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200804.pmtiles",
       "bytes": 2108086,
       "name": "tws-2008-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200805.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200805.pmtiles",
       "bytes": 2126996,
       "name": "tws-2008-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200806.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200806.pmtiles",
       "bytes": 2204361,
       "name": "tws-2008-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200807.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200807.pmtiles",
       "bytes": 2341116,
       "name": "tws-2008-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200808.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200808.pmtiles",
       "bytes": 2539057,
       "name": "tws-2008-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200809.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200809.pmtiles",
       "bytes": 2629964,
       "name": "tws-2008-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200810.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200810.pmtiles",
       "bytes": 2582939,
       "name": "tws-2008-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200811.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200811.pmtiles",
       "bytes": 2441252,
       "name": "tws-2008-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200812.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200812.pmtiles",
       "bytes": 2219014,
       "name": "tws-2008-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200901.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200901.pmtiles",
       "bytes": 2129944,
       "name": "tws-2009-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200902.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200902.pmtiles",
       "bytes": 2084468,
       "name": "tws-2009-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200903.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200903.pmtiles",
       "bytes": 2113356,
       "name": "tws-2009-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200904.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200904.pmtiles",
       "bytes": 2159806,
       "name": "tws-2009-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200905.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200905.pmtiles",
       "bytes": 2209493,
       "name": "tws-2009-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200906.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200906.pmtiles",
       "bytes": 2226193,
       "name": "tws-2009-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200907.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200907.pmtiles",
       "bytes": 2394274,
       "name": "tws-2009-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200908.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200908.pmtiles",
       "bytes": 2547514,
       "name": "tws-2009-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200909.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200909.pmtiles",
       "bytes": 2603029,
       "name": "tws-2009-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200910.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200910.pmtiles",
       "bytes": 2608364,
       "name": "tws-2009-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200911.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200911.pmtiles",
       "bytes": 2515777,
       "name": "tws-2009-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_200912.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_200912.pmtiles",
       "bytes": 2302299,
       "name": "tws-2009-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201001.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201001.pmtiles",
       "bytes": 2214840,
       "name": "tws-2010-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201002.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201002.pmtiles",
       "bytes": 2192591,
       "name": "tws-2010-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201003.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201003.pmtiles",
       "bytes": 2162041,
       "name": "tws-2010-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201004.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201004.pmtiles",
       "bytes": 2124935,
       "name": "tws-2010-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201005.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201005.pmtiles",
       "bytes": 2116847,
       "name": "tws-2010-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201006.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201006.pmtiles",
       "bytes": 2256997,
       "name": "tws-2010-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201007.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201007.pmtiles",
       "bytes": 2483185,
       "name": "tws-2010-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201008.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201008.pmtiles",
       "bytes": 2624531,
       "name": "tws-2010-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201009.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201009.pmtiles",
       "bytes": 2650900,
       "name": "tws-2010-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201010.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201010.pmtiles",
       "bytes": 2628974,
       "name": "tws-2010-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201011.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201011.pmtiles",
       "bytes": 2480713,
       "name": "tws-2010-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201012.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201012.pmtiles",
       "bytes": 2340160,
       "name": "tws-2010-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201102.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201102.pmtiles",
       "bytes": 2203374,
       "name": "tws-2011-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201103.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201103.pmtiles",
       "bytes": 2212099,
       "name": "tws-2011-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201104.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201104.pmtiles",
       "bytes": 2223377,
       "name": "tws-2011-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201105.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201105.pmtiles",
       "bytes": 2243330,
       "name": "tws-2011-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201107.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201107.pmtiles",
       "bytes": 2622759,
       "name": "tws-2011-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201108.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201108.pmtiles",
       "bytes": 2630598,
       "name": "tws-2011-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201109.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201109.pmtiles",
       "bytes": 2643686,
       "name": "tws-2011-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201110.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201110.pmtiles",
       "bytes": 2720886,
       "name": "tws-2011-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201111.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201111.pmtiles",
       "bytes": 2672546,
       "name": "tws-2011-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201201.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201201.pmtiles",
       "bytes": 2311455,
       "name": "tws-2012-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201201.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201201.pmtiles",
       "bytes": 2370279,
       "name": "tws-2012-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201202.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201202.pmtiles",
       "bytes": 2298727,
       "name": "tws-2012-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201203.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201203.pmtiles",
       "bytes": 2285972,
       "name": "tws-2012-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201204.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201204.pmtiles",
       "bytes": 2293092,
       "name": "tws-2012-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201206.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201206.pmtiles",
       "bytes": 2471104,
       "name": "tws-2012-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201207.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201207.pmtiles",
       "bytes": 2675354,
       "name": "tws-2012-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201208.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201208.pmtiles",
       "bytes": 2712092,
       "name": "tws-2012-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201209.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201209.pmtiles",
       "bytes": 2687851,
       "name": "tws-2012-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201211.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201211.pmtiles",
       "bytes": 2568950,
       "name": "tws-2012-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201212.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201212.pmtiles",
       "bytes": 2565011,
       "name": "tws-2012-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201301.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201301.pmtiles",
       "bytes": 2449977,
       "name": "tws-2013-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201302.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201302.pmtiles",
       "bytes": 2420644,
       "name": "tws-2013-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201304.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201304.pmtiles",
       "bytes": 2298443,
       "name": "tws-2013-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201305.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201305.pmtiles",
       "bytes": 2236694,
       "name": "tws-2013-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201306.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201306.pmtiles",
       "bytes": 2334718,
       "name": "tws-2013-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201307.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201307.pmtiles",
       "bytes": 2629299,
       "name": "tws-2013-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201310.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201310.pmtiles",
       "bytes": 2653046,
       "name": "tws-2013-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201311.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201311.pmtiles",
       "bytes": 2504252,
       "name": "tws-2013-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201312.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201312.pmtiles",
       "bytes": 2395089,
       "name": "tws-2013-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201401.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201401.pmtiles",
       "bytes": 2315880,
       "name": "tws-2014-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201403.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201403.pmtiles",
       "bytes": 2332610,
       "name": "tws-2014-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201404.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201404.pmtiles",
       "bytes": 2373218,
       "name": "tws-2014-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201405.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201405.pmtiles",
       "bytes": 2328089,
       "name": "tws-2014-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201406.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201406.pmtiles",
       "bytes": 2396030,
       "name": "tws-2014-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201408.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201408.pmtiles",
       "bytes": 2681413,
       "name": "tws-2014-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201409.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201409.pmtiles",
       "bytes": 2723994,
       "name": "tws-2014-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201410.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201410.pmtiles",
       "bytes": 2677535,
       "name": "tws-2014-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201411.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201411.pmtiles",
       "bytes": 2559881,
       "name": "tws-2014-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201501.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201501.pmtiles",
       "bytes": 2372393,
       "name": "tws-2015-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201502.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201502.pmtiles",
       "bytes": 2355218,
       "name": "tws-2015-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201503.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201503.pmtiles",
       "bytes": 2368628,
       "name": "tws-2015-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201504.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201504.pmtiles",
       "bytes": 2369992,
       "name": "tws-2015-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201504.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201504.pmtiles",
       "bytes": 2376581,
       "name": "tws-2015-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201507.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201507.pmtiles",
       "bytes": 2654780,
       "name": "tws-2015-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201508.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201508.pmtiles",
       "bytes": 2680056,
       "name": "tws-2015-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201509.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201509.pmtiles",
       "bytes": 2688928,
       "name": "tws-2015-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201512.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201512.pmtiles",
       "bytes": 2517684,
       "name": "tws-2015-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201601.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201601.pmtiles",
       "bytes": 2477985,
       "name": "tws-2016-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201602.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201602.pmtiles",
       "bytes": 2409570,
       "name": "tws-2016-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201603.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201603.pmtiles",
       "bytes": 2367026,
       "name": "tws-2016-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201605.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201605.pmtiles",
       "bytes": 2342356,
       "name": "tws-2016-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201606.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201606.pmtiles",
       "bytes": 2442403,
       "name": "tws-2016-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201607.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201607.pmtiles",
       "bytes": 2612641,
       "name": "tws-2016-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201608.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201608.pmtiles",
       "bytes": 2633957,
       "name": "tws-2016-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201611.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201611.pmtiles",
       "bytes": 2587520,
       "name": "tws-2016-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201612.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201612.pmtiles",
       "bytes": 2543262,
       "name": "tws-2016-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201701.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201701.pmtiles",
       "bytes": 2458392,
       "name": "tws-2017-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201703.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201703.pmtiles",
       "bytes": 2395376,
       "name": "tws-2017-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201704.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201704.pmtiles",
       "bytes": 2426934,
       "name": "tws-2017-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201705.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201705.pmtiles",
       "bytes": 2436040,
       "name": "tws-2017-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201706.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201706.pmtiles",
       "bytes": 2446115,
       "name": "tws-2017-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201806.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201806.pmtiles",
       "bytes": 2492309,
       "name": "tws-2018-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201807.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201807.pmtiles",
       "bytes": 2629374,
       "name": "tws-2018-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201810.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201810.pmtiles",
       "bytes": 2585522,
       "name": "tws-2018-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201811.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201811.pmtiles",
       "bytes": 2593941,
       "name": "tws-2018-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201812.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201812.pmtiles",
       "bytes": 2562897,
       "name": "tws-2018-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201901.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201901.pmtiles",
       "bytes": 2499434,
       "name": "tws-2019-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201902.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201902.pmtiles",
       "bytes": 2456841,
       "name": "tws-2019-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201903.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201903.pmtiles",
       "bytes": 2450741,
       "name": "tws-2019-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201904.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201904.pmtiles",
       "bytes": 2427418,
       "name": "tws-2019-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201905.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201905.pmtiles",
       "bytes": 2414960,
       "name": "tws-2019-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201906.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201906.pmtiles",
       "bytes": 2507306,
       "name": "tws-2019-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201907.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201907.pmtiles",
       "bytes": 2710046,
       "name": "tws-2019-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201908.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201908.pmtiles",
       "bytes": 2704199,
       "name": "tws-2019-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201909.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201909.pmtiles",
       "bytes": 2701611,
       "name": "tws-2019-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201910.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201910.pmtiles",
       "bytes": 2662163,
       "name": "tws-2019-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201911.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201911.pmtiles",
       "bytes": 2556928,
       "name": "tws-2019-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_201912.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_201912.pmtiles",
       "bytes": 2518020,
       "name": "tws-2019-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202001.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202001.pmtiles",
       "bytes": 2510775,
       "name": "tws-2020-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202002.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202002.pmtiles",
       "bytes": 2467097,
       "name": "tws-2020-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202003.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202003.pmtiles",
       "bytes": 2412958,
       "name": "tws-2020-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202004.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202004.pmtiles",
       "bytes": 2433730,
       "name": "tws-2020-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202005.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202005.pmtiles",
       "bytes": 2433239,
       "name": "tws-2020-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202006.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202006.pmtiles",
       "bytes": 2538635,
       "name": "tws-2020-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202007.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202007.pmtiles",
       "bytes": 2690315,
       "name": "tws-2020-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202008.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202008.pmtiles",
       "bytes": 2695106,
       "name": "tws-2020-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202009.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202009.pmtiles",
       "bytes": 2623780,
       "name": "tws-2020-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202010.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202010.pmtiles",
       "bytes": 2608638,
       "name": "tws-2020-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202011.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202011.pmtiles",
       "bytes": 2584426,
       "name": "tws-2020-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202012.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202012.pmtiles",
       "bytes": 2567157,
       "name": "tws-2020-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202101.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202101.pmtiles",
       "bytes": 2494595,
       "name": "tws-2021-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202102.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202102.pmtiles",
       "bytes": 2504432,
       "name": "tws-2021-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202103.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202103.pmtiles",
       "bytes": 2413903,
       "name": "tws-2021-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202104.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202104.pmtiles",
       "bytes": 2417420,
       "name": "tws-2021-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202105.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202105.pmtiles",
       "bytes": 2394169,
       "name": "tws-2021-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202106.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202106.pmtiles",
       "bytes": 2554081,
       "name": "tws-2021-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202107.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202107.pmtiles",
       "bytes": 2653746,
       "name": "tws-2021-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202108.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202108.pmtiles",
       "bytes": 2635243,
       "name": "tws-2021-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202109.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202109.pmtiles",
       "bytes": 2608512,
       "name": "tws-2021-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202110.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202110.pmtiles",
       "bytes": 2610080,
       "name": "tws-2021-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202111.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202111.pmtiles",
       "bytes": 2601005,
       "name": "tws-2021-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202112.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202112.pmtiles",
       "bytes": 2593208,
       "name": "tws-2021-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202201.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202201.pmtiles",
       "bytes": 2581355,
       "name": "tws-2022-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202202.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202202.pmtiles",
       "bytes": 2565178,
       "name": "tws-2022-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202203.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202203.pmtiles",
       "bytes": 2522525,
       "name": "tws-2022-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202204.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202204.pmtiles",
       "bytes": 2507868,
       "name": "tws-2022-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202205.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202205.pmtiles",
       "bytes": 2516873,
       "name": "tws-2022-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202206.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202206.pmtiles",
       "bytes": 2587886,
       "name": "tws-2022-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202207.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202207.pmtiles",
       "bytes": 2656922,
       "name": "tws-2022-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202208.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202208.pmtiles",
       "bytes": 2620576,
       "name": "tws-2022-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202209.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202209.pmtiles",
       "bytes": 2609069,
       "name": "tws-2022-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202210.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202210.pmtiles",
       "bytes": 2585478,
       "name": "tws-2022-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202211.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202211.pmtiles",
       "bytes": 2613722,
       "name": "tws-2022-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202212.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202212.pmtiles",
       "bytes": 2630122,
       "name": "tws-2022-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202301.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202301.pmtiles",
       "bytes": 2567540,
       "name": "tws-2023-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202302.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202302.pmtiles",
       "bytes": 2512468,
       "name": "tws-2023-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202303.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202303.pmtiles",
       "bytes": 2474888,
       "name": "tws-2023-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202304.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202304.pmtiles",
       "bytes": 2431447,
       "name": "tws-2023-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202305.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202305.pmtiles",
       "bytes": 2446150,
       "name": "tws-2023-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202306.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202306.pmtiles",
       "bytes": 2577234,
       "name": "tws-2023-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202307.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202307.pmtiles",
       "bytes": 2707432,
       "name": "tws-2023-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202308.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202308.pmtiles",
       "bytes": 2648236,
       "name": "tws-2023-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202309.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202309.pmtiles",
       "bytes": 2608862,
       "name": "tws-2023-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202310.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202310.pmtiles",
       "bytes": 2575737,
       "name": "tws-2023-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202311.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202311.pmtiles",
       "bytes": 2564443,
       "name": "tws-2023-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202312.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202312.pmtiles",
       "bytes": 2551568,
       "name": "tws-2023-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202401.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202401.pmtiles",
       "bytes": 2552641,
       "name": "tws-2024-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202402.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202402.pmtiles",
       "bytes": 2448227,
       "name": "tws-2024-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202403.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202403.pmtiles",
       "bytes": 2424333,
       "name": "tws-2024-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202404.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202404.pmtiles",
       "bytes": 2423543,
       "name": "tws-2024-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202405.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202405.pmtiles",
       "bytes": 2436128,
       "name": "tws-2024-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202406.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202406.pmtiles",
       "bytes": 2506823,
       "name": "tws-2024-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202407.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202407.pmtiles",
       "bytes": 2579597,
       "name": "tws-2024-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202408.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202408.pmtiles",
       "bytes": 2567446,
       "name": "tws-2024-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202409.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202409.pmtiles",
       "bytes": 2552647,
       "name": "tws-2024-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202410.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202410.pmtiles",
       "bytes": 2510502,
       "name": "tws-2024-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202411.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202411.pmtiles",
       "bytes": 2515045,
       "name": "tws-2024-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202412.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202412.pmtiles",
       "bytes": 2539067,
       "name": "tws-2024-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202501.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202501.pmtiles",
       "bytes": 2542667,
       "name": "tws-2025-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202502.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202502.pmtiles",
       "bytes": 2495639,
       "name": "tws-2025-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202503.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202503.pmtiles",
       "bytes": 2515842,
       "name": "tws-2025-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202504.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202504.pmtiles",
       "bytes": 2464828,
       "name": "tws-2025-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202505.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202505.pmtiles",
       "bytes": 2461169,
       "name": "tws-2025-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202506.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202506.pmtiles",
       "bytes": 2515295,
       "name": "tws-2025-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202507.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202507.pmtiles",
       "bytes": 2597064,
       "name": "tws-2025-07"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202508.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202508.pmtiles",
       "bytes": 2593116,
       "name": "tws-2025-08"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202509.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202509.pmtiles",
       "bytes": 2552515,
       "name": "tws-2025-09"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202510.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202510.pmtiles",
       "bytes": 2531646,
       "name": "tws-2025-10"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202511.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202511.pmtiles",
       "bytes": 2547444,
       "name": "tws-2025-11"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202512.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202512.pmtiles",
       "bytes": 2573579,
       "name": "tws-2025-12"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202601.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202601.pmtiles",
       "bytes": 2518541,
       "name": "tws-2026-01"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202602.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202602.pmtiles",
       "bytes": 2555677,
       "name": "tws-2026-02"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202603.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202603.pmtiles",
       "bytes": 2516184,
       "name": "tws-2026-03"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202604.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202604.pmtiles",
       "bytes": 2478832,
       "name": "tws-2026-04"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202605.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202605.pmtiles",
       "bytes": 2467938,
       "name": "tws-2026-05"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202606.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202606.pmtiles",
       "bytes": 2551023,
       "name": "tws-2026-06"
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_202607.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_202607.pmtiles",
       "bytes": 2606599,
       "name": "tws-2026-07"
     },
     {
       "kind": "png",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_latest.png",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_latest.png",
       "bytes": 643969,
       "name": "tws_latest",
       "bbox": [
@@ -1573,13 +1573,13 @@
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_latest.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_latest.pmtiles",
       "bytes": 2606697,
       "name": "tws_latest-tiles"
     },
     {
       "kind": "png",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_mean24.png",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_mean24.png",
       "bytes": 636007,
       "name": "tws_mean24",
       "bbox": [
@@ -1591,13 +1591,13 @@
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_mean24.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_mean24.pmtiles",
       "bytes": 2555530,
       "name": "tws_mean24-tiles"
     },
     {
       "kind": "png",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_trend.png",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_trend.png",
       "bytes": 385039,
       "name": "tws_trend",
       "bbox": [
@@ -1609,13 +1609,13 @@
     },
     {
       "kind": "raster-pmtiles",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/tws_trend.pmtiles",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/tws_trend.pmtiles",
       "bytes": 1549870,
       "name": "tws_trend-tiles"
     },
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261001T1122/series/",
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/groundwater/20261101T1140/series/",
       "bytes": 0,
       "name": "series-blocks"
     },
@@ -1683,6 +1683,7 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20261101T1140",
     "20261001T1122",
     "20260907T1038",
     "20260902T2204"
