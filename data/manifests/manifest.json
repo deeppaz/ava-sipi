@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T01:30:04Z",
+  "generatedAt": "2026-11-05T08:27:49Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -129,21 +129,21 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20261105T0129",
-      "generatedAt": "2026-11-05T01:29:44Z",
-      "sourceUpdatedAt": "2026-11-05T01:30:00Z",
+      "version": "20261105T0827",
+      "generatedAt": "2026-11-05T08:27:13Z",
+      "sourceUpdatedAt": "2026-11-05T08:30:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261105T0129/latest.json",
-          "bytes": 3249320,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261105T0827/latest.json",
+          "bytes": 3248566,
           "name": "latest"
         },
         {
           "kind": "json",
           "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json",
-          "bytes": 3028557,
+          "bytes": 3026280,
           "name": "noaa"
         },
         {
@@ -204,6 +204,8 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261105T0827",
+        "20261105T0826",
         "20261105T0129",
         "20261105T0128",
         "20261104T2110",
@@ -601,23 +603,21 @@
         "20260920T1859",
         "20260920T1625",
         "20260920T1624",
-        "20260920T1225",
-        "20260920T1224",
-        "20260920T0708"
+        "20260920T1225"
       ],
       "notes": []
     },
     "events": {
       "id": "events",
-      "version": "20261105T0129",
-      "generatedAt": "2026-11-05T01:29:51Z",
-      "sourceUpdatedAt": "2026-11-05T01:20:50Z",
+      "version": "20261105T0827",
+      "generatedAt": "2026-11-05T08:27:21Z",
+      "sourceUpdatedAt": "2026-11-05T08:20:55Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261105T0129/current.geojson",
-          "bytes": 78316,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261105T0827/current.geojson",
+          "bytes": 78304,
           "name": "current"
         }
       ],
@@ -636,6 +636,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261105T0827",
         "20261105T0129",
         "20261104T2110",
         "20261104T1451",
