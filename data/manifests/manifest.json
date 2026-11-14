@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-11-14T09:28:38Z",
+  "generatedAt": "2026-11-14T11:05:47Z",
   "layers": {
     "rivers": {
       "id": "rivers",
-      "version": "20261113T1120",
-      "generatedAt": "2026-11-13T11:20:18Z",
-      "sourceUpdatedAt": "2026-11-13T00:00:00Z",
+      "version": "20261114T1044",
+      "generatedAt": "2026-11-14T10:44:20Z",
+      "sourceUpdatedAt": "2026-11-14T00:00:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20261113T1120/cells.json",
-          "bytes": 185412,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/rivers/20261114T1044/cells.json",
+          "bytes": 185318,
           "name": "cells"
         },
         {
           "kind": "parquet",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20261113T1120/20261113.parquet",
-          "bytes": 153632,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20261114T1044/20261114.parquet",
+          "bytes": 153640,
           "name": "discharge"
         },
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20261113T1120/20261113.json",
-          "bytes": 524396,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/discharge/20261114T1044/20261114.json",
+          "bytes": 524595,
           "name": "discharge-json"
         },
         {
@@ -54,6 +54,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261114T1044",
         "20261113T1120",
         "20261112T1136",
         "20261111T1117",
@@ -2795,14 +2796,14 @@
     },
     "drought": {
       "id": "drought",
-      "version": "20261113T1138",
-      "generatedAt": "2026-11-13T11:38:29Z",
+      "version": "20261114T1105",
+      "generatedAt": "2026-11-14T11:05:30Z",
       "sourceUpdatedAt": "2026-10-21T00:00:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "png",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20261113T1138/cdi.png",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20261114T1105/cdi.png",
           "bytes": 35240,
           "name": "cdi",
           "bbox": [
@@ -2814,7 +2815,7 @@
         },
         {
           "kind": "raster-pmtiles",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20261113T1138/cdi.pmtiles",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/drought/20261114T1105/cdi.pmtiles",
           "bytes": 1400238,
           "name": "cdi-tiles"
         }
@@ -2853,6 +2854,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261114T1105",
         "20261113T1138",
         "20261112T1156",
         "20261111T1138",
