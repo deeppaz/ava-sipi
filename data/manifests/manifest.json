@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T00:23:17Z",
+  "generatedAt": "2026-11-15T07:04:35Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -139,15 +139,15 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20261115T0022",
-      "generatedAt": "2026-11-15T00:22:28Z",
-      "sourceUpdatedAt": "2026-11-15T00:30:00Z",
+      "version": "20261115T0704",
+      "generatedAt": "2026-11-15T07:04:16Z",
+      "sourceUpdatedAt": "2026-11-15T07:15:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261115T0022/latest.json",
-          "bytes": 3239536,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261115T0704/latest.json",
+          "bytes": 3238693,
           "name": "latest"
         },
         {
@@ -214,6 +214,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261115T0704",
         "20261115T0022",
         "20261115T0021",
         "20261114T2039",
@@ -612,21 +613,20 @@
         "20260927T2112",
         "20260927T2109",
         "20260927T1747",
-        "20260927T1746",
-        "20260927T1306"
+        "20260927T1746"
       ],
       "notes": []
     },
     "events": {
       "id": "events",
-      "version": "20261115T0023",
-      "generatedAt": "2026-11-15T00:23:07Z",
-      "sourceUpdatedAt": "2026-11-14T23:21:55Z",
+      "version": "20261115T0704",
+      "generatedAt": "2026-11-15T07:04:26Z",
+      "sourceUpdatedAt": "2026-11-15T07:04:19Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261115T0023/current.geojson",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261115T0704/current.geojson",
           "bytes": 67834,
           "name": "current"
         }
@@ -646,6 +646,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261115T0704",
         "20261115T0023",
         "20261114T2039",
         "20261114T1603",
