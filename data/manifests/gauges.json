@@ -1,20 +1,20 @@
 {
   "id": "gauges",
-  "version": "20261122T2243",
-  "generatedAt": "2026-11-22T22:43:35Z",
-  "sourceUpdatedAt": "2026-11-22T22:45:00Z",
+  "version": "20261123T0313",
+  "generatedAt": "2026-11-23T03:13:10Z",
+  "sourceUpdatedAt": "2026-11-23T03:15:00Z",
   "stale": false,
   "artifacts": [
     {
       "kind": "json",
-      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261122T2243/latest.json",
-      "bytes": 3230260,
+      "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261123T0313/latest.json",
+      "bytes": 3229999,
       "name": "latest"
     },
     {
       "kind": "json",
       "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/latest/noaa.json",
-      "bytes": 3028330,
+      "bytes": 3028381,
       "name": "noaa"
     },
     {
@@ -75,6 +75,8 @@
   "failures": 0,
   "sample": false,
   "versions": [
+    "20261123T0313",
+    "20261123T0312",
     "20261122T2243",
     "20261122T2242",
     "20261122T1725",
@@ -472,9 +474,7 @@
     "20261003T1844",
     "20261003T1842",
     "20261003T1515",
-    "20261003T1512",
-    "20261003T1124",
-    "20261003T1123"
+    "20261003T1512"
   ],
   "notes": []
 }
