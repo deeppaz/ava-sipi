@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T13:46:06Z",
+  "generatedAt": "2026-11-23T13:57:02Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -148,16 +148,22 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20261123T1306",
-      "generatedAt": "2026-11-23T13:06:33Z",
-      "sourceUpdatedAt": "2026-11-23T13:15:00Z",
+      "version": "20261123T1348",
+      "generatedAt": "2026-11-23T13:48:37Z",
+      "sourceUpdatedAt": "2026-11-23T14:00:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261123T1306/latest.json",
-          "bytes": 3230120,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261123T1348/latest.json",
+          "bytes": 3228671,
           "name": "latest"
+        },
+        {
+          "kind": "json",
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261123T1348/stats.json",
+          "bytes": 6935201,
+          "name": "stats"
         },
         {
           "kind": "json",
@@ -166,15 +172,9 @@
           "name": "noaa"
         },
         {
-          "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261116T1211/stats.json",
-          "bytes": 6933890,
-          "name": "stats"
-        },
-        {
           "kind": "parquet",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261116T1210/stations.parquet",
-          "bytes": 6189899,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261123T1348/stations.parquet",
+          "bytes": 6190152,
           "name": "stations"
         }
       ],
@@ -223,6 +223,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261123T1348",
         "20261123T1306",
         "20261123T0313",
         "20261123T0312",
@@ -621,8 +622,7 @@
         "20261004T0024",
         "20261003T2152",
         "20261003T1844",
-        "20261003T1842",
-        "20261003T1515"
+        "20261003T1842"
       ],
       "notes": []
     },
@@ -1105,7 +1105,7 @@
           }
         ]
       },
-      "failures": 1,
+      "failures": 2,
       "sample": false,
       "versions": [
         "20261109T1218",
