@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T15:39:58Z",
+  "generatedAt": "2026-11-27T00:05:15Z",
   "layers": {
     "rivers": {
       "id": "rivers",
@@ -151,15 +151,15 @@
     },
     "gauges": {
       "id": "gauges",
-      "version": "20261126T1539",
-      "generatedAt": "2026-11-26T15:39:32Z",
-      "sourceUpdatedAt": "2026-11-26T15:45:00Z",
+      "version": "20261127T0004",
+      "generatedAt": "2026-11-27T00:04:50Z",
+      "sourceUpdatedAt": "2026-11-27T00:15:00Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "json",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261126T1539/latest.json",
-          "bytes": 3215449,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/gauges/20261127T0004/latest.json",
+          "bytes": 3215937,
           "name": "latest"
         },
         {
@@ -226,6 +226,7 @@
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261127T0004",
         "20261126T1539",
         "20261126T1538",
         "20261126T0521",
@@ -624,22 +625,21 @@
         "20261006T0644",
         "20261006T0019",
         "20261006T0017",
-        "20261005T1833",
-        "20261005T0908"
+        "20261005T1833"
       ],
       "notes": []
     },
     "events": {
       "id": "events",
-      "version": "20261126T1539",
-      "generatedAt": "2026-11-26T15:39:39Z",
-      "sourceUpdatedAt": "2026-11-26T13:35:37Z",
+      "version": "20261127T0005",
+      "generatedAt": "2026-11-27T00:05:02Z",
+      "sourceUpdatedAt": "2026-11-26T23:20:36Z",
       "stale": false,
       "artifacts": [
         {
           "kind": "geojson",
-          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261126T1539/current.geojson",
-          "bytes": 48343,
+          "url": "https://pub-666b3b31460b4674b7a6d091cd74fed7.r2.dev/events/20261127T0005/current.geojson",
+          "bytes": 46358,
           "name": "current"
         }
       ],
@@ -650,14 +650,15 @@
       },
       "coverage": "global",
       "bbox": [
-        -175.9,
+        -173.4,
         -37.44,
         175.171,
-        53.5502
+        51.6798
       ],
       "failures": 0,
       "sample": false,
       "versions": [
+        "20261127T0005",
         "20261126T1539",
         "20261126T0521",
         "20261125T2322",
@@ -1056,8 +1057,7 @@
         "20260907T1945",
         "20260907T1553",
         "20260907T1005",
-        "20260907T0454",
-        "20260907T0015"
+        "20260907T0454"
       ],
       "notes": [
         "events.window30d"
